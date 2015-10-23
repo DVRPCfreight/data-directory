@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="description" content="">
+        <meta name="author" content="Michael Ruane">     
+        <title>DVRPC GeoDatabase Directory</title>
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.datatables.net/1.10.8/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">
+
+        <!--<link href="lib/locals/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+    
+        
+        <link rel="stylesheet" href="lib/style.css" />
+        <style>
+
+
+        #loading {
+          position: absolute;
+          width: 220px;
+          
+          top: 50%;
+          left: 50%;
+          margin: -40px 0 0 -110px;
+          z-index: 1028;
+          text-align: center;
+            }
+        .omodal{
+            position: absolute;
+            width: 220px;
+            height: 19px;
+            top: 50%;
+            left: 50%;
+            margin: -10px 0 0 -110px;
+            z-index: 1028;
+            display: none;
+            overflow: hidden;
+            outline: 0px none;
+        }
+        .navbar-brand h3{
+            margin:15px;
+        }
+        
+
+
+        @media screen and (min-width: 768px) {
+                .modal-dialog {
+                    width:730px!important;
+                }
+            }
+            @media (max-width: 1360px){
+                .search-container{
+                    width:250px!important;
+                }
+            }
+            @media (max-width: 1270px) {
+                .navbar .navbar-brand {
+                    font-size: 18px;
+                    float: left;
+                }
+                .leaflet-control-attribution {
+                    display: none;
+                }
+                
+            }
+            @media (max-width: 1200px) {
+               .search-container {
+                    width: 200px!important;
+                }
+            }
+            @media (max-width: 960px) {
+               .search-container {
+                    display :none!important;
+                }
+
+            }
+            @media (max-width: 768px){
+                .search-container {
+                    display: table!important;
+                    width: 100%!important;
+                }
+                .logo-container{
+                    padding:0px;
+                }
+                .navbar-nav .open .dropdown-menu{
+                    background-color:#fff;
+                }
+                #infobox_ {
+                    right:10px;
+                }
+            }
+            @media (max-width: 376px){
+                .infowrap{
+                    padding:20px;
+                    height:auto;
+                }
+                #infobox_ {
+                    display:none;
+                }
+            }
+            /* Print Handling */
+            @media print {
+                .navbar, .toggle, #sidebar {
+                    display: none !important;
+                }
+            }
+        </style> 
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <header id="TC_header" class="navbar navbar-inverse navbar-top oheader">
+            <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <div class="navbar-brand">
+                    <h3>Traffic Count Concept</h3>
+                </div>
+            </div>
+            <div id="navbar-links" class="navbar-collapse collapse">
+                <ul id="landing" class="nav navbar-nav navbar-right">
+                    <li><a href="#about" class="toggleLanding" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;About</a></li>
+                </ul> 
+            </div><!--/.navbar-collapse -->
+        </header>
+        
+    <!--Map and Sidebar-->
+       <div class="row ocontent" id="container">            
+            <!---Map Pane -->
+            <div id="core-page" class="col-sm-12 col-lg-12">
+                <table id="table" class="table table-striped table-bordered">
+                    <!-- table contents -->
+                </table>
+
+            </div>
+        </div>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/dataTables.bootstrap.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" ></script>             
+        <script type="text/javascript" src="lib/map.js"></script>
+    </body>
+</html>
