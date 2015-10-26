@@ -69,3 +69,10 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
     float: right;
 }
 
+td.details-control {
+    background: url('../lib/images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('../lib/images/details_close.png') no-repeat center center;
+}

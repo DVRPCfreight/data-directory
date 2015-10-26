@@ -141,7 +141,36 @@
                 <table id="table" class="table table-striped table-bordered">
                     <!-- table contents -->
                 </table>
-
+                <div id="Filters">
+                    <select id="dataset-select"></select>
+                    <select id="database-select"></select>
+                </div>
+            </div>
+            <div id="feature-" class="col-sm-12 col-lg-12 hidden">
+                <h1 id="d-name">Data name</h1>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        Data location:  USER . Tablename  ----link to the "USER" or database field with filter applied
+                        Data contact: if available
+                        Feature dataset: dataset ----link back to table with filter applied showing the dataset
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        Feature type: table..etc
+                        Feature count: # of features
+                        Last modified: MODdate
+                        
+                    </div>
+                </div>
+                <div class="row col-xs-12 col-sm-12">
+                    Abstract:  data abstract
+                    Purpose: data purpose
+                    License and Use limits: use limitations
+                    Table of fields:
+                        | Name | Alias | Description | Type
+                </div>
+                <div class="row col-xs-12 col-sm-12">
+                    Relationships?  --- links to the individual relationship classes
+                </div>
             </div>
         </div>
 
@@ -149,7 +178,8 @@
         <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/dataTables.bootstrap.min.js"></script> 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" ></script>             
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" ></script>   
+        <script type="text/javascript" src="lib/columnFilter.js"></script>          
         <script type="text/javascript" src="lib/map.js"></script>
     </body>
 </html>
