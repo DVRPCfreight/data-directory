@@ -124,13 +124,13 @@
                         <span class="icon-bar"></span>
                     </button>
                 <div class="navbar-brand">
-                    <h3>Traffic Count Concept</h3>
+                    <h1>DVRPC GIS Data Directory</h1>
                 </div>
             </div>
             <div id="navbar-links" class="navbar-collapse collapse">
-                <ul id="landing" class="nav navbar-nav navbar-right">
+               <!-- <ul id="landing" class="nav navbar-nav navbar-right">
                     <li><a href="#about" class="toggleLanding" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;About</a></li>
-                </ul> 
+                </ul> -->
             </div><!--/.navbar-collapse -->
         </header>
         
@@ -142,17 +142,19 @@
                     <!-- table contents -->
                 </table>
                 <div id="Filters">
-                    <select id="dataset-select"></select>
-                    <select id="database-select"></select>
+                    
                 </div>
             </div>
-            <div id="feature-" class="col-sm-12 col-lg-12 hidden">
-                <h1 id="d-name">Data name</h1>
+            <div id="feature" class="col-sm-12 col-lg-12 hidden">
+                <h2 id="d-name">Data name</h2>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
-                        Data location:  USER . Tablename  ----link to the "USER" or database field with filter applied
-                        Data contact: if available
-                        Feature dataset: dataset ----link back to table with filter applied showing the dataset
+                        <b>Data location:</b>
+                        <div id="d-location" class="well well-sm"></div>
+                        <b>Data contact:</b>
+                        <div id="d-contact" class="well well-sm"></div>
+                        <b>Feature dataset:</b>
+                        <div id="d-dataset" class="well well-sm"></div>
                     </div>
                     <div class="col-xs-12 col-sm-6">
                         Feature type: table..etc
