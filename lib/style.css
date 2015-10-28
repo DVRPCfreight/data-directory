@@ -103,3 +103,7 @@ tr.shown td.details-control {
 .toolbar{
     float:left;
 }
+.alert-warning{
+    color: #B54242!important;
+    background-color: #FFCACA!important;
+}

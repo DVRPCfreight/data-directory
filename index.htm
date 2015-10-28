@@ -15,7 +15,7 @@
         <link href="lib/locals/local.css" rel="stylesheet" type="text/css">
     
         
-        <link rel="stylesheet" href="lib/style.css" />
+        <link rel="stylesheet" type="text/css" href="lib/style.css" />
         <style>
 
 
@@ -150,29 +150,67 @@
                 <h2 id="d-name">Data name</h2>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
-                        <b>Data location:</b>
+                        <b>Database location:</b>
                         <div id="d-location" class="well well-sm"></div>
-                        <b>Data contact:</b>
-                        <div id="d-contact" class="well well-sm"></div>
+                        <b>Data feature name:</b>
+                        <div id="d-feature" class="well well-sm"></div>
                         <b>Feature dataset:</b>
                         <div id="d-dataset" class="well well-sm"></div>
                     </div>
                     <div class="col-xs-12 col-sm-6">
-                        Feature type: table..etc
-                        Feature count: # of features
-                        Last modified: MODdate
-                        
+                        <b>Feature type:</b>
+                        <div id="d-type" class="well well-sm"></div>
+                        <b>Feature count:</b>
+                        <div id="d-count" class="well well-sm"></div>
+                        <b>Last modified:</b>
+                        <div id="d-modified" class="well well-sm"></div>
                     </div>
                 </div>
                 <div class="row col-xs-12 col-sm-12">
-                    Abstract:  data abstract
-                    Purpose: data purpose
-                    License and Use limits: use limitations
-                    Table of fields:
-                        | Name | Alias | Description | Type
-                </div>
-                <div class="row col-xs-12 col-sm-12">
-                    Relationships?  --- links to the individual relationship classes
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div data-toggle="collapse" data-parent="#accordion_" href="#abstract" class="panel-heading accordion-toggle">
+                                <b>Abstract</b>
+                            </div> 
+                            <div id="abstract" class="panel-collapse collapse">
+                                <div class="panel-body legPanel">
+                                    <div id="d-abstract" class="well well-sm"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div data-toggle="collapse" data-parent="#accordion_" href="#purpose" class="panel-heading accordion-toggle">
+                                <b>Purpose</b>
+                            </div> 
+                            <div id="purpose" class="panel-collapse collapse">
+                                <div class="panel-body legPanel">
+                                    <div id="d-purpose" class="well well-sm"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div id="use-panel" data-toggle="collapse" data-parent="#accordion_" href="#limits" class="panel-heading accordion-toggle">
+                                <b>Use Limits and License Restriction</b>
+                            </div> 
+                            <div id="limits" class="panel-collapse collapse">
+                                <div class="panel-body legPanel">
+                                    <div id="d-limits" class="well well-sm"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <b>Fields</b>
+                    <div class="well well-sm">
+                        <table id="field-table" class="table table-striped">
+                            <tr>
+                                <th>Field name</th>
+                                <th>Alias</th>
+                                <th>Description</th>
+                                <th>Field type</th>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
