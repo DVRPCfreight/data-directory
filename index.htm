@@ -129,15 +129,12 @@
                 </div>
             </div>
             <div id="navbar-links" class="navbar-collapse collapse">
-               <!-- <ul id="landing" class="nav navbar-nav navbar-right">
-                    <li><a href="#about" class="toggleLanding" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;About</a></li>
-                </ul> -->
             </div><!--/.navbar-collapse -->
         </header>
         
-    <!--Map and Sidebar-->
+    
        <div class="row ocontent" id="container">            
-            <!---Map Pane -->
+            <!--main table--> 
             <div id="core-page" class="col-sm-12 col-lg-12">
                 <table id="table" class="table table-striped table-bordered">
                     <!-- table contents -->
@@ -146,71 +143,82 @@
                     
                 </div>
             </div>
+
+            <!-- single feature record view -->
             <div id="feature" class="col-sm-12 col-lg-12 hidden">
+                <div href="#" class="btn btn-sm btn-primary" onclick="history.back(-1)">return to search</div>
                 <h2 id="d-name">Data name</h2>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                        <b>Database location:</b>
+                    <div class="col-xs-12 col-sm-7">
+                        <b>Data location:</b>
                         <div id="d-location" class="well well-sm"></div>
-                        <b>Data feature name:</b>
-                        <div id="d-feature" class="well well-sm"></div>
                         <b>Feature dataset:</b>
                         <div id="d-dataset" class="well well-sm"></div>
+                        
                     </div>
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-sm-5">
                         <b>Feature type:</b>
                         <div id="d-type" class="well well-sm"></div>
-                        <b>Feature count:</b>
-                        <div id="d-count" class="well well-sm"></div>
                         <b>Last modified:</b>
                         <div id="d-modified" class="well well-sm"></div>
+                        
                     </div>
                 </div>
                 <div class="row col-xs-12 col-sm-12">
                     <div class="panel-group">
                         <div class="panel panel-default">
-                            <div data-toggle="collapse" data-parent="#accordion_" href="#abstract" class="panel-heading accordion-toggle">
+                            <div class="panel-heading accordion-toggle">
                                 <b>Abstract</b>
                             </div> 
-                            <div id="abstract" class="panel-collapse collapse">
+                            <div id="abstract" class="">
                                 <div class="panel-body legPanel">
-                                    <div id="d-abstract" class="well well-sm"></div>
+                                    <div id="d-abstract" ></div>
                                 </div>
                             </div>
                         </div>
                         <div class="panel panel-default">
-                            <div data-toggle="collapse" data-parent="#accordion_" href="#purpose" class="panel-heading accordion-toggle">
+                            <div  class="panel-heading accordion-toggle">
                                 <b>Purpose</b>
                             </div> 
-                            <div id="purpose" class="panel-collapse collapse">
+                            <div id="purpose" class=" ">
                                 <div class="panel-body legPanel">
-                                    <div id="d-purpose" class="well well-sm"></div>
+                                    <div id="d-purpose" ></div>
                                 </div>
                             </div>
                         </div>
                         <div class="panel panel-default">
-                            <div id="use-panel" data-toggle="collapse" data-parent="#accordion_" href="#limits" class="panel-heading accordion-toggle">
+                            <div class="panel-heading accordion-toggle">
                                 <b>Use Limits and License Restriction</b>
                             </div> 
-                            <div id="limits" class="panel-collapse collapse">
+                            <div id="limits" class="">
                                 <div class="panel-body legPanel">
-                                    <div id="d-limits" class="well well-sm"></div>
+                                    <div id="d-limits" ></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <b>Fields</b>
-                    <div class="well well-sm">
-                        <table id="field-table" class="table table-striped">
-                            <tr>
-                                <th>Field name</th>
-                                <th>Alias</th>
-                                <th>Description</th>
-                                <th>Field type</th>
-                            </tr>
-                        </table>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading accordion-toggle">
+                            <b>Fields</b>
+                        </div> 
+                        <div id="fields" class=" ">
+                            <div class="panel-body legPanel">
+                                <div >
+                                    <table id="field-table" class="table table-striped">
+                                        <tr>
+                                            <th>Field name</th>
+                                            <th>Alias</th>
+                                            <th>Description</th>
+                                            <th>Field type</th>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -222,6 +230,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" ></script>   -->
         <script type="text/javascript" src="lib/locals/local.js"></script> 
         <script type="text/javascript" src="lib/columnFilter.js"></script>          
-        <script type="text/javascript" src="lib/map.js"></script>
+        <script type="text/javascript" src="lib/app.js"></script>
     </body>
 </html>

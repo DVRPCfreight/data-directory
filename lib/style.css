@@ -55,7 +55,7 @@ outline:none;
 /*--------  UI Element Color Styles  ---------------------*/
 /*------- Change to alter color theme  -------------------*/
 /*--------------------------------------------------------*/
-body, .landing, #sidebar {
+/*body, .landing, #sidebar {
     background-color: #efefef !important;
 }
 .infowrap, .ofooter, .oheader {
@@ -85,7 +85,7 @@ body, .landing, #sidebar {
 }
 a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-check i:hover{
     color: #5876A2 !important;
-}
+}*/
 .input-group #searchbox.form-control {
     float: right;
 }
@@ -106,4 +106,7 @@ tr.shown td.details-control {
 .alert-warning{
     color: #B54242!important;
     background-color: #FFCACA!important;
+}
+#table_filter{
+    float:right;
 }
