@@ -2,7 +2,7 @@ html,body,#sidebar,#container {
     height: 100%;
     margin: 0;
 }
-body {
+/*body {
    
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -23,7 +23,7 @@ h1{
 }
 h2{
     font-size: 20px;
-}
+}*/
 label {
     font-weight: 400;
 }
@@ -50,7 +50,9 @@ outline:none;
 .data-link:hover{
     text-decoration: underline;
 }
-
+#table_filter input{
+    margin-left:7px;
+}
 /*--------------------------------------------------------*/
 /*--------  UI Element Color Styles  ---------------------*/
 /*------- Change to alter color theme  -------------------*/

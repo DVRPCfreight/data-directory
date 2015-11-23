@@ -7449,7 +7449,17 @@ STRUCTURES,PrivateSchools_2012,Point,gc_lon,gc_lon,Double,No variable
 STRUCTURES,PrivateSchools_2012,Point,Shape,Shape,Geometry,Feature geometry.
 STRUCTURES,PrivateSchools_2012,Point,DVRPC_Reg,DVRPC_Reg,String,No variable
 STRUCTURES,PrivateSchools_2012,Point,DVRPC_28Co,DVRPC_28Co,String,No variable
-STRUCTURES,NJ_FireSta,Point,SPECIALTY,OBJECTID,OID,"
+STRUCTURES,NJ_FireSta,Point,OWNER,OBJECTID,OID,"
+The type of ownership for the entity. 
+
+The values that this field is populated with came from individual states and have not been validated or checked by TGS.
+"
+STRUCTURES,NJ_FireSta,Point,TYPE,TYPE,String,"
+Type of employees.
+
+The values that this field is populated with came from individual states and have not been validated or checked by TGS.
+"
+STRUCTURES,NJ_FireSta,Point,SPECIALTY,SPECIALTY,String,"
 Indicates any type of specialty unit available at the facility.
 
 The values that this field is populated with came from individual states and have not been validated or checked by TGS.
@@ -7517,12 +7527,12 @@ STRUCTURES,NJ_FireSta,Point,PHONELOC,QC_QA,String,Indicates whether the phone nu
 STRUCTURES,NJ_FireSta,Point,QC_QA,STATE_ID,String,Organization that performed Quality Control/Quality Assurance on the record.
 STRUCTURES,NJ_FireSta,Point,STATE_ID,FDID,String,"State Fire Station Data ID. For states that contributed data, this field is populated with the unique ID used by the state to track Fire Stations."
 STRUCTURES,NJ_FireSta,Point,FDID,FRST_MBRS,Double,"A unique five-character identifier assigned by the state to identify a particular fire department within the state. The first two characters designate the county and the last three designate the department within the county. This identifier is only unique within each state, not nationwide."
-STRUCTURES,NJ_FireSta,Point,FRST_MBRS,EMS_MBRS,Double,"
+STRUCTURES,NJ_FireSta,Point,FRST_MBRS,LEVEL_,String,"
 Total number of fire fighter members associated with the DEPARTMENT.
 
 The values that this field is populated with came from individual states and have not been validated or checked by TGS
 "
-STRUCTURES,NJ_FireSta,Point,LEVEL_,LEVEL_,String,No variable
+STRUCTURES,NJ_FireSta,Point,LEVEL_,EMS_MBRS,Double,No variable
 STRUCTURES,NJ_FireSta,Point,EMS_MBRS,TOTALPERS,Double,"
 Total number of EMS members associated with the DEPARTMENT.
 
@@ -7552,16 +7562,6 @@ STRUCTURES,NJ_FireSta,Point,NBR_STA,OWNER,String,"
 The total number of stations associated with the DEPARTMENT.
 
 The values that this field is populated with came from individual states and have not been validated or checked by TGS
-"
-STRUCTURES,NJ_FireSta,Point,OWNER,TYPE,String,"
-The type of ownership for the entity. 
-
-The values that this field is populated with came from individual states and have not been validated or checked by TGS.
-"
-STRUCTURES,NJ_FireSta,Point,TYPE,SPECIALTY,String,"
-Type of employees.
-
-The values that this field is populated with came from individual states and have not been validated or checked by TGS.
 "
 STRUCTURES,NJ_EMS,Point,OBJECTID,OBJECTID,OID,Internal feature number.
 STRUCTURES,NJ_EMS,Point,Shape,Shape,Geometry,Feature geometry.
