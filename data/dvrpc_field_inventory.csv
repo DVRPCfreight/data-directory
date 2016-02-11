@@ -2406,294 +2406,24 @@ ENVIRONMENT,PA_IntList_Attaining_2012,Polyline,STR_GISKEY,STR_HUC,String,No vari
 ENVIRONMENT,PA_IntList_Attaining_2012,Polyline,STR_HUC,DTE_CREATE,Date,No variable
 ENVIRONMENT,PA_IntList_Attaining_2012,Polyline,DTE_CREATE,BLN_ATTAIN,String,No variable
 ENVIRONMENT,PA_IntList_Attaining_2012,Polyline,SHAPE.LEN,SHAPE.LEN,Double,No variable
-﻿FREIGHT,anchorage_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,anchorage_pts,Point,pff_id,pff_id,String,No variable
-FREIGHT,anchorage_pts,Point,anch_id,Anchorage Link,String,No variable
-FREIGHT,anchorage_pts,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,anchorages,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,anchorages,Polygon,pff_id,pff_id,String,No variable
-FREIGHT,anchorages,Polygon,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,anchorages,Polygon,Name,Anchorage name,String,No variable
-FREIGHT,anchorages,Polygon,Township_s,township_s,String,No variable
-FREIGHT,anchorages,Polygon,length,anchorage length,Double,No variable
-FREIGHT,anchorages,Polygon,Start,start,Double,No variable
-FREIGHT,anchorages,Polygon,End,end,Double,No variable
-FREIGHT,anchorages,Polygon,Source,source,String,No variable
-FREIGHT,anchorages,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,anchorages,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
-FREIGHT,airport_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,airport_pts,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,airport_pts,Point,LAT,LAT,Double,No variable
-FREIGHT,airport_pts,Point,NAVID,FAA NavID,String,No variable
-FREIGHT,airport_pts,Point,LONG_,LONG_,Double,No variable
-FREIGHT,airport_pts,Point,PFF_ID,PFF_ID,String,No variable
-FREIGHT,airport_pts,Point,GLOBALID,GLOBALID,GlobalID,No variable
-FREIGHT,energy_terminals,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,energy_terminals,Point,pff_id,pff_id,String,No variable
-FREIGHT,energy_terminals,Point,name,Energy terminal name,String,No variable
-FREIGHT,energy_terminals,Point,operator,Energy terminal operator,String,No variable
-FREIGHT,energy_terminals,Point,type,Energy terminal type,String,No variable
-FREIGHT,energy_terminals,Point,port_link,Port Link,String,No variable
-FREIGHT,energy_terminals,Point,pipeline_link,pipelines,String,No variable
-FREIGHT,energy_terminals,Point,tank_link,tank farms,String,No variable
-FREIGHT,energy_terminals,Point,ref_capacity,refining capacity,Double,No variable
-FREIGHT,energy_terminals,Point,pipeline_in,pipe_in,String,No variable
-FREIGHT,energy_terminals,Point,pipeline_out,pipe_out,String,No variable
-FREIGHT,energy_terminals,Point,SHAPE,SHAPE,Geometry,Feature geometry.
-FREIGHT,freight_centers,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,freight_centers,Polygon,pff_id,pff_id,String,No variable
-FREIGHT,freight_centers,Polygon,name,freight center name,String,No variable
-FREIGHT,freight_centers,Polygon,center_typ,Center Type,String,No variable
-FREIGHT,freight_centers,Polygon,township_s,township_s,String,No variable
-FREIGHT,freight_centers,Polygon,acres,acres,String,No variable
-FREIGHT,freight_centers,Polygon,rail_id,Rail link,String,No variable
-FREIGHT,freight_centers,Polygon,source,source,String,No variable
-FREIGHT,freight_centers,Polygon,County,County,String,No variable
-FREIGHT,freight_centers,Polygon,Acres_1,Acres_1,Double,No variable
-FREIGHT,freight_centers,Polygon,Id,Id,Integer,No variable
-FREIGHT,freight_centers,Polygon,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,freight_centers,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,freight_centers,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
-FREIGHT,freight_rail,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,freight_rail,Polyline,pff_id,pff_id,String,No variable
-FREIGHT,freight_rail,Polyline,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,freight_rail,Polyline,Type,Freight rail type,String,No variable
-FREIGHT,freight_rail,Polyline,start,rail milepost start,String,No variable
-FREIGHT,freight_rail,Polyline,end,rail milepost end,String,No variable
-FREIGHT,freight_rail,Polyline,Owner,Rail owner,String,No variable
-FREIGHT,freight_rail,Polyline,trk_main,Mainline Tracks,Double,No variable
-FREIGHT,freight_rail,Polyline,trk_side,Siding tracks,String,No variable
-FREIGHT,freight_rail,Polyline,trk_multi,Multi level cars,String,No variable
-FREIGHT,freight_rail,Polyline,trk_dbl,Double stack clearance,String,No variable
-FREIGHT,freight_rail,Polyline,trk_weight,286k capacity,String,No variable
-FREIGHT,freight_rail,Polyline,trk_plate,Plate clearance,String,No variable
-FREIGHT,freight_rail,Polyline,trk_trains,Activity,String,No variable
-FREIGHT,freight_rail,Polyline,Operator,rail operator,String,No variable
-FREIGHT,freight_rail,Polyline,MILES,miles,Double,No variable
-FREIGHT,freight_rail,Polyline,Name,Rail segment name,String,No variable
-FREIGHT,freight_rail,Polyline,Source,source,String,No variable
-FREIGHT,freight_rail,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,good_neighbor_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,good_neighbor_pts,Point,pff_id,pff_id,String,No variable
-FREIGHT,good_neighbor_pts,Point,Descr1,Descr1,String,No variable
-FREIGHT,good_neighbor_pts,Point,Descr2,Descr2,String,No variable
-FREIGHT,good_neighbor_pts,Point,Descr3,Descr3,String,No variable
-FREIGHT,good_neighbor_pts,Point,Municipality,Municipality,String,No variable
-FREIGHT,good_neighbor_pts,Point,County,County,String,No variable
-FREIGHT,good_neighbor_pts,Point,Id,Id,Integer,No variable
-FREIGHT,good_neighbor_pts,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,heliport,Point,OBJECTID_1,OBJECTID_1,OID,Internal feature number.
-FREIGHT,heliport,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,heliport,Point,OBJECTID,OBJECTID,Double,No variable
-FREIGHT,heliport,Point,Type,Type,String,No variable
-FREIGHT,heliport,Point,pff_id,PFF and FAA Navigation ID,String,No variable
-FREIGHT,heliport,Point,StateNam,StateNam,String,No variable
-FREIGHT,heliport,Point,County,County,String,No variable
-FREIGHT,heliport,Point,City,City,String,No variable
-FREIGHT,heliport,Point,Facility,Facility,String,No variable
-FREIGHT,heliport,Point,Ownershi,Ownershi,String,No variable
-FREIGHT,heliport,Point,Use,Use,String,No variable
-FREIGHT,heliport,Point,Owner,Owner,String,No variable
-FREIGHT,heliport,Point,Size,Size,String,No variable
-FREIGHT,heliport,Point,Report,Report,String,No variable
-FREIGHT,highways,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,highways,Polyline,pff_id,pff_id,String,No variable
-FREIGHT,highways,Polyline,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,highways,Polyline,SHIELD,shield,String,No variable
-FREIGHT,highways,Polyline,HWY_NUM,hwy_num,String,No variable
-FREIGHT,highways,Polyline,STATE,state,String,No variable
-FREIGHT,highways,Polyline,Name,Highway name,String,No variable
-FREIGHT,highways,Polyline,Type,Highway classification,String,No variable
-FREIGHT,highways,Polyline,Owner,Highway owner,String,No variable
-FREIGHT,highways,Polyline,section_miles,section_miles,Double,No variable
-FREIGHT,highways,Polyline,Shield_id,shield_id,Double,No variable
-FREIGHT,highways,Polyline,DIR_1,DIR_1,String,No variable
-FREIGHT,highways,Polyline,CAP_1,CAP_1,Double,No variable
-FREIGHT,highways,Polyline,ACT_1A,ACT_1A,String,No variable
-FREIGHT,highways,Polyline,ACT_1B,ACT_1B,String,No variable
-FREIGHT,highways,Polyline,DEVICE_1,DEVICE_1,String,No variable
-FREIGHT,highways,Polyline,DIR_2,DIR_2,String,No variable
-FREIGHT,highways,Polyline,CAP_2,CAP_2,Double,No variable
-FREIGHT,highways,Polyline,ACT_2A,ACT_2A,String,No variable
-FREIGHT,highways,Polyline,ACT_2B,ACT_2B,String,No variable
-FREIGHT,highways,Polyline,DEVICE_2,DEVICE_2,String,No variable
-FREIGHT,highways,Polyline,SHLD_ID,SHLD_ID,String,No variable
-FREIGHT,highways,Polyline,YEAR,YEAR,Double,No variable
-FREIGHT,highways,Polyline,GIS_MILES,GIS_MILES,Double,No variable
-FREIGHT,highways,Polyline,SOURCE,SOURCE,String,No variable
-FREIGHT,highways,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,intermodal_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,intermodal_pts,Point,pff_id,pff_id,String,No variable
-FREIGHT,intermodal_pts,Point,intermodal_id,Intermodal Link,String,No variable
-FREIGHT,intermodal_pts,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,intermodal_pts,Point,GLOBALID,GLOBALID,GlobalID,No variable
-FREIGHT,maintained_channel,Polygon,OBJECTID_1,OBJECTID_1,OID,Internal feature number.
-FREIGHT,maintained_channel,Polygon,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,maintained_channel,Polygon,NAME,Maintained channel name,String,No variable
-FREIGHT,maintained_channel,Polygon,PFF_ID,pff_id,String,No variable
-FREIGHT,maintained_channel,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,maintained_channel,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
-FREIGHT,ndc_link_tons,Table,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,ndc_link_tons,Table,link,link,Double,No variable
-FREIGHT,ndc_link_tons,Table,year,year,Double,No variable
-FREIGHT,ndc_link_tons,Table,tot_up,total up,Double,No variable
-FREIGHT,ndc_link_tons,Table,tot_dwn,total down,Double,No variable
-FREIGHT,ndc_link_tons,Table,F10up,coal up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F10dwn,coal down,Double,No variable
-FREIGHT,ndc_link_tons,Table,F20up,petroleum up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F20dwn,petroleum down,Double,No variable
-FREIGHT,ndc_link_tons,Table,F30up,chemicals up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F30dwn,chemicals down,Double,No variable
-FREIGHT,ndc_link_tons,Table,F40up,crude materials up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F40dwn,crude materials down,Double,No variable
-FREIGHT,ndc_link_tons,Table,manufactured,manufactured up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F50dwn,manufactured down,Double,No variable
-FREIGHT,ndc_link_tons,Table,F60up,farm up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F60dwn,farm down,Double,No variable
-FREIGHT,ndc_link_tons,Table,F70up,machinery up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F70dwn,machinery down,Double,No variable
-FREIGHT,ndc_link_tons,Table,F80up,waste up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F80dwn,waste down,Double,No variable
-FREIGHT,ndc_link_tons,Table,F90up,unknown up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F90dwn,unknown down,Double,No variable
-FREIGHT,nhs_connectors,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,nhs_connectors,Polyline,pff_id,pff_id,String,No variable
-FREIGHT,nhs_connectors,Polyline,name,nhs name,String,No variable
-FREIGHT,nhs_connectors,Polyline,township_s,township_s,String,No variable
-FREIGHT,nhs_connectors,Polyline,cap_1,lanes,Double,No variable
-FREIGHT,nhs_connectors,Polyline,cap_2,cap_2,Double,No variable
-FREIGHT,nhs_connectors,Polyline,aadt,aadt,String,No variable
-FREIGHT,nhs_connectors,Polyline,hwy_id,highway link,String,No variable
-FREIGHT,nhs_connectors,Polyline,link_id,intermodal node link,String,No variable
-FREIGHT,nhs_connectors,Polyline,source,source,String,No variable
-FREIGHT,nhs_connectors,Polyline,LAT,LAT,Double,No variable
-FREIGHT,nhs_connectors,Polyline,LONG,LONG,Double,No variable
-FREIGHT,nhs_connectors,Polyline,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,nhs_connectors,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,pff_feature_prefix,Table,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,pff_feature_prefix,Table,feature_class,feature_class,String,No variable
-FREIGHT,pff_feature_prefix,Table,prefix,prefix,String,No variable
-FREIGHT,pff_grade_xings,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,pff_grade_xings,Point,pff_id,pff_id,String,No variable
-FREIGHT,pff_grade_xings,Point,fra_id,FRA crossing #,String,No variable
-FREIGHT,pff_grade_xings,Point,rail_id,rail link,String,No variable
-FREIGHT,pff_grade_xings,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,pff_grade_xings,Point,TOTALTRN,TOTALTRN,Double,No variable
-FREIGHT,pff_grade_xings,Point,operator,operator,String,No variable
-FREIGHT,pff_grade_xings,Point,TOTALSWT,TOTALSWT,Double,No variable
-FREIGHT,pff_grade_xings,Point,tracks,tracks,String,No variable
-FREIGHT,pff_grade_xings,Point,Name,name,String,No variable
-FREIGHT,pff_grade_xings,Point,Owner,owner,String,No variable
-FREIGHT,pff_grade_xings,Point,LAT,LAT,Double,No variable
-FREIGHT,pff_grade_xings,Point,LONG,LONG,Double,No variable
-FREIGHT,pff_grade_xings,Point,Street_1,Street_1,String,No variable
-FREIGHT,pff_grade_xings,Point,Rail_Line,Rail_Line,String,No variable
-FREIGHT,pff_grade_xings,Point,Township,township,String,No variable
-FREIGHT,pff_grade_xings,Point,Act,Act,String,No variable
-FREIGHT,pff_grade_xings,Point,Source_1,Source_1,String,No variable
-FREIGHT,port_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,port_pts,Point,pff_id,pff_id,String,No variable
-FREIGHT,port_pts,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,port_pts,Point,Port_ID,port link,String,No variable
-FREIGHT,product_pipelines,Table,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,product_pipelines,Table,PFF_ID,pff_id,String,No variable
-FREIGHT,product_pipelines,Table,name,name,String,No variable
-FREIGHT,product_pipelines,Table,owner,owner,String,No variable
-FREIGHT,product_pipelines,Table,product,product,String,No variable
-FREIGHT,product_pipelines,Table,capacity,capacity,Double,No variable
-FREIGHT,product_pipelines,Table,origin,origin,String,No variable
-FREIGHT,product_pipelines,Table,destination,destination,String,No variable
-FREIGHT,rail_mileposts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,rail_mileposts,Point,SHAPE,SHAPE,Geometry,Feature geometry.
-FREIGHT,rail_mileposts,Point,pff_id,pff_id,String,No variable
-FREIGHT,rail_mileposts,Point,rail_id,Rail Link,String,No variable
-FREIGHT,rail_mileposts,Point,milepost,milepost,Double,No variable
-FREIGHT,rail_yard_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,rail_yard_pts,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,rail_yard_pts,Point,pff_id,pff_id,String,No variable
-FREIGHT,rail_yard_pts,Point,yard_id,Rail yard link,String,No variable
-FREIGHT,rail_yards,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,rail_yards,Polygon,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,rail_yards,Polygon,pff_id,pff_id,String,No variable
-FREIGHT,rail_yards,Polygon,Web_ID,Web_ID,String,No variable
-FREIGHT,rail_yards,Polygon,Name,name,String,No variable
-FREIGHT,rail_yards,Polygon,operator,Operator_s,String,No variable
-FREIGHT,rail_yards,Polygon,Owner,owner,String,No variable
-FREIGHT,rail_yards,Polygon,acres,acres,String,No variable
-FREIGHT,rail_yards,Polygon,rail_id,Rail link,String,No variable
-FREIGHT,rail_yards,Polygon,Township,township,String,No variable
-FREIGHT,rail_yards,Polygon,GIS_Acres,GIS_Acres,Double,No variable
-FREIGHT,rail_yards,Polygon,Source,source,String,No variable
-FREIGHT,rail_yards,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,rail_yards,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
-FREIGHT,river,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,river,Polygon,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,river,Polygon,pff_id,pff_id,String,No variable
-FREIGHT,river,Polygon,NAME,name,String,No variable
-FREIGHT,river,Polygon,townships,river bordering townships,String,No variable
-FREIGHT,river,Polygon,DVRPC_ST,DVRPC_ST,String,No variable
-FREIGHT,river,Polygon,Web_ID,Web_ID,String,No variable
-FREIGHT,river,Polygon,length,length,Double,No variable
-FREIGHT,river,Polygon,width,channel width,Double,No variable
-FREIGHT,river,Polygon,depth,channel depth,Double,No variable
-FREIGHT,river,Polygon,clearance,max air draft,String,No variable
-FREIGHT,river,Polygon,Start,start,Double,No variable
-FREIGHT,river,Polygon,End,end,Double,No variable
-FREIGHT,river,Polygon,Source,source,String,No variable
-FREIGHT,river,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,river,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
-FREIGHT,river_channel,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,river_channel,Polyline,SHAPE,SHAPE,Geometry,Feature geometry.
-FREIGHT,river_channel,Polyline,river_id,river link,String,No variable
-FREIGHT,river_channel,Polyline,up_vessels,up_vessels,String,No variable
-FREIGHT,river_channel,Polyline,up_count,up_count,Double,No variable
-FREIGHT,river_channel,Polyline,SHAPE_Length,SHAPE_Length,Double,Length of feature in internal units.
-FREIGHT,river_crossings,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,river_crossings,Point,pff_id,pff_id,String,No variable
-FREIGHT,river_crossings,Point,name,Bridge name,String,No variable
-FREIGHT,river_crossings,Point,type,bridge type,String,No variable
-FREIGHT,river_crossings,Point,owner,bridge owner,String,No variable
-FREIGHT,river_crossings,Point,operator,bridge operator,String,No variable
-FREIGHT,river_crossings,Point,use,bridge mode,String,No variable
-FREIGHT,river_crossings,Point,town_1,town_1,String,No variable
-FREIGHT,river_crossings,Point,town_2,town_2,String,No variable
-FREIGHT,river_crossings,Point,cap_1,tracks/lanes,Double,No variable
-FREIGHT,river_crossings,Point,cap_2,dbl stack/vert clearance,String,No variable
-FREIGHT,river_crossings,Point,cap_3,286k/river clearance,String,No variable
-FREIGHT,river_crossings,Point,act_1,act_1,String,No variable
-FREIGHT,river_crossings,Point,source,source,String,No variable
-FREIGHT,river_crossings,Point,link_id,highway/rail link,String,No variable
-FREIGHT,river_crossings,Point,Line,Line,String,No variable
-FREIGHT,river_crossings,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,river_ndc_links,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,river_ndc_links,Polyline,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,river_ndc_links,Polyline,pff_id,pff_id,String,No variable
-FREIGHT,river_ndc_links,Polyline,ndc_id,ndc_id,Double,No variable
-FREIGHT,river_ndc_links,Polyline,LENGTH,length,Double,No variable
-FREIGHT,river_ndc_links,Polyline,DIR,DIR,SmallInteger,No variable
-FREIGHT,river_ndc_links,Polyline,LINK,LINK,Double,No variable
-FREIGHT,river_ndc_links,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,truck_parking,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,truck_parking,Polygon,Id,Id,Integer,No variable
-FREIGHT,truck_parking,Polygon,pff_id,pff_id,String,No variable
-FREIGHT,truck_parking,Polygon,name,name,String,No variable
-FREIGHT,truck_parking,Polygon,owner,owner,String,No variable
-FREIGHT,truck_parking,Polygon,operator,operator,String,No variable
-FREIGHT,truck_parking,Polygon,township,township,String,No variable
+﻿FREIGHT,truck_parking,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,truck_parking,Polygon,Id,ID,Integer,No variable
+FREIGHT,truck_parking,Polygon,pff_id,PFF_ID,String,No variable
+FREIGHT,truck_parking,Polygon,name,NAME,String,No variable
+FREIGHT,truck_parking,Polygon,owner,OWNER,String,No variable
+FREIGHT,truck_parking,Polygon,operator,OPERATOR,String,No variable
+FREIGHT,truck_parking,Polygon,township,TOWNSHIP,String,No variable
 FREIGHT,truck_parking,Polygon,capacity,parking stalls,Double,No variable
 FREIGHT,truck_parking,Polygon,truck_count,truck count,Double,No variable
-FREIGHT,truck_parking,Polygon,source,source,String,No variable
+FREIGHT,truck_parking,Polygon,source,SOURCE,String,No variable
 FREIGHT,truck_parking,Polygon,rating,use rating,String,No variable
 FREIGHT,truck_parking,Polygon,LAT,LAT,Double,No variable
-FREIGHT,truck_parking,Polygon,LONG,LONG,Double,No variable
-FREIGHT,truck_parking,Polygon,cargo,cargo,String,No variable
+FREIGHT,truck_parking,Polygon,LONG_,LONG_,Double,No variable
+FREIGHT,truck_parking,Polygon,cargo,CARGO,String,No variable
 FREIGHT,truck_parking,Polygon,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,truck_parking,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,truck_parking,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
-FREIGHT,truck_parking_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,truck_parking_pts,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,truck_parking_pts,Point,pff_id,pff_id,String,No variable
-FREIGHT,truck_parking_pts,Point,tp_id,truck parking link,String,No variable
+FREIGHT,truck_parking,Polygon,GLOBALID,GLOBALID,GlobalID,No variable
+FREIGHT,truck_parking,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
+FREIGHT,truck_parking,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
 FREIGHT,SHRP2_Links,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
 FREIGHT,SHRP2_Links,Polyline,Shape,SHAPE,Geometry,Feature geometry.
 FREIGHT,SHRP2_Links,Polyline,LINK_ID,LINK_ID,Integer,No variable
@@ -2758,24 +2488,72 @@ FREIGHT,SHRP2_Links,Polyline,P_15_16_C,P_15_16_C,String,No variable
 FREIGHT,SHRP2_Links,Polyline,P_17_18_C,P_17_18_C,String,No variable
 FREIGHT,SHRP2_Links,Polyline,P_19_23_C,P_19_23_C,String,No variable
 FREIGHT,SHRP2_Links,Polyline,SHAPE.LEN,SHAPE.LEN,Double,No variable
-FREIGHT,airports,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,airports,Polygon,pff_id,PFF ID,String,No variable
-FREIGHT,airports,Polygon,Shape,SHAPE,Geometry,Feature geometry.
-FREIGHT,airports,Polygon,NAVID,FAA NavID,String,No variable
-FREIGHT,airports,Polygon,Name,Airport Name,String,No variable
-FREIGHT,airports,Polygon,type,Airport Type,String,No variable
-FREIGHT,airports,Polygon,Owner,Airport Owner,String,No variable
-FREIGHT,airports,Polygon,Township,TOWNSHIP,String,No variable
-FREIGHT,airports,Polygon,Cap_1,Runways,Double,No variable
-FREIGHT,airports,Polygon,Cap_2,Runway Length,String,No variable
-FREIGHT,airports,Polygon,Cap_3,Acres,String,No variable
-FREIGHT,airports,Polygon,Activity_1,Annual operations,Double,No variable
-FREIGHT,airports,Polygon,fc_id,Freight Center Link,Double,No variable
-FREIGHT,airports,Polygon,Source,SOURCE,String,No variable
-FREIGHT,airports,Polygon,Towered,TOWERED,String,No variable
-FREIGHT,airports,Polygon,GLOBALID,GLOBALID,GlobalID,No variable
-FREIGHT,airports,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
-FREIGHT,airports,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
+FREIGHT,river_ndc_links,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,river_ndc_links,Polyline,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,river_ndc_links,Polyline,pff_id,pff_id,String,No variable
+FREIGHT,river_ndc_links,Polyline,ndc_id,ndc_id,Double,No variable
+FREIGHT,river_ndc_links,Polyline,LENGTH,length,Double,No variable
+FREIGHT,river_ndc_links,Polyline,DIR,DIR,SmallInteger,No variable
+FREIGHT,river_ndc_links,Polyline,LINK,LINK,Double,No variable
+FREIGHT,river_ndc_links,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,river_crossings,Point,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,river_crossings,Point,pff_id,pff_id,String,No variable
+FREIGHT,river_crossings,Point,name,Bridge name,String,No variable
+FREIGHT,river_crossings,Point,type,bridge type,String,No variable
+FREIGHT,river_crossings,Point,owner,bridge owner,String,No variable
+FREIGHT,river_crossings,Point,operator,bridge operator,String,No variable
+FREIGHT,river_crossings,Point,use,bridge mode,String,No variable
+FREIGHT,river_crossings,Point,town_1,town_1,String,No variable
+FREIGHT,river_crossings,Point,town_2,town_2,String,No variable
+FREIGHT,river_crossings,Point,cap_1,tracks/lanes,Double,No variable
+FREIGHT,river_crossings,Point,cap_2,dbl stack/vert clearance,String,No variable
+FREIGHT,river_crossings,Point,cap_3,286k/river clearance,String,No variable
+FREIGHT,river_crossings,Point,act_1,act_1,String,No variable
+FREIGHT,river_crossings,Point,source,source,String,No variable
+FREIGHT,river_crossings,Point,link_id,highway/rail link,String,No variable
+FREIGHT,river_crossings,Point,Line,Line,String,No variable
+FREIGHT,river_crossings,Point,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,river_channel,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,river_channel,Polyline,SHAPE,SHAPE,Geometry,Feature geometry.
+FREIGHT,river_channel,Polyline,river_id,river link,String,No variable
+FREIGHT,river_channel,Polyline,up_vessels,up_vessels,String,No variable
+FREIGHT,river_channel,Polyline,up_count,up_count,Double,No variable
+FREIGHT,river_channel,Polyline,SHAPE_Length,SHAPE_Length,Double,Length of feature in internal units.
+FREIGHT,river,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,river,Polygon,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,river,Polygon,pff_id,pff_id,String,No variable
+FREIGHT,river,Polygon,NAME,name,String,No variable
+FREIGHT,river,Polygon,townships,river bordering townships,String,No variable
+FREIGHT,river,Polygon,DVRPC_ST,DVRPC_ST,String,No variable
+FREIGHT,river,Polygon,Web_ID,Web_ID,String,No variable
+FREIGHT,river,Polygon,length,length,Double,No variable
+FREIGHT,river,Polygon,width,channel width,Double,No variable
+FREIGHT,river,Polygon,depth,channel depth,Double,No variable
+FREIGHT,river,Polygon,clearance,max air draft,String,No variable
+FREIGHT,river,Polygon,Start,start,Double,No variable
+FREIGHT,river,Polygon,End,end,Double,No variable
+FREIGHT,river,Polygon,Source,source,String,No variable
+FREIGHT,river,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,river,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
+FREIGHT,rail_yards,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,rail_yards,Polygon,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,rail_yards,Polygon,pff_id,pff_id,String,No variable
+FREIGHT,rail_yards,Polygon,Web_ID,Web_ID,String,No variable
+FREIGHT,rail_yards,Polygon,Name,name,String,No variable
+FREIGHT,rail_yards,Polygon,operator,Operator_s,String,No variable
+FREIGHT,rail_yards,Polygon,Owner,owner,String,No variable
+FREIGHT,rail_yards,Polygon,acres,acres,String,No variable
+FREIGHT,rail_yards,Polygon,rail_id,Rail link,String,No variable
+FREIGHT,rail_yards,Polygon,Township,township,String,No variable
+FREIGHT,rail_yards,Polygon,GIS_Acres,GIS_Acres,Double,No variable
+FREIGHT,rail_yards,Polygon,Source,source,String,No variable
+FREIGHT,rail_yards,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,rail_yards,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
+FREIGHT,rail_mileposts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,rail_mileposts,Point,SHAPE,SHAPE,Geometry,Feature geometry.
+FREIGHT,rail_mileposts,Point,pff_id,pff_id,String,No variable
+FREIGHT,rail_mileposts,Point,rail_id,Rail Link,String,No variable
+FREIGHT,rail_mileposts,Point,milepost,milepost,Double,No variable
 FREIGHT,ports,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
 FREIGHT,ports,Polygon,Shape,Shape,Geometry,Feature geometry.
 FREIGHT,ports,Polygon,Port_ID,Port_ID,Double,No variable
@@ -2800,14 +2578,51 @@ FREIGHT,ports,Polygon,Source,Source,String,No variable
 FREIGHT,ports,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
 FREIGHT,ports,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
 FREIGHT,ports,Polygon,PFF_ID,pff_id,String,No variable
-FREIGHT,ship_call_activity,Table,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,ship_call_activity,Table,link_id,link_id,String,No variable
-FREIGHT,ship_call_activity,Table,year,year,Integer,No variable
-FREIGHT,ship_call_activity,Table,calls,calls,Integer,No variable
-FREIGHT,freight_center_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,freight_center_pts,Point,pff_id,pff_id,String,No variable
-FREIGHT,freight_center_pts,Point,fc_id,Freight center link,String,No variable
-FREIGHT,freight_center_pts,Point,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,pipelines,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,pipelines,Polyline,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,pipelines,Polyline,Id,Id,Integer,No variable
+FREIGHT,pipelines,Polyline,TYPE,TYPE,String,No variable
+FREIGHT,pipelines,Polyline,COUNTY,COUNTY,String,No variable
+FREIGHT,pipelines,Polyline,PFF_ID,pff_id,String,No variable
+FREIGHT,pipelines,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,pff_grade_xings,Point,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,pff_grade_xings,Point,pff_id,pff_id,String,No variable
+FREIGHT,pff_grade_xings,Point,fra_id,FRA crossing #,String,No variable
+FREIGHT,pff_grade_xings,Point,rail_id,rail link,String,No variable
+FREIGHT,pff_grade_xings,Point,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,pff_grade_xings,Point,TOTALTRN,TOTALTRN,Double,No variable
+FREIGHT,pff_grade_xings,Point,operator,operator,String,No variable
+FREIGHT,pff_grade_xings,Point,TOTALSWT,TOTALSWT,Double,No variable
+FREIGHT,pff_grade_xings,Point,tracks,tracks,String,No variable
+FREIGHT,pff_grade_xings,Point,Name,name,String,No variable
+FREIGHT,pff_grade_xings,Point,Owner,owner,String,No variable
+FREIGHT,pff_grade_xings,Point,LAT,LAT,Double,No variable
+FREIGHT,pff_grade_xings,Point,LONG,LONG,Double,No variable
+FREIGHT,pff_grade_xings,Point,Street_1,Street_1,String,No variable
+FREIGHT,pff_grade_xings,Point,Rail_Line,Rail_Line,String,No variable
+FREIGHT,pff_grade_xings,Point,Township,township,String,No variable
+FREIGHT,pff_grade_xings,Point,Act,Act,String,No variable
+FREIGHT,pff_grade_xings,Point,Source_1,Source_1,String,No variable
+FREIGHT,nhs_connectors,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,nhs_connectors,Polyline,pff_id,pff_id,String,No variable
+FREIGHT,nhs_connectors,Polyline,name,nhs name,String,No variable
+FREIGHT,nhs_connectors,Polyline,township_s,township_s,String,No variable
+FREIGHT,nhs_connectors,Polyline,cap_1,lanes,Double,No variable
+FREIGHT,nhs_connectors,Polyline,cap_2,cap_2,Double,No variable
+FREIGHT,nhs_connectors,Polyline,aadt,aadt,String,No variable
+FREIGHT,nhs_connectors,Polyline,hwy_id,highway link,String,No variable
+FREIGHT,nhs_connectors,Polyline,link_id,intermodal node link,String,No variable
+FREIGHT,nhs_connectors,Polyline,source,source,String,No variable
+FREIGHT,nhs_connectors,Polyline,LAT,LAT,Double,No variable
+FREIGHT,nhs_connectors,Polyline,LONG,LONG,Double,No variable
+FREIGHT,nhs_connectors,Polyline,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,nhs_connectors,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,maintained_channel,Polygon,OBJECTID_1,OBJECTID_1,OID,Internal feature number.
+FREIGHT,maintained_channel,Polygon,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,maintained_channel,Polygon,NAME,Maintained channel name,String,No variable
+FREIGHT,maintained_channel,Polygon,PFF_ID,pff_id,String,No variable
+FREIGHT,maintained_channel,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,maintained_channel,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
 FREIGHT,intermodal,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
 FREIGHT,intermodal,Polygon,pff_id,pff_id,String,No variable
 FREIGHT,intermodal,Polygon,name,Intermodal terminal name,String,No variable
@@ -2824,17 +2639,167 @@ FREIGHT,intermodal,Polygon,Township,township,String,No variable
 FREIGHT,intermodal,Polygon,Source,source,String,No variable
 FREIGHT,intermodal,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
 FREIGHT,intermodal,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
-FREIGHT,nhs_connector_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,nhs_connector_pts,Point,pff_id,pff_id,String,No variable
-FREIGHT,nhs_connector_pts,Point,nhs_id,NHS Link,String,No variable
-FREIGHT,nhs_connector_pts,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,pipelines,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,pipelines,Polyline,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,pipelines,Polyline,Id,Id,Integer,No variable
-FREIGHT,pipelines,Polyline,TYPE,TYPE,String,No variable
-FREIGHT,pipelines,Polyline,COUNTY,COUNTY,String,No variable
-FREIGHT,pipelines,Polyline,PFF_ID,pff_id,String,No variable
-FREIGHT,pipelines,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,highways,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,highways,Polyline,pff_id,pff_id,String,No variable
+FREIGHT,highways,Polyline,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,highways,Polyline,SHIELD,shield,String,No variable
+FREIGHT,highways,Polyline,HWY_NUM,hwy_num,String,No variable
+FREIGHT,highways,Polyline,STATE,state,String,No variable
+FREIGHT,highways,Polyline,Name,Highway name,String,No variable
+FREIGHT,highways,Polyline,Type,Highway classification,String,No variable
+FREIGHT,highways,Polyline,Owner,Highway owner,String,No variable
+FREIGHT,highways,Polyline,section_miles,section_miles,Double,No variable
+FREIGHT,highways,Polyline,Shield_id,shield_id,Double,No variable
+FREIGHT,highways,Polyline,DIR_1,DIR_1,String,No variable
+FREIGHT,highways,Polyline,CAP_1,CAP_1,Double,No variable
+FREIGHT,highways,Polyline,ACT_1A,ACT_1A,String,No variable
+FREIGHT,highways,Polyline,ACT_1B,ACT_1B,String,No variable
+FREIGHT,highways,Polyline,DEVICE_1,DEVICE_1,String,No variable
+FREIGHT,highways,Polyline,DIR_2,DIR_2,String,No variable
+FREIGHT,highways,Polyline,CAP_2,CAP_2,Double,No variable
+FREIGHT,highways,Polyline,ACT_2A,ACT_2A,String,No variable
+FREIGHT,highways,Polyline,ACT_2B,ACT_2B,String,No variable
+FREIGHT,highways,Polyline,DEVICE_2,DEVICE_2,String,No variable
+FREIGHT,highways,Polyline,SHLD_ID,SHLD_ID,String,No variable
+FREIGHT,highways,Polyline,YEAR,YEAR,Double,No variable
+FREIGHT,highways,Polyline,GIS_MILES,GIS_MILES,Double,No variable
+FREIGHT,highways,Polyline,SOURCE,SOURCE,String,No variable
+FREIGHT,highways,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,heliport,Point,OBJECTID_1,OBJECTID_1,OID,Internal feature number.
+FREIGHT,heliport,Point,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,heliport,Point,OBJECTID,OBJECTID,Double,No variable
+FREIGHT,heliport,Point,Type,Type,String,No variable
+FREIGHT,heliport,Point,pff_id,PFF and FAA Navigation ID,String,No variable
+FREIGHT,heliport,Point,StateNam,StateNam,String,No variable
+FREIGHT,heliport,Point,County,County,String,No variable
+FREIGHT,heliport,Point,City,City,String,No variable
+FREIGHT,heliport,Point,Facility,Facility,String,No variable
+FREIGHT,heliport,Point,Ownershi,Ownershi,String,No variable
+FREIGHT,heliport,Point,Use,Use,String,No variable
+FREIGHT,heliport,Point,Owner,Owner,String,No variable
+FREIGHT,heliport,Point,Size,Size,String,No variable
+FREIGHT,heliport,Point,Report,Report,String,No variable
+FREIGHT,good_neighbor_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,good_neighbor_pts,Point,pff_id,pff_id,String,No variable
+FREIGHT,good_neighbor_pts,Point,Descr1,Descr1,String,No variable
+FREIGHT,good_neighbor_pts,Point,Descr2,Descr2,String,No variable
+FREIGHT,good_neighbor_pts,Point,Descr3,Descr3,String,No variable
+FREIGHT,good_neighbor_pts,Point,Municipality,Municipality,String,No variable
+FREIGHT,good_neighbor_pts,Point,County,County,String,No variable
+FREIGHT,good_neighbor_pts,Point,Id,Id,Integer,No variable
+FREIGHT,good_neighbor_pts,Point,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,freight_rail,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,freight_rail,Polyline,pff_id,pff_id,String,No variable
+FREIGHT,freight_rail,Polyline,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,freight_rail,Polyline,Type,Freight rail type,String,No variable
+FREIGHT,freight_rail,Polyline,start,rail milepost start,String,No variable
+FREIGHT,freight_rail,Polyline,end,rail milepost end,String,No variable
+FREIGHT,freight_rail,Polyline,Owner,Rail owner,String,No variable
+FREIGHT,freight_rail,Polyline,trk_main,Mainline Tracks,Double,No variable
+FREIGHT,freight_rail,Polyline,trk_side,Siding tracks,String,No variable
+FREIGHT,freight_rail,Polyline,trk_multi,Multi level cars,String,No variable
+FREIGHT,freight_rail,Polyline,trk_dbl,Double stack clearance,String,No variable
+FREIGHT,freight_rail,Polyline,trk_weight,286k capacity,String,No variable
+FREIGHT,freight_rail,Polyline,trk_plate,Plate clearance,String,No variable
+FREIGHT,freight_rail,Polyline,trk_trains,Activity,String,No variable
+FREIGHT,freight_rail,Polyline,Operator,rail operator,String,No variable
+FREIGHT,freight_rail,Polyline,MILES,miles,Double,No variable
+FREIGHT,freight_rail,Polyline,Name,Rail segment name,String,No variable
+FREIGHT,freight_rail,Polyline,Source,source,String,No variable
+FREIGHT,freight_rail,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,freight_centers,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,freight_centers,Polygon,pff_id,pff_id,String,No variable
+FREIGHT,freight_centers,Polygon,name,freight center name,String,No variable
+FREIGHT,freight_centers,Polygon,center_typ,Center Type,String,No variable
+FREIGHT,freight_centers,Polygon,township_s,township_s,String,No variable
+FREIGHT,freight_centers,Polygon,acres,acres,String,No variable
+FREIGHT,freight_centers,Polygon,rail_id,Rail link,String,No variable
+FREIGHT,freight_centers,Polygon,source,source,String,No variable
+FREIGHT,freight_centers,Polygon,County,County,String,No variable
+FREIGHT,freight_centers,Polygon,Acres_1,Acres_1,Double,No variable
+FREIGHT,freight_centers,Polygon,Id,Id,Integer,No variable
+FREIGHT,freight_centers,Polygon,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,freight_centers,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,freight_centers,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
+FREIGHT,anchorages,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,anchorages,Polygon,pff_id,pff_id,String,No variable
+FREIGHT,anchorages,Polygon,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,anchorages,Polygon,Name,Anchorage name,String,No variable
+FREIGHT,anchorages,Polygon,Township_s,township_s,String,No variable
+FREIGHT,anchorages,Polygon,length,anchorage length,Double,No variable
+FREIGHT,anchorages,Polygon,Start,start,Double,No variable
+FREIGHT,anchorages,Polygon,End,end,Double,No variable
+FREIGHT,anchorages,Polygon,Source,source,String,No variable
+FREIGHT,anchorages,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,anchorages,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
+FREIGHT,airports,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,airports,Polygon,pff_id,PFF ID,String,No variable
+FREIGHT,airports,Polygon,Shape,SHAPE,Geometry,Feature geometry.
+FREIGHT,airports,Polygon,NAVID,FAA NavID,String,No variable
+FREIGHT,airports,Polygon,Name,Airport Name,String,No variable
+FREIGHT,airports,Polygon,type,Airport Type,String,No variable
+FREIGHT,airports,Polygon,Owner,Airport Owner,String,No variable
+FREIGHT,airports,Polygon,Township,TOWNSHIP,String,No variable
+FREIGHT,airports,Polygon,Cap_1,Runways,Double,No variable
+FREIGHT,airports,Polygon,Cap_2,Runway Length,String,No variable
+FREIGHT,airports,Polygon,Cap_3,Acres,String,No variable
+FREIGHT,airports,Polygon,Activity_1,Annual operations,Double,No variable
+FREIGHT,airports,Polygon,fc_id,Freight Center Link,Double,No variable
+FREIGHT,airports,Polygon,Source,SOURCE,String,No variable
+FREIGHT,airports,Polygon,Towered,TOWERED,String,No variable
+FREIGHT,airports,Polygon,GLOBALID,GLOBALID,GlobalID,No variable
+FREIGHT,airports,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
+FREIGHT,airports,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
+FREIGHT,ndc_link_tons,Table,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,ndc_link_tons,Table,link,link,Double,No variable
+FREIGHT,ndc_link_tons,Table,year,year,Double,No variable
+FREIGHT,ndc_link_tons,Table,tot_up,total up,Double,No variable
+FREIGHT,ndc_link_tons,Table,tot_dwn,total down,Double,No variable
+FREIGHT,ndc_link_tons,Table,F10up,coal up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F10dwn,coal down,Double,No variable
+FREIGHT,ndc_link_tons,Table,F20up,petroleum up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F20dwn,petroleum down,Double,No variable
+FREIGHT,ndc_link_tons,Table,F30up,chemicals up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F30dwn,chemicals down,Double,No variable
+FREIGHT,ndc_link_tons,Table,F40up,crude materials up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F40dwn,crude materials down,Double,No variable
+FREIGHT,ndc_link_tons,Table,manufactured,manufactured up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F50dwn,manufactured down,Double,No variable
+FREIGHT,ndc_link_tons,Table,F60up,farm up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F60dwn,farm down,Double,No variable
+FREIGHT,ndc_link_tons,Table,F70up,machinery up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F70dwn,machinery down,Double,No variable
+FREIGHT,ndc_link_tons,Table,F80up,waste up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F80dwn,waste down,Double,No variable
+FREIGHT,ndc_link_tons,Table,F90up,unknown up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F90dwn,unknown down,Double,No variable
+FREIGHT,pff_feature_prefix,Table,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,pff_feature_prefix,Table,feature_class,feature_class,String,No variable
+FREIGHT,pff_feature_prefix,Table,prefix,prefix,String,No variable
+FREIGHT,product_pipelines,Table,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,product_pipelines,Table,PFF_ID,pff_id,String,No variable
+FREIGHT,product_pipelines,Table,name,name,String,No variable
+FREIGHT,product_pipelines,Table,owner,owner,String,No variable
+FREIGHT,product_pipelines,Table,product,product,String,No variable
+FREIGHT,product_pipelines,Table,capacity,capacity,Double,No variable
+FREIGHT,product_pipelines,Table,origin,origin,String,No variable
+FREIGHT,product_pipelines,Table,destination,destination,String,No variable
+FREIGHT,ship_call_activity,Table,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,ship_call_activity,Table,link_id,link_id,String,No variable
+FREIGHT,ship_call_activity,Table,year,year,Integer,No variable
+FREIGHT,ship_call_activity,Table,calls,calls,Integer,No variable
+FREIGHT,energy_terminals,Point,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,energy_terminals,Point,pff_id,pff_id,String,No variable
+FREIGHT,energy_terminals,Point,name,Energy terminal name,String,No variable
+FREIGHT,energy_terminals,Point,operator,Energy terminal operator,String,No variable
+FREIGHT,energy_terminals,Point,type,Energy terminal type,String,No variable
+FREIGHT,energy_terminals,Point,port_link,Port Link,String,No variable
+FREIGHT,energy_terminals,Point,pipeline_link,pipelines,String,No variable
+FREIGHT,energy_terminals,Point,tank_link,tank farms,String,No variable
+FREIGHT,energy_terminals,Point,ref_capacity,refining capacity,Double,No variable
+FREIGHT,energy_terminals,Point,pipeline_in,pipe_in,String,No variable
+FREIGHT,energy_terminals,Point,pipeline_out,pipe_out,String,No variable
+FREIGHT,energy_terminals,Point,SHAPE,SHAPE,Geometry,Feature geometry.
 FREIGHT,energy_storage,Table,OBJECTID,OBJECTID,OID,Internal feature number.
 FREIGHT,energy_storage,Table,pff_id,PFF_ID,String,No variable
 FREIGHT,energy_storage,Table,port_id,PORT_ID,String,No variable
@@ -7164,6 +7129,23 @@ PLANNING,DNT,Point,Photos,Photos,String,No variable
 PLANNING,DNT,Point,Photo_Cred,Photo_Cred,String,No variable
 PLANNING,DNT,Point,PHOTO1,PHOTO1,String,No variable
 PLANNING,DNT,Point,PHOTO2,PHOTO2,String,No variable
+PLANNING,NJ_PreservedFarmland,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+PLANNING,NJ_PreservedFarmland,Polygon,STATUS,STATUS,String,Preservation status of the farm application in the NJSFPP.
+PLANNING,NJ_PreservedFarmland,Polygon,NUM_GIS_AC,NUM_GIS_AC,Double,GIS calculated acres for each spatial feature
+PLANNING,NJ_PreservedFarmland,Polygon,NJFARMS_ID,NJFARMS_ID,Integer,Internal ID number
+PLANNING,NJ_PreservedFarmland,Polygon,BLOCK_LOT,BLOCK_LOT,String,Pairs of municipal block and lot number combinations.
+PLANNING,NJ_PreservedFarmland,Polygon,CNTY_MUNI,CNTY_MUNI,String,Three letter county abbreviation and municipal name.
+PLANNING,NJ_PreservedFarmland,Polygon,ROUND,ROUND,String,SADC funding round used to preserve the farm.
+PLANNING,NJ_PreservedFarmland,Polygon,PARCEL_TYP,PARCEL_TYP,String,General description of spatial feature.
+PLANNING,NJ_PreservedFarmland,Polygon,NJFARMS_,NJFARMS_,Integer,Internal ID number
+PLANNING,NJ_PreservedFarmland,Polygon,IDN_GIS,IDN_GIS,Integer,Unique sequential identification number used to join/link to the Oracle RDMS.
+PLANNING,NJ_PreservedFarmland,Polygon,PROGRAM,PROGRAM,String,Specific farmland preservation program used to fund the preservation of the farm.
+PLANNING,NJ_PreservedFarmland,Polygon,Shape,SHAPE,Geometry,Feature geometry.
+PLANNING,NJ_PreservedFarmland,Polygon,SOURCE,SOURCE,String,Original source of each spatial feature.
+PLANNING,NJ_PreservedFarmland,Polygon,EASEMENT,EASEMENT,Integer,Total acreage of preserved easement for farm.
+PLANNING,NJ_PreservedFarmland,Polygon,PRESERVED,PRESERVED,Date,Date that the farm was preserved - closing date.
+PLANNING,NJ_PreservedFarmland,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
+PLANNING,NJ_PreservedFarmland,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
 PLANNING,NJ_OpenSpace,Polygon,TYPE,TYPE,String,No variable
 PLANNING,NJ_OpenSpace,Polygon,PLANNING.NJ_OpenSpace.AREA,PLANNING.NJ_OpenSpace.AREA,Double,No variable
 PLANNING,NJ_OpenSpace,Polygon,Shape,Shape,Geometry,Feature geometry.
@@ -7250,24 +7232,6 @@ PLANNING,DVRPC_ProtectedOpenSpace,Polygon,GIS_Acres,GIS_ACRES,Double,Acreage cal
 PLANNING,DVRPC_ProtectedOpenSpace,Polygon,Co_Name,CO_NAME,String,County Name
 PLANNING,DVRPC_ProtectedOpenSpace,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
 PLANNING,DVRPC_ProtectedOpenSpace,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
-PLANNING,NJ_PreservedFarmland,Polygon,OBJECTID_1,OBJECTID_1,OID,Internal feature number.
-PLANNING,NJ_PreservedFarmland,Polygon,STATUS,STATUS,String,Preservation status of the farm application in the NJSFPP.
-PLANNING,NJ_PreservedFarmland,Polygon,NUM_GIS_AC,NUM_GIS_AC,Double,GIS calculated acres for each spatial feature
-PLANNING,NJ_PreservedFarmland,Polygon,OBJECTID,OBJECTID,Integer,No variable
-PLANNING,NJ_PreservedFarmland,Polygon,NJFARMS_ID,NJFARMS_ID,Integer,Internal ID number
-PLANNING,NJ_PreservedFarmland,Polygon,BLOCK_LOT,BLOCK_LOT,String,Pairs of municipal block and lot number combinations.
-PLANNING,NJ_PreservedFarmland,Polygon,CNTY_MUNI,CNTY_MUNI,String,Three letter county abbreviation and municipal name.
-PLANNING,NJ_PreservedFarmland,Polygon,ROUND,ROUND,String,SADC funding round used to preserve the farm.
-PLANNING,NJ_PreservedFarmland,Polygon,PARCEL_TYP,PARCEL_TYP,String,General description of spatial feature.
-PLANNING,NJ_PreservedFarmland,Polygon,NJFARMS_,NJFARMS_,Integer,Internal ID number
-PLANNING,NJ_PreservedFarmland,Polygon,IDN_GIS,IDN_GIS,Integer,Unique sequential identification number used to join/link to the Oracle RDMS.
-PLANNING,NJ_PreservedFarmland,Polygon,PROGRAM,PROGRAM,String,Specific farmland preservation program used to fund the preservation of the farm.
-PLANNING,NJ_PreservedFarmland,Polygon,Shape,SHAPE,Geometry,Feature geometry.
-PLANNING,NJ_PreservedFarmland,Polygon,SOURCE,SOURCE,String,Original source of each spatial feature.
-PLANNING,NJ_PreservedFarmland,Polygon,EASEMENT,EASEMENT,Integer,Total acreage of preserved easement for farm.
-PLANNING,NJ_PreservedFarmland,Polygon,PRESERVED,PRESERVED,Date,Date that the farm was preserved - closing date.
-PLANNING,NJ_PreservedFarmland,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
-PLANNING,NJ_PreservedFarmland,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
 PLANNING,DVRPC_LandUse_2010,Polygon,GEOID_10,OBJECTID,OID,Area of feature in internal units squared.
 PLANNING,DVRPC_LandUse_2010,Polygon,LU_5Cat,LU_5CAT,String,Internal feature number.
 PLANNING,DVRPC_LandUse_2010,Polygon,LU_Label,LU_LABEL,String,Land Use description
