@@ -117,7 +117,8 @@ tr.shown td.details-control {
     float:left;
 }
 #TC_header{
-  background-image: url("http://www.dvrpc.org/webmaps/img/dataportal/banner_bg.png");
+  background: url("http://www.dvrpc.org/webmaps/img/dataportal/banner_bg.png") #A5DFEF no-repeat;
+  background-position: right;
   height:80px;
 }
 .navbar{
@@ -126,6 +127,8 @@ tr.shown td.details-control {
 #dvrpc-nav-logo{
     margin-top:-15px;
     float:left;
+
+
 }
 .page-title{
     font-size: 32px;
