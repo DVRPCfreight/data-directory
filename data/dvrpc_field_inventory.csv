@@ -125,13 +125,13 @@ BOUNDARIES,StateBoundaries,Polygon,STATE_FIPS,STATE_FIPS,String,2 digit state FI
 BOUNDARIES,StateBoundaries,Polygon,State,STATE,String,State abbreviation
 BOUNDARIES,StateBoundaries,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
 BOUNDARIES,StateBoundaries,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
-BOUNDARIES,MunicipalBoundaries_Line,Polyline,Shape,SHAPE.LEN,Double,Feature geometry.
-BOUNDARIES,MunicipalBoundaries_Line,Polyline,SHAPE,OBJECTID,OID,Feature geometry.
-BOUNDARIES,MunicipalBoundaries_Line,Polyline,SHAPE.LEN,ID,Integer,Internal feature number.
-BOUNDARIES,MunicipalBoundaries_Line,Polyline,Id,DVRPC_REG,String,Internal feature number.
-BOUNDARIES,MunicipalBoundaries_Line,Polyline,DVRPC_Reg,DVRPC_28CO,String,Internal feature number.
-BOUNDARIES,MunicipalBoundaries_Line,Polyline,DVRPC_28Co,CO_NAME,String,Internal feature number.
-BOUNDARIES,MunicipalBoundaries_Line,Polyline,Co_Name,SHAPE,Geometry,Internal feature number.
+BOUNDARIES,MunicipalBoundaries_Line,Polyline,Shape,SHAPE,Geometry,Feature geometry.
+BOUNDARIES,MunicipalBoundaries_Line,Polyline,Co_Name,County Name,OID,Internal feature number.
+BOUNDARIES,MunicipalBoundaries_Line,Polyline,SHAPE,SHAPE.LEN,Double,Feature geometry.
+BOUNDARIES,MunicipalBoundaries_Line,Polyline,SHAPE.LEN,SHAPE.LEN,Integer,Internal feature number.
+BOUNDARIES,MunicipalBoundaries_Line,Polyline,Id,Id,String,Internal feature number.
+BOUNDARIES,MunicipalBoundaries_Line,Polyline,DVRPC_Reg,DVRPC_Reg,String,Internal feature number.
+BOUNDARIES,MunicipalBoundaries_Line,Polyline,DVRPC_28Co,DVRPC_28Co,String,Internal feature number.
 BOUNDARIES,DVRPC_State,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
 BOUNDARIES,DVRPC_State,Polyline,Shape,SHAPE,Geometry,Feature geometry.
 BOUNDARIES,DVRPC_State,Polyline,FNODE_,FNODE_,Integer,No variable
@@ -143,7 +143,8 @@ BOUNDARIES,DVRPC_State,Polyline,CORRECT_CO,CORRECT_CO,Integer,No variable
 BOUNDARIES,DVRPC_State,Polyline,CORRECT__1,CORRECT__1,Integer,No variable
 BOUNDARIES,DVRPC_State,Polyline,SHOW,SHOW,String,No variable
 BOUNDARIES,DVRPC_State,Polyline,SHAPE.LEN,SHAPE.LEN,Double,No variable
-BOUNDARIES,MunicipalBoundaries,Polygon,SHAPE.AREA,OBJECTID,OID,Internal feature number.
+BOUNDARIES,MunicipalBoundaries,Polygon,Co_Name,OBJECTID,OID,County Name
+BOUNDARIES,MunicipalBoundaries,Polygon,SHAPE.AREA,SHAPE.AREA,Double,Internal feature number.
 BOUNDARIES,MunicipalBoundaries,Polygon,SHAPE.LEN,SHAPE.LEN,Double,Internal feature number.
 BOUNDARIES,MunicipalBoundaries,Polygon,Co_AltName,CO_ALTNAME,String,Alternate County Name (where municipality falls within multiple counties)
 BOUNDARIES,MunicipalBoundaries,Polygon,Mun_Name,MUN_NAME,String,Municipality Name
@@ -165,7 +166,6 @@ BOUNDARIES,MunicipalBoundaries,Polygon,SHAPE,GEOID,String,Feature geometry.
 BOUNDARIES,MunicipalBoundaries,Polygon,GEOID,STATE,String,"GIS Municipality Code ( FIPS, 2000 without spaces, ten digit, text); MD and DE use CDP codes"
 BOUNDARIES,MunicipalBoundaries,Polygon,State,STATE_NAME,String,Internal feature number.
 BOUNDARIES,MunicipalBoundaries,Polygon,State_Name,CO_NAME,String,Name of State
-BOUNDARIES,MunicipalBoundaries,Polygon,Co_Name,SHAPE.AREA,Double,County Name
 BOUNDARIES,CountyBoundaries,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
 BOUNDARIES,CountyBoundaries,Polygon,Shape,SHAPE,Geometry,Feature geometry.
 BOUNDARIES,CountyBoundaries,Polygon,STATE_NAME,STATE_NAME,String,State Name
@@ -395,44 +395,6 @@ DEMOGRAPHICS,Census2010_DemoProfile_Tract,Table,POP2000,POP2000,Double,No variab
 DEMOGRAPHICS,Census2010_DemoProfile_Tract,Table,VACANT,VACANT,Double,No variable
 DEMOGRAPHICS,Census2010_DemoProfile_Tract,Table,POP00SM,POP00SM,Double,No variable
 DEMOGRAPHICS,Census2010_DemoProfile_Tract,Table,POP10SM,POP10SM,Double,No variable
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,OBJECTID,OBJECTID,OID,Internal feature number.
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,GEOID,GEOID,String,Unique ID - use to join to Municipalities
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,Pop2010,POP2010,Double,2010 Total Population 
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,Und18,UND18,Double,Population Under 18
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,Btw1864,BTW1864,Double,Population Age 18-64
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,Ov62,OV62,Double,Population Age 62 and over
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,Ov65,OV65,Double,Population Age 65 and over
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,MedAge,MEDAGE,Double,Median Age
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,OneRace,ONERACE,Double,Population of one Race
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,White,WHITE,Double,White Alone
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,Blk,BLK,Double,Black or African American Alone
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,Amerin,AMERIN,Double,American Indian and Alaska Native Alone
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,Asian,ASIAN,Double,Asian Alone
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,PacIs,PACIS,Double,Native Hawaiian and other Pacific Islander Alone
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,OthRce,OTHRCE,Double,Some Other Race Alone
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,TwoRce,TWORCE,Double,Population of Two or more Races
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,Hisp,HISP,Double,Hispanic or Latino
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,Mex,MEX,Double,Mexican
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,PR,PR,Double,Puerto Rican
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,Cub,CUB,Double,Cuban
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,OthHis,OTHHIS,Double,Other Hispanic or Latino
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,NonHis,NONHIS,Double,Not Hispanic or Latino
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,TotHH,TOTHH,Double,Total Households
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,FamHH,FAMHH,Double,Family Households
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,NonFam,NONFAM,Double,Nonfamily Households
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,HHSz,HHSZ,Double,Average Household Size
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,FamSz,FAMSZ,Double,Average Family Size
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,HHKids,HHKIDS,Double,Family Households with own children under 18
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,HusWfe,HUSWFE,Double,Husband-Wife Family
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,HsWfKd,HSWFKD,Double,Husband-Wife Family with own children under 18
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,SngMom,SNGMOM,Double,"Female householder, no husband present"
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,SngMKd,SNGMKD,Double,"Female householder, no husband present with own children under 18"
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,OccHU,OCCHU,Double,Total Occupied Housing Units
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,OwOcHU,OWOCHU,Double,Owner-Occupied Housing Units
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,RnOcHU,RNOCHU,Double,Renter-Occupied Housing Units
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,Pop2k,POP2K,Double,2000 Total Population 
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,PopChg,POPCHG,Double,% Population Change 2000-2010 
-DEMOGRAPHICS,Census2010_DemoProfile_MCD,Table,PopChAb,POPCHAB,Double,No variable
 DEMOGRAPHICS,TAZ_2010_MCDAligned_ExtReg,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
 DEMOGRAPHICS,TAZ_2010_MCDAligned_ExtReg,Polygon,Shape,Shape,Geometry,Feature geometry.
 DEMOGRAPHICS,TAZ_2010_MCDAligned_ExtReg,Polygon,TAZ,TAZ,Integer,No variable
@@ -1388,37 +1350,279 @@ DEMOGRAPHICS,TAZ_2010_MCDAligned,Polygon,NAME,NAME,String,No variable
 DEMOGRAPHICS,TAZ_2010_MCDAligned,Polygon,AREA_TYPE,AREA_TYPE,SmallInteger,No variable
 DEMOGRAPHICS,TAZ_2010_MCDAligned,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
 DEMOGRAPHICS,TAZ_2010_MCDAligned,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,TAZ,TAZ,Integer,"State, Co fips with TAZ Number"
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,STATE_NAME,State,String,No variable
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,CO_NAME,County,String,No variable
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,MUN_NAME,Municipality,String,No variable
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,SHAPE,Shape,Geometry,Feature geometry.
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,POP10,"Population, 2010",Double,CTPP
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,GIS_AcLand,Acres of Land,Double,Land area of TAZ (no water)
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,Emp10,"Employment, 2010",Double,"2010 NETS database, adjusted by DVRPC. For Berks Co TAZs, this data is estimated by DVRPC Modeling Division"
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,HHNoVeh,"Zero Vehicle Households, 2010",Double,DVRPC Modeling Division projection/estimate  (2010-2040)
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,PopDen,"Population Density, 2010",Double,No variable
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,EmpDen,"Employment Density, 2010",Double,No variable
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,NoVehDen,"Zero Car Household Density, 2010",Double,CTPP
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,TranSc10,"Transit Score, 2010",Double,"Transit score = [0.41*(Population per acre)] +
-[0.09*(Jobs per acre)] +
-[0.74*(Zero car households per acre)]"
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,TranCat10,"Transit Score Category, 2010",String,"Low: < 0.6
-Marginal: 0.6 – 1.0
-Medium: 1.01 – 2.5
-Medium-High: 2.51 – 7.5
-High: > 7.5"
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,Pop40,"Population, 2040",Double,No variable
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,Emp40,"Employment, 2040",Double,No variable
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,HHNoVeh40,"Zero Car Households, 2040",Double,No variable
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,PopDen40,"Population Density, 2040",Double,No variable
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,EmpDen40,"Employment Density, 2040",Double,No variable
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,NoVehDen40,"Zero Car Household Density, 2040",Double,No variable
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,TranSc40,"Transit Score, 2040",Double,No variable
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,TranCat40,"Transit Score Category, 2040",String,No variable
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
-DEMOGRAPHICS,TransitScore_2010_2040,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,SHAPE,SHAPE,Geometry,Feature geometry.
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,STATEFP10,State FIPS,String,No variable
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,COUNTYFP10,County FIPS,String,No variable
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TRACTCE10,Tract ID,String,No variable
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,GEOID10,GEOID10,String,No variable
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,NAME10,Tract Name,String,No variable
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TotComm,Total Commuters,Double,Total Commuters
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Auto,"Car, truck, or van:",Double,"Car, truck, or van"
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,DrvAlone,Drove alone,Double,Drove alone
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Carpool,Carpooled:,Double,Carpooled
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Carpl2,In 2-person carpool,Double,In 2-person carpool
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Carpl3,In 3-person carpool,Double,In 3-person carpool
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Carpl4,In 4-person carpool,Double,In 4-person carpool
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Carpl5or6,In 5- or 6-person carpool,Double,In 5- or 6-person carpool
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Carpl7pls,In 7-or-more-person carpool,Double,In 7-or-more-person carpool
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,PublTran,Public transportation (excluding taxicab),Double,Public transportation (excluding taxicab)
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,BusTroll,Bus or trolley bus,Double,Bus or trolley bus
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,StCarTroll,Streetcar or trolley car (carro publico in Puerto Rico),Double,Streetcar or trolley car (carro publico in Puerto Rico)
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,SubEl,Subway or elevated,Double,Subway or elevated
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,RR,Railroad,Double,Railroad
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Ferry,Ferryboat,Double,Ferryboat
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Taxi,Taxicab,Double,Taxicab
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Motorcyc,Motorcycle,Double,Motorcycle
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Bike,Bicycle,Double,Bicycle
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Walk,Walked,Double,Walked
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Other,Other means,Double,Other means
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Telecomm,Worked at home,Double,Worked at home
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,PopOver16,Population 16 years and over,Double,Population 16 years and over
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TotEmpInForce,In labor force,Double,No variable
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,UnempPct,Percent non in labor force,Double,Percent non in labor force
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TimeToWk,Mean Travel Time to Work,Double,Mean Travel Time to Work
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,MedHHI,Median household income (dollars),Double,Median household income (dollars)
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,PctFoodSNAP,Percentage of households with Food Stamp/SNAP benefits in the past 12 months,Double,"Percentage of households with Food Stamp/SNAP benefits in the past 12 months
+"
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,PCTNOINS,Percentage of civilian noninstitutionalized population with no health insurance coverage,Double,"Percentage of civilian noninstitutionalized population with no health insurance coverage
+"
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,PctFamBelPov,Percentage of families and people whose income is the past 12 months is below the poverty level,Double,No variable
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TotHU,Total housing units,Double,Total housing units
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,HUOcc,Occupied housing units,Double,Occupied housing units
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,HUVACANT,Vacant housing units,Double,"Vacant housing units
+"
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,NoVehN,Households with no vehicles available,Double,Households with no vehicles available
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,NoVehP,Percentage of households with no vehicles available,Double,Percentage of households with no vehicles available
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,OneVehN,Households with 1 vehicle available,Double,Households with 1 vehicle available
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,OneVehP,Percentage of households with 1 vehicle available,Double,Percentage of households with 1 vehicle available
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TwoVehN,Households with 2 vehicles available,Double,Households with 2 vehicles available
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TwoVehP,Percentage of households with 2 vehicles available,Double,Percentage of households with 2 vehicles available
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,ThrPlsVehN,Households with 3 or more vehicles available ,Double,Households with 3 or more vehicles available
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,ThrPlsVehP,Percentage of households with 3 or more vehicles available ,Double,Percentage of households with 3 or more vehicles available
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TotPop,Total Population,Double,Total Population
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TotMale,Male Population,Double,Male Population
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TotFem,Female Population,Double,Female Population
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllWhite,Total White,Double,Total White
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllWhitePct,Percent White,Double,No variable
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllBlk,Total Black,Double,Total Black
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllBlkPct,Percent Black,Double,Percent Black
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllAmerIn,Total American Indian and Alaska Native,Double,"Total American Indian and Alaska Native
+"
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllAmerInPct,Percent American Indian and Alaska Native,Double,"Percent American Indian and Alaska Native
+"
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllAsian,Total Asian,Double,Total Asian
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllAsianPct,Percent Asian,Double,No variable
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllNatHI,Total Native Hawaiian and Other Pacific Islander,Double,"Total Native Hawaiian and Other Pacific Islander
+"
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllNatHIPct,Percent Native Hawaiian and Other Pacific Islander,Double,"Percent Native Hawaiian and Other Pacific Islander
+"
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,HispTot,Total Hispanic,Double,Total Hispanic
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,HispPct,Percent Hispanic,Double,Percent Hispanic
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
+DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,Shape,SHAPE,Geometry,Feature geometry.
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,STATE_NAME,STATE_NAME,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,STATE_FIPS,STATE_FIPS,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,CNTY_FIPS,CNTY_FIPS,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,FIPS,FIPS,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,AREA_SQMI,AREA_SQMI,Double,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,State,STATE,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,Co_Name,CO_NAME,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,Co_Seat,CO_SEAT,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,GEOID,GEOID,String,Unique ID - use to join to Municipalities
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,Name,NAME,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,Pop2010,POP2010,Double,2010 Total Population 
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,Und18,UND18,Double,Population Under 18
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,Btw1864,BTW1864,Double,Population Age 18-64
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,Ov62,OV62,Double,Population Age 62 and over
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,Ov65,OV65,Double,Population Age 65 and over
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,MedAge,MEDAGE,Double,Median Age
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,OneRace,ONERACE,Double,Population of one Race
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,White,WHITE,Double,White Alone
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,Blk,BLK,Double,Black or African American Alone
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,Amerin,AMERIN,Double,American Indian and Alaska Native Alone
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,Asian,ASIAN,Double,Asian Alone
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,PacIs,PACIS,Double,Native Hawaiian and other Pacific Islander Alone
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,OthRce,OTHRCE,Double,Some Other Race Alone
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,TwoRce,TWORCE,Double,Population of Two or more Races
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,Hisp,HISP,Double,Hispanic or Latino
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,Mex,MEX,Double,Mexican
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,PR,PR,Double,Puerto Rican
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,Cub,CUB,Double,Cuban
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,OthHis,OTHHIS,Double,Other Hispanic or Latino
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,NonHis,NONHIS,Double,Not Hispanic or Latino
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,TotHH,TOTHH,Double,Total Households
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,FamHH,FAMHH,Double,Family Households
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,NonFam,NONFAM,Double,Nonfamily Households
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,HHSz,HHSZ,Double,Average Household Size
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,FamSz,FAMSZ,Double,Average Family Size
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,HHKids,HHKIDS,Double,Family Households with own children under 18
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,HusWfe,HUSWFE,Double,Husband-Wife Family
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,HsWfKd,HSWFKD,Double,Husband-Wife Family with own children under 18
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,SngMom,SNGMOM,Double,"Female householder, no husband present"
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,SngMKd,SNGMKD,Double,"Female householder, no husband present with own children under 18"
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,OccHU,OCCHU,Double,Total Occupied Housing Units
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,OwOcHU,OWOCHU,Double,Owner-Occupied Housing Units
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,RnOcHU,RNOCHU,Double,Renter-Occupied Housing Units
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,Pop2k,POP2K,Double,2000 Total Population 
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,PopChg,POPCHG,Double,% Population Change 2000-2010 
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_County,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,SHAPE,SHAPE,Geometry,Feature geometry.
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,STATEFP10,STATEFP10,String,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,COUNTYFP10,COUNTYFP10,String,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,COUSUBFP10,COUSUBFP10,String,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,COUSUBNS10,COUSUBNS10,String,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,GEOID10,GEOID10,String,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,NAMELSAD10,NAMELSAD10,String,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,CLASSFP10,CLASSFP10,String,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,ALAND10,ALAND10,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,NAME10,NAME10,String,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,TotComm,Total Commuters,Double,Total Commuters
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,Auto,"Car, truck, or van:",Double,"Car, truck, or van"
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DrvAlone,Drove alone,Double,Drove alone
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,Carpool,Carpooled:,Double,Carpooled
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,Carpl2,In 2-person carpool,Double,In 2-person carpool
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,Carpl3,In 3-person carpool,Double,In 3-person carpool
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,Carpl4,In 4-person carpool,Double,In 4-person carpool
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,Carpl5or6,In 5- or 6-person carpool,Double,In 5- or 6-person carpool
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,Carpl7pls,In 7-or-more-person carpool,Double,In 7-or-more-person carpool
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,PublTran,Public transportation (excluding taxicab):,Double,Public transportation (excluding taxicab)
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,BusTroll,Bus or trolley bus,Double,Bus or trolley bus
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,StCarTroll,Streetcar or trolley car (carro publico in Puerto Rico),Double,Streetcar or trolley car (carro publico in Puerto Rico)
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,SubEl,Subway or elevated,Double,Subway or elevated
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,RR,Railroad,Double,Railroad
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,Ferry,Ferryboat,Double,Ferryboat
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,Taxi,Taxicab,Double,Taxicab
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,Motorcyc,Motorcycle,Double,Motorcycle
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,Bike,Bicycle,Double,Bicycle
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,Walk,Walked,Double,Walked
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,Other,Other means,Double,Other means
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,Telecomm,Worked at home,Double,Worked at home
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP03_0001E,Population 16 years and over,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP03_0002E,In labor force,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP03_0007PE,Percent non in labor force,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP03_0025E,Mean Travel Time to Work,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP03_0062E,Median household income (dollars),Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP03_0074PE,Percentage of households with Food Stamp/SNAP benefits in the past 12 months,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP03_0099PE,Percentage of civilian noninstitutionalized population with no health insurance coverage,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP03_0119PE,Percentage of families and people whose income in the past 12 months is below the poverty level,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP04_0001E,Total housing units,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP04_0002E,Occupied housing units,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP04_0003E,Vacant housing units,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP04_0057E,Households with no vehicles available,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP04_0057PE,Percentage of households with no vehicles available,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP04_0058E,Households with 1 vehicle available,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP04_0058PE,Percentage of households with 1 vehicle available,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP04_0059E,Households with 2 vehicles available,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP04_0059PE,Percentage of households with 2 vehicles available,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP04_0060E,Households with 3 or more vehicles available ,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP04_0060PE,Percentage of households with 3 or more vehicles available ,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP05_0001E,Total Population,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP05_0002E,Male Population,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP05_0003E,Female Population,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP05_0032E,Total White,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP05_0032PE,Percent White,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP05_0033E,Total Black,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP05_0033PE,Percent Black,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP05_0039E,Total Asian,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP05_0039PE,Percent Asian,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP05_0066E,Total Hispanic,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,DP05_0066PE,Percent Hispanic,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,SHAPE_Length,SHAPE_Length,Double,Length of feature in internal units.
+DEMOGRAPHICS,ACS_Profile_10_14_MCD,Polygon,SHAPE_Area,SHAPE_Area,Double,Area of feature in internal units squared.
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,CO_NAME,County Name,String,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SHAPE,SHAPE,Geometry,Feature geometry.
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SUM_Emp15,"Employment, 2015",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SUM_Emp20,"Employment, 2020",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SUM_Emp25,"Employment, 2025",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SUM_Emp30,"Employment, 2030",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SUM_Emp35,"Employment, 2035",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SUM_Emp40,"Employment, 2040",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,ABS,"Absolute Change in Employment, 2010 - 2040",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,PCT,"Percent Change in Employment, 2010 - 2040",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,STATE,STATE,String,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,POP_PCT,"Percent Change in Population, 2010 - 2040",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SUM_POP00,"Population, 2000",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SUM_POP10,"Population, 2010",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SUM_POP15,"Population, 2015",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SUM_POP20,"Population, 2020",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SUM_POP25,"Population, 2025",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SUM_POP30,"Population, 2030",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SUM_POP35,"Population, 2035",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SUM_POP40,"Population, 2040",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,POP_ABS,"Absolute Change in Population, 2010 - 2040",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SUM_Emp10,"Employment, 2010",Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
+DEMOGRAPHICS,Forecast_2010to2040_County,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,SHAPE,SHAPE,Geometry,Feature geometry.
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,STATEFP10,STATEFP10,String,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,COUNTYFP10,COUNTYFP10,String,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,TRACTCE10,TRACTCE10,String,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,GEOID10,GEOID10,String,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,NAMELSAD10,NAMELSAD10,String,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,ALAND10,ALAND10,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,NAME10,NAME10,String,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,TotComm,Total Commuters,Double,Total Commuters
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,Auto,"Car, truck, or van:",Double,"Car, truck, or van"
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DrvAlone,Drove alone,Double,Drove alone
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,Carpool,Carpooled:,Double,Carpooled
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,Carpl2,In 2-person carpool,Double,In 2-person carpool
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,Carpl3,In 3-person carpool,Double,In 3-person carpool
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,Carpl4,In 4-person carpool,Double,In 4-person carpool
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,Carpl5or6,In 5- or 6-person carpool,Double,In 5- or 6-person carpool
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,Carpl7pls,In 7-or-more-person carpool,Double,In 7-or-more-person carpool
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,PublTran,Public transportation (excluding taxicab):,Double,Public transportation (excluding taxicab)
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,BusTroll,Bus or trolley bus,Double,Bus or trolley bus
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,StCarTroll,Streetcar or trolley car (carro publico in Puerto Rico),Double,Streetcar or trolley car (carro publico in Puerto Rico)
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,SubEl,Subway or elevated,Double,Subway or elevated
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,RR,Railroad,Double,Railroad
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,Ferry,Ferryboat,Double,Ferryboat
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,Taxi,Taxicab,Double,Taxicab
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,Motorcyc,Motorcycle,Double,Motorcycle
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,Bike,Bicycle,Double,Bicycle
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,Walk,Walked,Double,Walked
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,Other,Other means,Double,Other means
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,Telecomm,Worked at home,Double,Worked at home
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,OBJECTID_1,OBJECTID_1,Integer,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,GEOID10_1,GEOID10_1,String,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP03_0001E,Population 16 years and over,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP03_0002E,In labor force,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP03_0007PE,Percent non in labor force,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP03_0025E,Mean Travel Time to Work,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP03_0062E,Median household income (dollars),Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP03_0074PE,Percentage of households with Food Stamp/SNAP benefits in the past 12 months,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP03_0099PE,Percentage of civilian noninstitutionalized population with no health insurance coverage,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP03_0119PE,Percentage of families and people whose income in the past 12 months is below the poverty level,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP04_0001E,Total housing units,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP04_0002E,Occupied housing units,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP04_0003E,Vacant housing units,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP04_0057E,Households with no vehicles available,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP04_0057PE,Percentage of households with no vehicles available,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP04_0058E,Households with 1 vehicle available,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP04_0058PE,Percentage of households with 1 vehicle available,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP04_0059E,Households with 2 vehicles available,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP04_0059PE,Percentage of households with 2 vehicles available,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP04_0060E,Households with 3 or more vehicles available ,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP04_0060PE,Percentage of households with 3 or more vehicles available ,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP05_0001E,Total Population,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP05_0002E,Male Population,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP05_0003E,Female Population,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP05_0032E,Total White,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP05_0032PE,Percent White,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP05_0033E,Total Black,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP05_0033PE,Percent Black,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP05_0039E,Total Asian,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP05_0039PE,Percent Asian,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP05_0066E,Total Hispanic,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,DP05_0066PE,Percent Hispanic,Double,No variable
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,SHAPE_Length,SHAPE_Length,Double,Length of feature in internal units.
+DEMOGRAPHICS,ACS_Profile_10_14_Tract,Polygon,SHAPE_Area,SHAPE_Area,Double,Area of feature in internal units squared.
 DEMOGRAPHICS,IPD,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
 DEMOGRAPHICS,IPD,Polygon,STATEFP10,STATEFP10,String,No variable
 DEMOGRAPHICS,IPD,Polygon,COUNTYFP10,COUNTYFP10,String,No variable
@@ -1454,6 +1658,62 @@ DEMOGRAPHICS,IPD,Polygon,LimEngIPD,"Limited English Proficiency, IPD",Double,No 
 DEMOGRAPHICS,IPD,Polygon,IPD,Number of IPD,Double,No variable
 DEMOGRAPHICS,IPD,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
 DEMOGRAPHICS,IPD,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Shape,SHAPE,Geometry,Feature geometry.
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,State_Name,STATE_NAME,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Co_Name,CO_NAME,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Mun_Name,MUN_NAME,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Mun_Label,MUN_LABEL,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Mun_Type,MUN_TYPE,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Label_Code,LABEL_CODE,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,GEOID,GEOID,String,Unique ID - use to join to Municipalities
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,GEOID_8,GEOID_8,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,DVRPC_Code,DVRPC_CODE,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,WebLink,WEBLINK,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,State,STATE,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,LandArea,LANDAREA,Double,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,LandAreaAc,LANDAREAAC,Double,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,GEOID_10,GEOID_10,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Name,NAME,String,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Pop2010,POP2010,Double,2010 Total Population 
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Und18,UND18,Double,Population Under 18
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Btw1864,BTW1864,Double,Population Age 18-64
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Ov62,OV62,Double,Population Age 62 and over
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Ov65,OV65,Double,Population Age 65 and over
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,MedAge,MEDAGE,Double,Median Age
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,OneRace,ONERACE,Double,Population of one Race
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,White,WHITE,Double,White Alone
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Blk,BLK,Double,Black or African American Alone
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Amerin,AMERIN,Double,American Indian and Alaska Native Alone
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Asian,ASIAN,Double,Asian Alone
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,PacIs,PACIS,Double,Native Hawaiian and other Pacific Islander Alone
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,OthRce,OTHRCE,Double,Some Other Race Alone
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,TwoRce,TWORCE,Double,Population of Two or more Races
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Hisp,HISP,Double,Hispanic or Latino
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Mex,MEX,Double,Mexican
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,PR,PR,Double,Puerto Rican
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Cub,CUB,Double,Cuban
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,OthHis,OTHHIS,Double,Other Hispanic or Latino
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,NonHis,NONHIS,Double,Not Hispanic or Latino
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,TotHH,TOTHH,Double,Total Households
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,FamHH,FAMHH,Double,Family Households
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,NonFam,NONFAM,Double,Nonfamily Households
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,HHSz,HHSZ,Double,Average Household Size
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,FamSz,FAMSZ,Double,Average Family Size
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,HHKids,HHKIDS,Double,Family Households with own children under 18
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,HusWfe,HUSWFE,Double,Husband-Wife Family
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,HsWfKd,HSWFKD,Double,Husband-Wife Family with own children under 18
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,SngMom,SNGMOM,Double,"Female householder, no husband present"
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,SngMKd,SNGMKD,Double,"Female householder, no husband present with own children under 18"
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,OccHU,OCCHU,Double,Total Occupied Housing Units
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,OwOcHU,OWOCHU,Double,Owner-Occupied Housing Units
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,RnOcHU,RNOCHU,Double,Renter-Occupied Housing Units
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,Pop2k,POP2K,Double,2000 Total Population 
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,PopChg,POPCHG,Double,% Population Change 2000-2010 
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,POP10_DEN,POP10_DEN,Double,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,SQ_MILE,SQ_MILE,Double,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
+DEMOGRAPHICS,Census2010_DemoProfile_MCD,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
 DEMOGRAPHICS,Forecast_2010to2040_TAZ,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
 DEMOGRAPHICS,Forecast_2010to2040_TAZ,Polygon,TAZ,TAZ Number,Integer,No variable
 DEMOGRAPHICS,Forecast_2010to2040_TAZ,Polygon,TAZt,"TAZ Number, text",String,No variable
@@ -1825,80 +2085,40 @@ DEMOGRAPHICS,Forecast_2000to2040_MCD,Polygon,Emp30,"Employment, 2030",Double,No 
 DEMOGRAPHICS,Forecast_2000to2040_MCD,Polygon,Emp35,"Employment, 2035",Double,No variable
 DEMOGRAPHICS,Forecast_2000to2040_MCD,Polygon,Emp40,"Employment, 2040",Double,No variable
 DEMOGRAPHICS,Forecast_2000to2040_MCD,Polygon,EmpAbs_10_40,"Absolute Change in Employment, 2010 - 2040",Double,No variable
-DEMOGRAPHICS,Forecast_2000to2040_MCD,Polygon,EmpPer_10_40,"Absolute Change in Employment, 2010 - 2040",Double,No variable
+DEMOGRAPHICS,Forecast_2000to2040_MCD,Polygon,EmpPer_10_40,"Percent Change in Employment, 2010 - 2040",Double,No variable
 DEMOGRAPHICS,Forecast_2000to2040_MCD,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
 DEMOGRAPHICS,Forecast_2000to2040_MCD,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,SHAPE,SHAPE,Geometry,Feature geometry.
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,STATEFP10,State FIPS,String,No variable
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,COUNTYFP10,County FIPS,String,No variable
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TRACTCE10,Tract ID,String,No variable
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,GEOID10,GEOID10,String,No variable
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,NAME10,Tract Name,String,No variable
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TotComm,Total Commuters,Double,Total Commuters
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Auto,"Car, truck, or van:",Double,"Car, truck, or van"
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,DrvAlone,Drove alone,Double,Drove alone
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Carpool,Carpooled:,Double,Carpooled
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Carpl2,In 2-person carpool,Double,In 2-person carpool
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Carpl3,In 3-person carpool,Double,In 3-person carpool
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Carpl4,In 4-person carpool,Double,In 4-person carpool
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Carpl5or6,In 5- or 6-person carpool,Double,In 5- or 6-person carpool
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Carpl7pls,In 7-or-more-person carpool,Double,In 7-or-more-person carpool
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,PublTran,Public transportation (excluding taxicab),Double,Public transportation (excluding taxicab)
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,BusTroll,Bus or trolley bus,Double,Bus or trolley bus
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,StCarTroll,Streetcar or trolley car (carro publico in Puerto Rico),Double,Streetcar or trolley car (carro publico in Puerto Rico)
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,SubEl,Subway or elevated,Double,Subway or elevated
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,RR,Railroad,Double,Railroad
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Ferry,Ferryboat,Double,Ferryboat
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Taxi,Taxicab,Double,Taxicab
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Motorcyc,Motorcycle,Double,Motorcycle
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Bike,Bicycle,Double,Bicycle
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Walk,Walked,Double,Walked
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Other,Other means,Double,Other means
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,Telecomm,Worked at home,Double,Worked at home
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,PopOver16,Population 16 years and over,Double,Population 16 years and over
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TotEmpInForce,In labor force,Double,No variable
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,UnempPct,Percent non in labor force,Double,Percent non in labor force
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TimeToWk,Mean Travel Time to Work,Double,Mean Travel Time to Work
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,MedHHI,Median household income (dollars),Double,Median household income (dollars)
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,PctFoodSNAP,Percentage of households with Food Stamp/SNAP benefits in the past 12 months,Double,"Percentage of households with Food Stamp/SNAP benefits in the past 12 months
-"
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,PCTNOINS,Percentage of civilian noninstitutionalized population with no health insurance coverage,Double,"Percentage of civilian noninstitutionalized population with no health insurance coverage
-"
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,PctFamBelPov,Percentage of families and people whose income is the past 12 months is below the poverty level,Double,No variable
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TotHU,Total housing units,Double,Total housing units
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,HUOcc,Occupied housing units,Double,Occupied housing units
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,HUVACANT,Vacant housing units,Double,"Vacant housing units
-"
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,NoVehN,Households with no vehicles available,Double,Households with no vehicles available
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,NoVehP,Percentage of households with no vehicles available,Double,Percentage of households with no vehicles available
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,OneVehN,Households with 1 vehicle available,Double,Households with 1 vehicle available
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,OneVehP,Percentage of households with 1 vehicle available,Double,Percentage of households with 1 vehicle available
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TwoVehN,Households with 2 vehicles available,Double,Households with 2 vehicles available
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TwoVehP,Percentage of households with 2 vehicles available,Double,Percentage of households with 2 vehicles available
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,ThrPlsVehN,Households with 3 or more vehicles available ,Double,Households with 3 or more vehicles available
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,ThrPlsVehP,Percentage of households with 3 or more vehicles available ,Double,Percentage of households with 3 or more vehicles available
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TotPop,Total Population,Double,Total Population
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TotMale,Male Population,Double,Male Population
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,TotFem,Female Population,Double,Female Population
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllWhite,Total White,Double,Total White
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllWhitePct,Percent White,Double,No variable
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllBlk,Total Black,Double,Total Black
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllBlkPct,Percent Black,Double,Percent Black
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllAmerIn,Total American Indian and Alaska Native,Double,"Total American Indian and Alaska Native
-"
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllAmerInPct,Percent American Indian and Alaska Native,Double,"Percent American Indian and Alaska Native
-"
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllAsian,Total Asian,Double,Total Asian
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllAsianPct,Percent Asian,Double,No variable
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllNatHI,Total Native Hawaiian and Other Pacific Islander,Double,"Total Native Hawaiian and Other Pacific Islander
-"
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,AllNatHIPct,Percent Native Hawaiian and Other Pacific Islander,Double,"Percent Native Hawaiian and Other Pacific Islander
-"
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,HispTot,Total Hispanic,Double,Total Hispanic
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,HispPct,Percent Hispanic,Double,Percent Hispanic
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
-DEMOGRAPHICS,ACS_Profile_09_13_Tract,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,TAZ,TAZ,Integer,"State, Co fips with TAZ Number"
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,STATE_NAME,State,String,No variable
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,CO_NAME,County,String,No variable
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,MUN_NAME,Municipality,String,No variable
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,SHAPE,Shape,Geometry,Feature geometry.
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,POP10,"Population, 2010",Double,CTPP
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,GIS_AcLand,Acres of Land,Double,Land area of TAZ (no water)
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,Emp10,"Employment, 2010",Double,"2010 NETS database, adjusted by DVRPC. For Berks Co TAZs, this data is estimated by DVRPC Modeling Division"
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,HHNoVeh,"Zero Vehicle Households, 2010",Double,DVRPC Modeling Division projection/estimate  (2010-2040)
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,PopDen,"Population Density, 2010",Double,No variable
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,EmpDen,"Employment Density, 2010",Double,No variable
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,NoVehDen,"Zero Car Household Density, 2010",Double,CTPP
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,TranSc10,"Transit Score, 2010",Double,"Transit score = [0.41*(Population per acre)] +
+[0.09*(Jobs per acre)] +
+[0.74*(Zero car households per acre)]"
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,TranCat10,"Transit Score Category, 2010",String,"Low: < 0.6
+Marginal: 0.6 – 1.0
+Medium: 1.01 – 2.5
+Medium-High: 2.51 – 7.5
+High: > 7.5"
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,Pop40,"Population, 2040",Double,No variable
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,Emp40,"Employment, 2040",Double,No variable
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,HHNoVeh40,"Zero Car Households, 2040",Double,No variable
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,PopDen40,"Population Density, 2040",Double,No variable
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,EmpDen40,"Employment Density, 2040",Double,No variable
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,NoVehDen40,"Zero Car Household Density, 2040",Double,No variable
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,TranSc40,"Transit Score, 2040",Double,No variable
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,TranCat40,"Transit Score Category, 2040",String,No variable
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
+DEMOGRAPHICS,TransitScore_2010_2040,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
 ﻿ECONOMY,EmploymentSites_2010,Point,OBJECTID,OBJECTID,OID,Internal feature number.
 ECONOMY,EmploymentSites_2010,Point,Shape,SHAPE,Geometry,Feature geometry.
 ECONOMY,EmploymentSites_2010,Point,DUNSNUMBER,DUNSNUMBER,String,"DUNS Number, where applicable. Some sites were not in NETS database, while others have multiple DUNS Numbers for same facility"
@@ -2186,294 +2406,24 @@ ENVIRONMENT,PA_IntList_Attaining_2012,Polyline,STR_GISKEY,STR_HUC,String,No vari
 ENVIRONMENT,PA_IntList_Attaining_2012,Polyline,STR_HUC,DTE_CREATE,Date,No variable
 ENVIRONMENT,PA_IntList_Attaining_2012,Polyline,DTE_CREATE,BLN_ATTAIN,String,No variable
 ENVIRONMENT,PA_IntList_Attaining_2012,Polyline,SHAPE.LEN,SHAPE.LEN,Double,No variable
-﻿FREIGHT,anchorage_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,anchorage_pts,Point,pff_id,pff_id,String,No variable
-FREIGHT,anchorage_pts,Point,anch_id,Anchorage Link,String,No variable
-FREIGHT,anchorage_pts,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,anchorages,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,anchorages,Polygon,pff_id,pff_id,String,No variable
-FREIGHT,anchorages,Polygon,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,anchorages,Polygon,Name,Anchorage name,String,No variable
-FREIGHT,anchorages,Polygon,Township_s,township_s,String,No variable
-FREIGHT,anchorages,Polygon,length,anchorage length,Double,No variable
-FREIGHT,anchorages,Polygon,Start,start,Double,No variable
-FREIGHT,anchorages,Polygon,End,end,Double,No variable
-FREIGHT,anchorages,Polygon,Source,source,String,No variable
-FREIGHT,anchorages,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,anchorages,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
-FREIGHT,airport_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,airport_pts,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,airport_pts,Point,LAT,LAT,Double,No variable
-FREIGHT,airport_pts,Point,NAVID,FAA NavID,String,No variable
-FREIGHT,airport_pts,Point,LONG_,LONG_,Double,No variable
-FREIGHT,airport_pts,Point,PFF_ID,PFF_ID,String,No variable
-FREIGHT,airport_pts,Point,GLOBALID,GLOBALID,GlobalID,No variable
-FREIGHT,energy_terminals,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,energy_terminals,Point,pff_id,pff_id,String,No variable
-FREIGHT,energy_terminals,Point,name,Energy terminal name,String,No variable
-FREIGHT,energy_terminals,Point,operator,Energy terminal operator,String,No variable
-FREIGHT,energy_terminals,Point,type,Energy terminal type,String,No variable
-FREIGHT,energy_terminals,Point,port_link,Port Link,String,No variable
-FREIGHT,energy_terminals,Point,pipeline_link,pipelines,String,No variable
-FREIGHT,energy_terminals,Point,tank_link,tank farms,String,No variable
-FREIGHT,energy_terminals,Point,ref_capacity,refining capacity,Double,No variable
-FREIGHT,energy_terminals,Point,pipeline_in,pipe_in,String,No variable
-FREIGHT,energy_terminals,Point,pipeline_out,pipe_out,String,No variable
-FREIGHT,energy_terminals,Point,SHAPE,SHAPE,Geometry,Feature geometry.
-FREIGHT,freight_centers,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,freight_centers,Polygon,pff_id,pff_id,String,No variable
-FREIGHT,freight_centers,Polygon,name,freight center name,String,No variable
-FREIGHT,freight_centers,Polygon,center_typ,Center Type,String,No variable
-FREIGHT,freight_centers,Polygon,township_s,township_s,String,No variable
-FREIGHT,freight_centers,Polygon,acres,acres,String,No variable
-FREIGHT,freight_centers,Polygon,rail_id,Rail link,String,No variable
-FREIGHT,freight_centers,Polygon,source,source,String,No variable
-FREIGHT,freight_centers,Polygon,County,County,String,No variable
-FREIGHT,freight_centers,Polygon,Acres_1,Acres_1,Double,No variable
-FREIGHT,freight_centers,Polygon,Id,Id,Integer,No variable
-FREIGHT,freight_centers,Polygon,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,freight_centers,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,freight_centers,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
-FREIGHT,freight_rail,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,freight_rail,Polyline,pff_id,pff_id,String,No variable
-FREIGHT,freight_rail,Polyline,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,freight_rail,Polyline,Type,Freight rail type,String,No variable
-FREIGHT,freight_rail,Polyline,start,rail milepost start,String,No variable
-FREIGHT,freight_rail,Polyline,end,rail milepost end,String,No variable
-FREIGHT,freight_rail,Polyline,Owner,Rail owner,String,No variable
-FREIGHT,freight_rail,Polyline,trk_main,Mainline Tracks,Double,No variable
-FREIGHT,freight_rail,Polyline,trk_side,Siding tracks,String,No variable
-FREIGHT,freight_rail,Polyline,trk_multi,Multi level cars,String,No variable
-FREIGHT,freight_rail,Polyline,trk_dbl,Double stack clearance,String,No variable
-FREIGHT,freight_rail,Polyline,trk_weight,286k capacity,String,No variable
-FREIGHT,freight_rail,Polyline,trk_plate,Plate clearance,String,No variable
-FREIGHT,freight_rail,Polyline,trk_trains,Activity,String,No variable
-FREIGHT,freight_rail,Polyline,Operator,rail operator,String,No variable
-FREIGHT,freight_rail,Polyline,MILES,miles,Double,No variable
-FREIGHT,freight_rail,Polyline,Name,Rail segment name,String,No variable
-FREIGHT,freight_rail,Polyline,Source,source,String,No variable
-FREIGHT,freight_rail,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,good_neighbor_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,good_neighbor_pts,Point,pff_id,pff_id,String,No variable
-FREIGHT,good_neighbor_pts,Point,Descr1,Descr1,String,No variable
-FREIGHT,good_neighbor_pts,Point,Descr2,Descr2,String,No variable
-FREIGHT,good_neighbor_pts,Point,Descr3,Descr3,String,No variable
-FREIGHT,good_neighbor_pts,Point,Municipality,Municipality,String,No variable
-FREIGHT,good_neighbor_pts,Point,County,County,String,No variable
-FREIGHT,good_neighbor_pts,Point,Id,Id,Integer,No variable
-FREIGHT,good_neighbor_pts,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,heliport,Point,OBJECTID_1,OBJECTID_1,OID,Internal feature number.
-FREIGHT,heliport,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,heliport,Point,OBJECTID,OBJECTID,Double,No variable
-FREIGHT,heliport,Point,Type,Type,String,No variable
-FREIGHT,heliport,Point,pff_id,PFF and FAA Navigation ID,String,No variable
-FREIGHT,heliport,Point,StateNam,StateNam,String,No variable
-FREIGHT,heliport,Point,County,County,String,No variable
-FREIGHT,heliport,Point,City,City,String,No variable
-FREIGHT,heliport,Point,Facility,Facility,String,No variable
-FREIGHT,heliport,Point,Ownershi,Ownershi,String,No variable
-FREIGHT,heliport,Point,Use,Use,String,No variable
-FREIGHT,heliport,Point,Owner,Owner,String,No variable
-FREIGHT,heliport,Point,Size,Size,String,No variable
-FREIGHT,heliport,Point,Report,Report,String,No variable
-FREIGHT,highways,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,highways,Polyline,pff_id,pff_id,String,No variable
-FREIGHT,highways,Polyline,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,highways,Polyline,SHIELD,shield,String,No variable
-FREIGHT,highways,Polyline,HWY_NUM,hwy_num,String,No variable
-FREIGHT,highways,Polyline,STATE,state,String,No variable
-FREIGHT,highways,Polyline,Name,Highway name,String,No variable
-FREIGHT,highways,Polyline,Type,Highway classification,String,No variable
-FREIGHT,highways,Polyline,Owner,Highway owner,String,No variable
-FREIGHT,highways,Polyline,section_miles,section_miles,Double,No variable
-FREIGHT,highways,Polyline,Shield_id,shield_id,Double,No variable
-FREIGHT,highways,Polyline,DIR_1,DIR_1,String,No variable
-FREIGHT,highways,Polyline,CAP_1,CAP_1,Double,No variable
-FREIGHT,highways,Polyline,ACT_1A,ACT_1A,String,No variable
-FREIGHT,highways,Polyline,ACT_1B,ACT_1B,String,No variable
-FREIGHT,highways,Polyline,DEVICE_1,DEVICE_1,String,No variable
-FREIGHT,highways,Polyline,DIR_2,DIR_2,String,No variable
-FREIGHT,highways,Polyline,CAP_2,CAP_2,Double,No variable
-FREIGHT,highways,Polyline,ACT_2A,ACT_2A,String,No variable
-FREIGHT,highways,Polyline,ACT_2B,ACT_2B,String,No variable
-FREIGHT,highways,Polyline,DEVICE_2,DEVICE_2,String,No variable
-FREIGHT,highways,Polyline,SHLD_ID,SHLD_ID,String,No variable
-FREIGHT,highways,Polyline,YEAR,YEAR,Double,No variable
-FREIGHT,highways,Polyline,GIS_MILES,GIS_MILES,Double,No variable
-FREIGHT,highways,Polyline,SOURCE,SOURCE,String,No variable
-FREIGHT,highways,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,intermodal_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,intermodal_pts,Point,pff_id,pff_id,String,No variable
-FREIGHT,intermodal_pts,Point,intermodal_id,Intermodal Link,String,No variable
-FREIGHT,intermodal_pts,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,intermodal_pts,Point,GLOBALID,GLOBALID,GlobalID,No variable
-FREIGHT,maintained_channel,Polygon,OBJECTID_1,OBJECTID_1,OID,Internal feature number.
-FREIGHT,maintained_channel,Polygon,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,maintained_channel,Polygon,NAME,Maintained channel name,String,No variable
-FREIGHT,maintained_channel,Polygon,PFF_ID,pff_id,String,No variable
-FREIGHT,maintained_channel,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,maintained_channel,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
-FREIGHT,ndc_link_tons,Table,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,ndc_link_tons,Table,link,link,Double,No variable
-FREIGHT,ndc_link_tons,Table,year,year,Double,No variable
-FREIGHT,ndc_link_tons,Table,tot_up,total up,Double,No variable
-FREIGHT,ndc_link_tons,Table,tot_dwn,total down,Double,No variable
-FREIGHT,ndc_link_tons,Table,F10up,coal up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F10dwn,coal down,Double,No variable
-FREIGHT,ndc_link_tons,Table,F20up,petroleum up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F20dwn,petroleum down,Double,No variable
-FREIGHT,ndc_link_tons,Table,F30up,chemicals up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F30dwn,chemicals down,Double,No variable
-FREIGHT,ndc_link_tons,Table,F40up,crude materials up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F40dwn,crude materials down,Double,No variable
-FREIGHT,ndc_link_tons,Table,manufactured,manufactured up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F50dwn,manufactured down,Double,No variable
-FREIGHT,ndc_link_tons,Table,F60up,farm up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F60dwn,farm down,Double,No variable
-FREIGHT,ndc_link_tons,Table,F70up,machinery up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F70dwn,machinery down,Double,No variable
-FREIGHT,ndc_link_tons,Table,F80up,waste up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F80dwn,waste down,Double,No variable
-FREIGHT,ndc_link_tons,Table,F90up,unknown up,Double,No variable
-FREIGHT,ndc_link_tons,Table,F90dwn,unknown down,Double,No variable
-FREIGHT,nhs_connectors,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,nhs_connectors,Polyline,pff_id,pff_id,String,No variable
-FREIGHT,nhs_connectors,Polyline,name,nhs name,String,No variable
-FREIGHT,nhs_connectors,Polyline,township_s,township_s,String,No variable
-FREIGHT,nhs_connectors,Polyline,cap_1,lanes,Double,No variable
-FREIGHT,nhs_connectors,Polyline,cap_2,cap_2,Double,No variable
-FREIGHT,nhs_connectors,Polyline,aadt,aadt,String,No variable
-FREIGHT,nhs_connectors,Polyline,hwy_id,highway link,String,No variable
-FREIGHT,nhs_connectors,Polyline,link_id,intermodal node link,String,No variable
-FREIGHT,nhs_connectors,Polyline,source,source,String,No variable
-FREIGHT,nhs_connectors,Polyline,LAT,LAT,Double,No variable
-FREIGHT,nhs_connectors,Polyline,LONG,LONG,Double,No variable
-FREIGHT,nhs_connectors,Polyline,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,nhs_connectors,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,pff_feature_prefix,Table,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,pff_feature_prefix,Table,feature_class,feature_class,String,No variable
-FREIGHT,pff_feature_prefix,Table,prefix,prefix,String,No variable
-FREIGHT,pff_grade_xings,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,pff_grade_xings,Point,pff_id,pff_id,String,No variable
-FREIGHT,pff_grade_xings,Point,fra_id,FRA crossing #,String,No variable
-FREIGHT,pff_grade_xings,Point,rail_id,rail link,String,No variable
-FREIGHT,pff_grade_xings,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,pff_grade_xings,Point,TOTALTRN,TOTALTRN,Double,No variable
-FREIGHT,pff_grade_xings,Point,operator,operator,String,No variable
-FREIGHT,pff_grade_xings,Point,TOTALSWT,TOTALSWT,Double,No variable
-FREIGHT,pff_grade_xings,Point,tracks,tracks,String,No variable
-FREIGHT,pff_grade_xings,Point,Name,name,String,No variable
-FREIGHT,pff_grade_xings,Point,Owner,owner,String,No variable
-FREIGHT,pff_grade_xings,Point,LAT,LAT,Double,No variable
-FREIGHT,pff_grade_xings,Point,LONG,LONG,Double,No variable
-FREIGHT,pff_grade_xings,Point,Street_1,Street_1,String,No variable
-FREIGHT,pff_grade_xings,Point,Rail_Line,Rail_Line,String,No variable
-FREIGHT,pff_grade_xings,Point,Township,township,String,No variable
-FREIGHT,pff_grade_xings,Point,Act,Act,String,No variable
-FREIGHT,pff_grade_xings,Point,Source_1,Source_1,String,No variable
-FREIGHT,port_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,port_pts,Point,pff_id,pff_id,String,No variable
-FREIGHT,port_pts,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,port_pts,Point,Port_ID,port link,String,No variable
-FREIGHT,product_pipelines,Table,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,product_pipelines,Table,PFF_ID,pff_id,String,No variable
-FREIGHT,product_pipelines,Table,name,name,String,No variable
-FREIGHT,product_pipelines,Table,owner,owner,String,No variable
-FREIGHT,product_pipelines,Table,product,product,String,No variable
-FREIGHT,product_pipelines,Table,capacity,capacity,Double,No variable
-FREIGHT,product_pipelines,Table,origin,origin,String,No variable
-FREIGHT,product_pipelines,Table,destination,destination,String,No variable
-FREIGHT,rail_mileposts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,rail_mileposts,Point,SHAPE,SHAPE,Geometry,Feature geometry.
-FREIGHT,rail_mileposts,Point,pff_id,pff_id,String,No variable
-FREIGHT,rail_mileposts,Point,rail_id,Rail Link,String,No variable
-FREIGHT,rail_mileposts,Point,milepost,milepost,Double,No variable
-FREIGHT,rail_yard_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,rail_yard_pts,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,rail_yard_pts,Point,pff_id,pff_id,String,No variable
-FREIGHT,rail_yard_pts,Point,yard_id,Rail yard link,String,No variable
-FREIGHT,rail_yards,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,rail_yards,Polygon,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,rail_yards,Polygon,pff_id,pff_id,String,No variable
-FREIGHT,rail_yards,Polygon,Web_ID,Web_ID,String,No variable
-FREIGHT,rail_yards,Polygon,Name,name,String,No variable
-FREIGHT,rail_yards,Polygon,operator,Operator_s,String,No variable
-FREIGHT,rail_yards,Polygon,Owner,owner,String,No variable
-FREIGHT,rail_yards,Polygon,acres,acres,String,No variable
-FREIGHT,rail_yards,Polygon,rail_id,Rail link,String,No variable
-FREIGHT,rail_yards,Polygon,Township,township,String,No variable
-FREIGHT,rail_yards,Polygon,GIS_Acres,GIS_Acres,Double,No variable
-FREIGHT,rail_yards,Polygon,Source,source,String,No variable
-FREIGHT,rail_yards,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,rail_yards,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
-FREIGHT,river,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,river,Polygon,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,river,Polygon,pff_id,pff_id,String,No variable
-FREIGHT,river,Polygon,NAME,name,String,No variable
-FREIGHT,river,Polygon,townships,river bordering townships,String,No variable
-FREIGHT,river,Polygon,DVRPC_ST,DVRPC_ST,String,No variable
-FREIGHT,river,Polygon,Web_ID,Web_ID,String,No variable
-FREIGHT,river,Polygon,length,length,Double,No variable
-FREIGHT,river,Polygon,width,channel width,Double,No variable
-FREIGHT,river,Polygon,depth,channel depth,Double,No variable
-FREIGHT,river,Polygon,clearance,max air draft,String,No variable
-FREIGHT,river,Polygon,Start,start,Double,No variable
-FREIGHT,river,Polygon,End,end,Double,No variable
-FREIGHT,river,Polygon,Source,source,String,No variable
-FREIGHT,river,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,river,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
-FREIGHT,river_channel,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,river_channel,Polyline,SHAPE,SHAPE,Geometry,Feature geometry.
-FREIGHT,river_channel,Polyline,river_id,river link,String,No variable
-FREIGHT,river_channel,Polyline,up_vessels,up_vessels,String,No variable
-FREIGHT,river_channel,Polyline,up_count,up_count,Double,No variable
-FREIGHT,river_channel,Polyline,SHAPE_Length,SHAPE_Length,Double,Length of feature in internal units.
-FREIGHT,river_crossings,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,river_crossings,Point,pff_id,pff_id,String,No variable
-FREIGHT,river_crossings,Point,name,Bridge name,String,No variable
-FREIGHT,river_crossings,Point,type,bridge type,String,No variable
-FREIGHT,river_crossings,Point,owner,bridge owner,String,No variable
-FREIGHT,river_crossings,Point,operator,bridge operator,String,No variable
-FREIGHT,river_crossings,Point,use,bridge mode,String,No variable
-FREIGHT,river_crossings,Point,town_1,town_1,String,No variable
-FREIGHT,river_crossings,Point,town_2,town_2,String,No variable
-FREIGHT,river_crossings,Point,cap_1,tracks/lanes,Double,No variable
-FREIGHT,river_crossings,Point,cap_2,dbl stack/vert clearance,String,No variable
-FREIGHT,river_crossings,Point,cap_3,286k/river clearance,String,No variable
-FREIGHT,river_crossings,Point,act_1,act_1,String,No variable
-FREIGHT,river_crossings,Point,source,source,String,No variable
-FREIGHT,river_crossings,Point,link_id,highway/rail link,String,No variable
-FREIGHT,river_crossings,Point,Line,Line,String,No variable
-FREIGHT,river_crossings,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,river_ndc_links,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,river_ndc_links,Polyline,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,river_ndc_links,Polyline,pff_id,pff_id,String,No variable
-FREIGHT,river_ndc_links,Polyline,ndc_id,ndc_id,Double,No variable
-FREIGHT,river_ndc_links,Polyline,LENGTH,length,Double,No variable
-FREIGHT,river_ndc_links,Polyline,DIR,DIR,SmallInteger,No variable
-FREIGHT,river_ndc_links,Polyline,LINK,LINK,Double,No variable
-FREIGHT,river_ndc_links,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,truck_parking,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,truck_parking,Polygon,Id,Id,Integer,No variable
-FREIGHT,truck_parking,Polygon,pff_id,pff_id,String,No variable
-FREIGHT,truck_parking,Polygon,name,name,String,No variable
-FREIGHT,truck_parking,Polygon,owner,owner,String,No variable
-FREIGHT,truck_parking,Polygon,operator,operator,String,No variable
-FREIGHT,truck_parking,Polygon,township,township,String,No variable
+﻿FREIGHT,truck_parking,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,truck_parking,Polygon,Id,ID,Integer,No variable
+FREIGHT,truck_parking,Polygon,pff_id,PFF_ID,String,No variable
+FREIGHT,truck_parking,Polygon,name,NAME,String,No variable
+FREIGHT,truck_parking,Polygon,owner,OWNER,String,No variable
+FREIGHT,truck_parking,Polygon,operator,OPERATOR,String,No variable
+FREIGHT,truck_parking,Polygon,township,TOWNSHIP,String,No variable
 FREIGHT,truck_parking,Polygon,capacity,parking stalls,Double,No variable
 FREIGHT,truck_parking,Polygon,truck_count,truck count,Double,No variable
-FREIGHT,truck_parking,Polygon,source,source,String,No variable
+FREIGHT,truck_parking,Polygon,source,SOURCE,String,No variable
 FREIGHT,truck_parking,Polygon,rating,use rating,String,No variable
 FREIGHT,truck_parking,Polygon,LAT,LAT,Double,No variable
-FREIGHT,truck_parking,Polygon,LONG,LONG,Double,No variable
-FREIGHT,truck_parking,Polygon,cargo,cargo,String,No variable
+FREIGHT,truck_parking,Polygon,LONG_,LONG_,Double,No variable
+FREIGHT,truck_parking,Polygon,cargo,CARGO,String,No variable
 FREIGHT,truck_parking,Polygon,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,truck_parking,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
-FREIGHT,truck_parking,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
-FREIGHT,truck_parking_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,truck_parking_pts,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,truck_parking_pts,Point,pff_id,pff_id,String,No variable
-FREIGHT,truck_parking_pts,Point,tp_id,truck parking link,String,No variable
+FREIGHT,truck_parking,Polygon,GLOBALID,GLOBALID,GlobalID,No variable
+FREIGHT,truck_parking,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
+FREIGHT,truck_parking,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
 FREIGHT,SHRP2_Links,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
 FREIGHT,SHRP2_Links,Polyline,Shape,SHAPE,Geometry,Feature geometry.
 FREIGHT,SHRP2_Links,Polyline,LINK_ID,LINK_ID,Integer,No variable
@@ -2538,24 +2488,72 @@ FREIGHT,SHRP2_Links,Polyline,P_15_16_C,P_15_16_C,String,No variable
 FREIGHT,SHRP2_Links,Polyline,P_17_18_C,P_17_18_C,String,No variable
 FREIGHT,SHRP2_Links,Polyline,P_19_23_C,P_19_23_C,String,No variable
 FREIGHT,SHRP2_Links,Polyline,SHAPE.LEN,SHAPE.LEN,Double,No variable
-FREIGHT,airports,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,airports,Polygon,pff_id,PFF ID,String,No variable
-FREIGHT,airports,Polygon,Shape,SHAPE,Geometry,Feature geometry.
-FREIGHT,airports,Polygon,NAVID,FAA NavID,String,No variable
-FREIGHT,airports,Polygon,Name,Airport Name,String,No variable
-FREIGHT,airports,Polygon,type,Airport Type,String,No variable
-FREIGHT,airports,Polygon,Owner,Airport Owner,String,No variable
-FREIGHT,airports,Polygon,Township,TOWNSHIP,String,No variable
-FREIGHT,airports,Polygon,Cap_1,Runways,Double,No variable
-FREIGHT,airports,Polygon,Cap_2,Runway Length,String,No variable
-FREIGHT,airports,Polygon,Cap_3,Acres,String,No variable
-FREIGHT,airports,Polygon,Activity_1,Annual operations,Double,No variable
-FREIGHT,airports,Polygon,fc_id,Freight Center Link,Double,No variable
-FREIGHT,airports,Polygon,Source,SOURCE,String,No variable
-FREIGHT,airports,Polygon,Towered,TOWERED,String,No variable
-FREIGHT,airports,Polygon,GLOBALID,GLOBALID,GlobalID,No variable
-FREIGHT,airports,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
-FREIGHT,airports,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
+FREIGHT,river_ndc_links,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,river_ndc_links,Polyline,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,river_ndc_links,Polyline,pff_id,pff_id,String,No variable
+FREIGHT,river_ndc_links,Polyline,ndc_id,ndc_id,Double,No variable
+FREIGHT,river_ndc_links,Polyline,LENGTH,length,Double,No variable
+FREIGHT,river_ndc_links,Polyline,DIR,DIR,SmallInteger,No variable
+FREIGHT,river_ndc_links,Polyline,LINK,LINK,Double,No variable
+FREIGHT,river_ndc_links,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,river_crossings,Point,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,river_crossings,Point,pff_id,pff_id,String,No variable
+FREIGHT,river_crossings,Point,name,Bridge name,String,No variable
+FREIGHT,river_crossings,Point,type,bridge type,String,No variable
+FREIGHT,river_crossings,Point,owner,bridge owner,String,No variable
+FREIGHT,river_crossings,Point,operator,bridge operator,String,No variable
+FREIGHT,river_crossings,Point,use,bridge mode,String,No variable
+FREIGHT,river_crossings,Point,town_1,town_1,String,No variable
+FREIGHT,river_crossings,Point,town_2,town_2,String,No variable
+FREIGHT,river_crossings,Point,cap_1,tracks/lanes,Double,No variable
+FREIGHT,river_crossings,Point,cap_2,dbl stack/vert clearance,String,No variable
+FREIGHT,river_crossings,Point,cap_3,286k/river clearance,String,No variable
+FREIGHT,river_crossings,Point,act_1,act_1,String,No variable
+FREIGHT,river_crossings,Point,source,source,String,No variable
+FREIGHT,river_crossings,Point,link_id,highway/rail link,String,No variable
+FREIGHT,river_crossings,Point,Line,Line,String,No variable
+FREIGHT,river_crossings,Point,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,river_channel,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,river_channel,Polyline,SHAPE,SHAPE,Geometry,Feature geometry.
+FREIGHT,river_channel,Polyline,river_id,river link,String,No variable
+FREIGHT,river_channel,Polyline,up_vessels,up_vessels,String,No variable
+FREIGHT,river_channel,Polyline,up_count,up_count,Double,No variable
+FREIGHT,river_channel,Polyline,SHAPE_Length,SHAPE_Length,Double,Length of feature in internal units.
+FREIGHT,river,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,river,Polygon,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,river,Polygon,pff_id,pff_id,String,No variable
+FREIGHT,river,Polygon,NAME,name,String,No variable
+FREIGHT,river,Polygon,townships,river bordering townships,String,No variable
+FREIGHT,river,Polygon,DVRPC_ST,DVRPC_ST,String,No variable
+FREIGHT,river,Polygon,Web_ID,Web_ID,String,No variable
+FREIGHT,river,Polygon,length,length,Double,No variable
+FREIGHT,river,Polygon,width,channel width,Double,No variable
+FREIGHT,river,Polygon,depth,channel depth,Double,No variable
+FREIGHT,river,Polygon,clearance,max air draft,String,No variable
+FREIGHT,river,Polygon,Start,start,Double,No variable
+FREIGHT,river,Polygon,End,end,Double,No variable
+FREIGHT,river,Polygon,Source,source,String,No variable
+FREIGHT,river,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,river,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
+FREIGHT,rail_yards,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,rail_yards,Polygon,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,rail_yards,Polygon,pff_id,pff_id,String,No variable
+FREIGHT,rail_yards,Polygon,Web_ID,Web_ID,String,No variable
+FREIGHT,rail_yards,Polygon,Name,name,String,No variable
+FREIGHT,rail_yards,Polygon,operator,Operator_s,String,No variable
+FREIGHT,rail_yards,Polygon,Owner,owner,String,No variable
+FREIGHT,rail_yards,Polygon,acres,acres,String,No variable
+FREIGHT,rail_yards,Polygon,rail_id,Rail link,String,No variable
+FREIGHT,rail_yards,Polygon,Township,township,String,No variable
+FREIGHT,rail_yards,Polygon,GIS_Acres,GIS_Acres,Double,No variable
+FREIGHT,rail_yards,Polygon,Source,source,String,No variable
+FREIGHT,rail_yards,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,rail_yards,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
+FREIGHT,rail_mileposts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,rail_mileposts,Point,SHAPE,SHAPE,Geometry,Feature geometry.
+FREIGHT,rail_mileposts,Point,pff_id,pff_id,String,No variable
+FREIGHT,rail_mileposts,Point,rail_id,Rail Link,String,No variable
+FREIGHT,rail_mileposts,Point,milepost,milepost,Double,No variable
 FREIGHT,ports,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
 FREIGHT,ports,Polygon,Shape,Shape,Geometry,Feature geometry.
 FREIGHT,ports,Polygon,Port_ID,Port_ID,Double,No variable
@@ -2580,14 +2578,51 @@ FREIGHT,ports,Polygon,Source,Source,String,No variable
 FREIGHT,ports,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
 FREIGHT,ports,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
 FREIGHT,ports,Polygon,PFF_ID,pff_id,String,No variable
-FREIGHT,ship_call_activity,Table,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,ship_call_activity,Table,link_id,link_id,String,No variable
-FREIGHT,ship_call_activity,Table,year,year,Integer,No variable
-FREIGHT,ship_call_activity,Table,calls,calls,Integer,No variable
-FREIGHT,freight_center_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,freight_center_pts,Point,pff_id,pff_id,String,No variable
-FREIGHT,freight_center_pts,Point,fc_id,Freight center link,String,No variable
-FREIGHT,freight_center_pts,Point,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,pipelines,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,pipelines,Polyline,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,pipelines,Polyline,Id,Id,Integer,No variable
+FREIGHT,pipelines,Polyline,TYPE,TYPE,String,No variable
+FREIGHT,pipelines,Polyline,COUNTY,COUNTY,String,No variable
+FREIGHT,pipelines,Polyline,PFF_ID,pff_id,String,No variable
+FREIGHT,pipelines,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,pff_grade_xings,Point,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,pff_grade_xings,Point,pff_id,pff_id,String,No variable
+FREIGHT,pff_grade_xings,Point,fra_id,FRA crossing #,String,No variable
+FREIGHT,pff_grade_xings,Point,rail_id,rail link,String,No variable
+FREIGHT,pff_grade_xings,Point,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,pff_grade_xings,Point,TOTALTRN,TOTALTRN,Double,No variable
+FREIGHT,pff_grade_xings,Point,operator,operator,String,No variable
+FREIGHT,pff_grade_xings,Point,TOTALSWT,TOTALSWT,Double,No variable
+FREIGHT,pff_grade_xings,Point,tracks,tracks,String,No variable
+FREIGHT,pff_grade_xings,Point,Name,name,String,No variable
+FREIGHT,pff_grade_xings,Point,Owner,owner,String,No variable
+FREIGHT,pff_grade_xings,Point,LAT,LAT,Double,No variable
+FREIGHT,pff_grade_xings,Point,LONG,LONG,Double,No variable
+FREIGHT,pff_grade_xings,Point,Street_1,Street_1,String,No variable
+FREIGHT,pff_grade_xings,Point,Rail_Line,Rail_Line,String,No variable
+FREIGHT,pff_grade_xings,Point,Township,township,String,No variable
+FREIGHT,pff_grade_xings,Point,Act,Act,String,No variable
+FREIGHT,pff_grade_xings,Point,Source_1,Source_1,String,No variable
+FREIGHT,nhs_connectors,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,nhs_connectors,Polyline,pff_id,pff_id,String,No variable
+FREIGHT,nhs_connectors,Polyline,name,nhs name,String,No variable
+FREIGHT,nhs_connectors,Polyline,township_s,township_s,String,No variable
+FREIGHT,nhs_connectors,Polyline,cap_1,lanes,Double,No variable
+FREIGHT,nhs_connectors,Polyline,cap_2,cap_2,Double,No variable
+FREIGHT,nhs_connectors,Polyline,aadt,aadt,String,No variable
+FREIGHT,nhs_connectors,Polyline,hwy_id,highway link,String,No variable
+FREIGHT,nhs_connectors,Polyline,link_id,intermodal node link,String,No variable
+FREIGHT,nhs_connectors,Polyline,source,source,String,No variable
+FREIGHT,nhs_connectors,Polyline,LAT,LAT,Double,No variable
+FREIGHT,nhs_connectors,Polyline,LONG,LONG,Double,No variable
+FREIGHT,nhs_connectors,Polyline,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,nhs_connectors,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,maintained_channel,Polygon,OBJECTID_1,OBJECTID_1,OID,Internal feature number.
+FREIGHT,maintained_channel,Polygon,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,maintained_channel,Polygon,NAME,Maintained channel name,String,No variable
+FREIGHT,maintained_channel,Polygon,PFF_ID,pff_id,String,No variable
+FREIGHT,maintained_channel,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,maintained_channel,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
 FREIGHT,intermodal,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
 FREIGHT,intermodal,Polygon,pff_id,pff_id,String,No variable
 FREIGHT,intermodal,Polygon,name,Intermodal terminal name,String,No variable
@@ -2604,17 +2639,167 @@ FREIGHT,intermodal,Polygon,Township,township,String,No variable
 FREIGHT,intermodal,Polygon,Source,source,String,No variable
 FREIGHT,intermodal,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
 FREIGHT,intermodal,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
-FREIGHT,nhs_connector_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,nhs_connector_pts,Point,pff_id,pff_id,String,No variable
-FREIGHT,nhs_connector_pts,Point,nhs_id,NHS Link,String,No variable
-FREIGHT,nhs_connector_pts,Point,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,pipelines,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
-FREIGHT,pipelines,Polyline,Shape,Shape,Geometry,Feature geometry.
-FREIGHT,pipelines,Polyline,Id,Id,Integer,No variable
-FREIGHT,pipelines,Polyline,TYPE,TYPE,String,No variable
-FREIGHT,pipelines,Polyline,COUNTY,COUNTY,String,No variable
-FREIGHT,pipelines,Polyline,PFF_ID,pff_id,String,No variable
-FREIGHT,pipelines,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,highways,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,highways,Polyline,pff_id,pff_id,String,No variable
+FREIGHT,highways,Polyline,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,highways,Polyline,SHIELD,shield,String,No variable
+FREIGHT,highways,Polyline,HWY_NUM,hwy_num,String,No variable
+FREIGHT,highways,Polyline,STATE,state,String,No variable
+FREIGHT,highways,Polyline,Name,Highway name,String,No variable
+FREIGHT,highways,Polyline,Type,Highway classification,String,No variable
+FREIGHT,highways,Polyline,Owner,Highway owner,String,No variable
+FREIGHT,highways,Polyline,section_miles,section_miles,Double,No variable
+FREIGHT,highways,Polyline,Shield_id,shield_id,Double,No variable
+FREIGHT,highways,Polyline,DIR_1,DIR_1,String,No variable
+FREIGHT,highways,Polyline,CAP_1,CAP_1,Double,No variable
+FREIGHT,highways,Polyline,ACT_1A,ACT_1A,String,No variable
+FREIGHT,highways,Polyline,ACT_1B,ACT_1B,String,No variable
+FREIGHT,highways,Polyline,DEVICE_1,DEVICE_1,String,No variable
+FREIGHT,highways,Polyline,DIR_2,DIR_2,String,No variable
+FREIGHT,highways,Polyline,CAP_2,CAP_2,Double,No variable
+FREIGHT,highways,Polyline,ACT_2A,ACT_2A,String,No variable
+FREIGHT,highways,Polyline,ACT_2B,ACT_2B,String,No variable
+FREIGHT,highways,Polyline,DEVICE_2,DEVICE_2,String,No variable
+FREIGHT,highways,Polyline,SHLD_ID,SHLD_ID,String,No variable
+FREIGHT,highways,Polyline,YEAR,YEAR,Double,No variable
+FREIGHT,highways,Polyline,GIS_MILES,GIS_MILES,Double,No variable
+FREIGHT,highways,Polyline,SOURCE,SOURCE,String,No variable
+FREIGHT,highways,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,heliport,Point,OBJECTID_1,OBJECTID_1,OID,Internal feature number.
+FREIGHT,heliport,Point,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,heliport,Point,OBJECTID,OBJECTID,Double,No variable
+FREIGHT,heliport,Point,Type,Type,String,No variable
+FREIGHT,heliport,Point,pff_id,PFF and FAA Navigation ID,String,No variable
+FREIGHT,heliport,Point,StateNam,StateNam,String,No variable
+FREIGHT,heliport,Point,County,County,String,No variable
+FREIGHT,heliport,Point,City,City,String,No variable
+FREIGHT,heliport,Point,Facility,Facility,String,No variable
+FREIGHT,heliport,Point,Ownershi,Ownershi,String,No variable
+FREIGHT,heliport,Point,Use,Use,String,No variable
+FREIGHT,heliport,Point,Owner,Owner,String,No variable
+FREIGHT,heliport,Point,Size,Size,String,No variable
+FREIGHT,heliport,Point,Report,Report,String,No variable
+FREIGHT,good_neighbor_pts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,good_neighbor_pts,Point,pff_id,pff_id,String,No variable
+FREIGHT,good_neighbor_pts,Point,Descr1,Descr1,String,No variable
+FREIGHT,good_neighbor_pts,Point,Descr2,Descr2,String,No variable
+FREIGHT,good_neighbor_pts,Point,Descr3,Descr3,String,No variable
+FREIGHT,good_neighbor_pts,Point,Municipality,Municipality,String,No variable
+FREIGHT,good_neighbor_pts,Point,County,County,String,No variable
+FREIGHT,good_neighbor_pts,Point,Id,Id,Integer,No variable
+FREIGHT,good_neighbor_pts,Point,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,freight_rail,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,freight_rail,Polyline,pff_id,pff_id,String,No variable
+FREIGHT,freight_rail,Polyline,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,freight_rail,Polyline,Type,Freight rail type,String,No variable
+FREIGHT,freight_rail,Polyline,start,rail milepost start,String,No variable
+FREIGHT,freight_rail,Polyline,end,rail milepost end,String,No variable
+FREIGHT,freight_rail,Polyline,Owner,Rail owner,String,No variable
+FREIGHT,freight_rail,Polyline,trk_main,Mainline Tracks,Double,No variable
+FREIGHT,freight_rail,Polyline,trk_side,Siding tracks,String,No variable
+FREIGHT,freight_rail,Polyline,trk_multi,Multi level cars,String,No variable
+FREIGHT,freight_rail,Polyline,trk_dbl,Double stack clearance,String,No variable
+FREIGHT,freight_rail,Polyline,trk_weight,286k capacity,String,No variable
+FREIGHT,freight_rail,Polyline,trk_plate,Plate clearance,String,No variable
+FREIGHT,freight_rail,Polyline,trk_trains,Activity,String,No variable
+FREIGHT,freight_rail,Polyline,Operator,rail operator,String,No variable
+FREIGHT,freight_rail,Polyline,MILES,miles,Double,No variable
+FREIGHT,freight_rail,Polyline,Name,Rail segment name,String,No variable
+FREIGHT,freight_rail,Polyline,Source,source,String,No variable
+FREIGHT,freight_rail,Polyline,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,freight_centers,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,freight_centers,Polygon,pff_id,pff_id,String,No variable
+FREIGHT,freight_centers,Polygon,name,freight center name,String,No variable
+FREIGHT,freight_centers,Polygon,center_typ,Center Type,String,No variable
+FREIGHT,freight_centers,Polygon,township_s,township_s,String,No variable
+FREIGHT,freight_centers,Polygon,acres,acres,String,No variable
+FREIGHT,freight_centers,Polygon,rail_id,Rail link,String,No variable
+FREIGHT,freight_centers,Polygon,source,source,String,No variable
+FREIGHT,freight_centers,Polygon,County,County,String,No variable
+FREIGHT,freight_centers,Polygon,Acres_1,Acres_1,Double,No variable
+FREIGHT,freight_centers,Polygon,Id,Id,Integer,No variable
+FREIGHT,freight_centers,Polygon,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,freight_centers,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,freight_centers,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
+FREIGHT,anchorages,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,anchorages,Polygon,pff_id,pff_id,String,No variable
+FREIGHT,anchorages,Polygon,Shape,Shape,Geometry,Feature geometry.
+FREIGHT,anchorages,Polygon,Name,Anchorage name,String,No variable
+FREIGHT,anchorages,Polygon,Township_s,township_s,String,No variable
+FREIGHT,anchorages,Polygon,length,anchorage length,Double,No variable
+FREIGHT,anchorages,Polygon,Start,start,Double,No variable
+FREIGHT,anchorages,Polygon,End,end,Double,No variable
+FREIGHT,anchorages,Polygon,Source,source,String,No variable
+FREIGHT,anchorages,Polygon,Shape_Length,Shape_Length,Double,Length of feature in internal units.
+FREIGHT,anchorages,Polygon,Shape_Area,Shape_Area,Double,Area of feature in internal units squared.
+FREIGHT,airports,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,airports,Polygon,pff_id,PFF ID,String,No variable
+FREIGHT,airports,Polygon,Shape,SHAPE,Geometry,Feature geometry.
+FREIGHT,airports,Polygon,NAVID,FAA NavID,String,No variable
+FREIGHT,airports,Polygon,Name,Airport Name,String,No variable
+FREIGHT,airports,Polygon,type,Airport Type,String,No variable
+FREIGHT,airports,Polygon,Owner,Airport Owner,String,No variable
+FREIGHT,airports,Polygon,Township,TOWNSHIP,String,No variable
+FREIGHT,airports,Polygon,Cap_1,Runways,Double,No variable
+FREIGHT,airports,Polygon,Cap_2,Runway Length,String,No variable
+FREIGHT,airports,Polygon,Cap_3,Acres,String,No variable
+FREIGHT,airports,Polygon,Activity_1,Annual operations,Double,No variable
+FREIGHT,airports,Polygon,fc_id,Freight Center Link,Double,No variable
+FREIGHT,airports,Polygon,Source,SOURCE,String,No variable
+FREIGHT,airports,Polygon,Towered,TOWERED,String,No variable
+FREIGHT,airports,Polygon,GLOBALID,GLOBALID,GlobalID,No variable
+FREIGHT,airports,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
+FREIGHT,airports,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
+FREIGHT,ndc_link_tons,Table,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,ndc_link_tons,Table,link,link,Double,No variable
+FREIGHT,ndc_link_tons,Table,year,year,Double,No variable
+FREIGHT,ndc_link_tons,Table,tot_up,total up,Double,No variable
+FREIGHT,ndc_link_tons,Table,tot_dwn,total down,Double,No variable
+FREIGHT,ndc_link_tons,Table,F10up,coal up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F10dwn,coal down,Double,No variable
+FREIGHT,ndc_link_tons,Table,F20up,petroleum up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F20dwn,petroleum down,Double,No variable
+FREIGHT,ndc_link_tons,Table,F30up,chemicals up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F30dwn,chemicals down,Double,No variable
+FREIGHT,ndc_link_tons,Table,F40up,crude materials up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F40dwn,crude materials down,Double,No variable
+FREIGHT,ndc_link_tons,Table,manufactured,manufactured up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F50dwn,manufactured down,Double,No variable
+FREIGHT,ndc_link_tons,Table,F60up,farm up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F60dwn,farm down,Double,No variable
+FREIGHT,ndc_link_tons,Table,F70up,machinery up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F70dwn,machinery down,Double,No variable
+FREIGHT,ndc_link_tons,Table,F80up,waste up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F80dwn,waste down,Double,No variable
+FREIGHT,ndc_link_tons,Table,F90up,unknown up,Double,No variable
+FREIGHT,ndc_link_tons,Table,F90dwn,unknown down,Double,No variable
+FREIGHT,pff_feature_prefix,Table,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,pff_feature_prefix,Table,feature_class,feature_class,String,No variable
+FREIGHT,pff_feature_prefix,Table,prefix,prefix,String,No variable
+FREIGHT,product_pipelines,Table,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,product_pipelines,Table,PFF_ID,pff_id,String,No variable
+FREIGHT,product_pipelines,Table,name,name,String,No variable
+FREIGHT,product_pipelines,Table,owner,owner,String,No variable
+FREIGHT,product_pipelines,Table,product,product,String,No variable
+FREIGHT,product_pipelines,Table,capacity,capacity,Double,No variable
+FREIGHT,product_pipelines,Table,origin,origin,String,No variable
+FREIGHT,product_pipelines,Table,destination,destination,String,No variable
+FREIGHT,ship_call_activity,Table,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,ship_call_activity,Table,link_id,link_id,String,No variable
+FREIGHT,ship_call_activity,Table,year,year,Integer,No variable
+FREIGHT,ship_call_activity,Table,calls,calls,Integer,No variable
+FREIGHT,energy_terminals,Point,OBJECTID,OBJECTID,OID,Internal feature number.
+FREIGHT,energy_terminals,Point,pff_id,pff_id,String,No variable
+FREIGHT,energy_terminals,Point,name,Energy terminal name,String,No variable
+FREIGHT,energy_terminals,Point,operator,Energy terminal operator,String,No variable
+FREIGHT,energy_terminals,Point,type,Energy terminal type,String,No variable
+FREIGHT,energy_terminals,Point,port_link,Port Link,String,No variable
+FREIGHT,energy_terminals,Point,pipeline_link,pipelines,String,No variable
+FREIGHT,energy_terminals,Point,tank_link,tank farms,String,No variable
+FREIGHT,energy_terminals,Point,ref_capacity,refining capacity,Double,No variable
+FREIGHT,energy_terminals,Point,pipeline_in,pipe_in,String,No variable
+FREIGHT,energy_terminals,Point,pipeline_out,pipe_out,String,No variable
+FREIGHT,energy_terminals,Point,SHAPE,SHAPE,Geometry,Feature geometry.
 FREIGHT,energy_storage,Table,OBJECTID,OBJECTID,OID,Internal feature number.
 FREIGHT,energy_storage,Table,pff_id,PFF_ID,String,No variable
 FREIGHT,energy_storage,Table,port_id,PORT_ID,String,No variable
@@ -6944,6 +7129,23 @@ PLANNING,DNT,Point,Photos,Photos,String,No variable
 PLANNING,DNT,Point,Photo_Cred,Photo_Cred,String,No variable
 PLANNING,DNT,Point,PHOTO1,PHOTO1,String,No variable
 PLANNING,DNT,Point,PHOTO2,PHOTO2,String,No variable
+PLANNING,NJ_PreservedFarmland,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
+PLANNING,NJ_PreservedFarmland,Polygon,STATUS,STATUS,String,Preservation status of the farm application in the NJSFPP.
+PLANNING,NJ_PreservedFarmland,Polygon,NUM_GIS_AC,NUM_GIS_AC,Double,GIS calculated acres for each spatial feature
+PLANNING,NJ_PreservedFarmland,Polygon,NJFARMS_ID,NJFARMS_ID,Integer,Internal ID number
+PLANNING,NJ_PreservedFarmland,Polygon,BLOCK_LOT,BLOCK_LOT,String,Pairs of municipal block and lot number combinations.
+PLANNING,NJ_PreservedFarmland,Polygon,CNTY_MUNI,CNTY_MUNI,String,Three letter county abbreviation and municipal name.
+PLANNING,NJ_PreservedFarmland,Polygon,ROUND,ROUND,String,SADC funding round used to preserve the farm.
+PLANNING,NJ_PreservedFarmland,Polygon,PARCEL_TYP,PARCEL_TYP,String,General description of spatial feature.
+PLANNING,NJ_PreservedFarmland,Polygon,NJFARMS_,NJFARMS_,Integer,Internal ID number
+PLANNING,NJ_PreservedFarmland,Polygon,IDN_GIS,IDN_GIS,Integer,Unique sequential identification number used to join/link to the Oracle RDMS.
+PLANNING,NJ_PreservedFarmland,Polygon,PROGRAM,PROGRAM,String,Specific farmland preservation program used to fund the preservation of the farm.
+PLANNING,NJ_PreservedFarmland,Polygon,Shape,SHAPE,Geometry,Feature geometry.
+PLANNING,NJ_PreservedFarmland,Polygon,SOURCE,SOURCE,String,Original source of each spatial feature.
+PLANNING,NJ_PreservedFarmland,Polygon,EASEMENT,EASEMENT,Integer,Total acreage of preserved easement for farm.
+PLANNING,NJ_PreservedFarmland,Polygon,PRESERVED,PRESERVED,Date,Date that the farm was preserved - closing date.
+PLANNING,NJ_PreservedFarmland,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
+PLANNING,NJ_PreservedFarmland,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
 PLANNING,NJ_OpenSpace,Polygon,TYPE,TYPE,String,No variable
 PLANNING,NJ_OpenSpace,Polygon,PLANNING.NJ_OpenSpace.AREA,PLANNING.NJ_OpenSpace.AREA,Double,No variable
 PLANNING,NJ_OpenSpace,Polygon,Shape,Shape,Geometry,Feature geometry.
@@ -7030,24 +7232,6 @@ PLANNING,DVRPC_ProtectedOpenSpace,Polygon,GIS_Acres,GIS_ACRES,Double,Acreage cal
 PLANNING,DVRPC_ProtectedOpenSpace,Polygon,Co_Name,CO_NAME,String,County Name
 PLANNING,DVRPC_ProtectedOpenSpace,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
 PLANNING,DVRPC_ProtectedOpenSpace,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
-PLANNING,NJ_PreservedFarmland,Polygon,OBJECTID_1,OBJECTID_1,OID,Internal feature number.
-PLANNING,NJ_PreservedFarmland,Polygon,STATUS,STATUS,String,Preservation status of the farm application in the NJSFPP.
-PLANNING,NJ_PreservedFarmland,Polygon,NUM_GIS_AC,NUM_GIS_AC,Double,GIS calculated acres for each spatial feature
-PLANNING,NJ_PreservedFarmland,Polygon,OBJECTID,OBJECTID,Integer,No variable
-PLANNING,NJ_PreservedFarmland,Polygon,NJFARMS_ID,NJFARMS_ID,Integer,Internal ID number
-PLANNING,NJ_PreservedFarmland,Polygon,BLOCK_LOT,BLOCK_LOT,String,Pairs of municipal block and lot number combinations.
-PLANNING,NJ_PreservedFarmland,Polygon,CNTY_MUNI,CNTY_MUNI,String,Three letter county abbreviation and municipal name.
-PLANNING,NJ_PreservedFarmland,Polygon,ROUND,ROUND,String,SADC funding round used to preserve the farm.
-PLANNING,NJ_PreservedFarmland,Polygon,PARCEL_TYP,PARCEL_TYP,String,General description of spatial feature.
-PLANNING,NJ_PreservedFarmland,Polygon,NJFARMS_,NJFARMS_,Integer,Internal ID number
-PLANNING,NJ_PreservedFarmland,Polygon,IDN_GIS,IDN_GIS,Integer,Unique sequential identification number used to join/link to the Oracle RDMS.
-PLANNING,NJ_PreservedFarmland,Polygon,PROGRAM,PROGRAM,String,Specific farmland preservation program used to fund the preservation of the farm.
-PLANNING,NJ_PreservedFarmland,Polygon,Shape,SHAPE,Geometry,Feature geometry.
-PLANNING,NJ_PreservedFarmland,Polygon,SOURCE,SOURCE,String,Original source of each spatial feature.
-PLANNING,NJ_PreservedFarmland,Polygon,EASEMENT,EASEMENT,Integer,Total acreage of preserved easement for farm.
-PLANNING,NJ_PreservedFarmland,Polygon,PRESERVED,PRESERVED,Date,Date that the farm was preserved - closing date.
-PLANNING,NJ_PreservedFarmland,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
-PLANNING,NJ_PreservedFarmland,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
 PLANNING,DVRPC_LandUse_2010,Polygon,GEOID_10,OBJECTID,OID,Area of feature in internal units squared.
 PLANNING,DVRPC_LandUse_2010,Polygon,LU_5Cat,LU_5CAT,String,Internal feature number.
 PLANNING,DVRPC_LandUse_2010,Polygon,LU_Label,LU_LABEL,String,Land Use description
@@ -7449,6 +7633,190 @@ STRUCTURES,PrivateSchools_2012,Point,gc_lon,gc_lon,Double,No variable
 STRUCTURES,PrivateSchools_2012,Point,Shape,Shape,Geometry,Feature geometry.
 STRUCTURES,PrivateSchools_2012,Point,DVRPC_Reg,DVRPC_Reg,String,No variable
 STRUCTURES,PrivateSchools_2012,Point,DVRPC_28Co,DVRPC_28Co,String,No variable
+STRUCTURES,CoStarProperties,Point,OBJECTID,OBJECTID,OID,Internal feature number.
+STRUCTURES,CoStarProperties,Point,Shape,Shape,Geometry,Feature geometry.
+STRUCTURES,CoStarProperties,Point,PropertyID,PropertyID,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Building_Address,Building Address,String,No variable
+STRUCTURES,CoStarProperties,Point,Building_Name,Building Name,String,No variable
+STRUCTURES,CoStarProperties,Point,PropertyType,PropertyType,String,No variable
+STRUCTURES,CoStarProperties,Point,Secondary_Type,Secondary Type,String,No variable
+STRUCTURES,CoStarProperties,Point,Building_Status,Building Status,String,No variable
+STRUCTURES,CoStarProperties,Point,Building_Class,Building Class,String,No variable
+STRUCTURES,CoStarProperties,Point,Star_Rating,Star Rating,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Zoning,Zoning,String,No variable
+STRUCTURES,CoStarProperties,Point,Style,Style,String,No variable
+STRUCTURES,CoStarProperties,Point,Rentable_Building_Area,Rentable Building Area,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Land_Area_AC,Land Area (AC),Double,No variable
+STRUCTURES,CoStarProperties,Point,Building_Park,Building Park,String,No variable
+STRUCTURES,CoStarProperties,Point,City,City,String,No variable
+STRUCTURES,CoStarProperties,Point,State,State,String,No variable
+STRUCTURES,CoStarProperties,Point,Zip,Zip,String,No variable
+STRUCTURES,CoStarProperties,Point,County_Name,County Name,String,No variable
+STRUCTURES,CoStarProperties,Point,Cross_Street,Cross Street,String,No variable
+STRUCTURES,CoStarProperties,Point,Percent_Leased,Percent Leased,Double,No variable
+STRUCTURES,CoStarProperties,Point,Year_Built,Year Built,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Year_Renovated,Year Renovated,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Construction_Material,Construction Material,String,No variable
+STRUCTURES,CoStarProperties,Point,Number_Of_Parking_Spaces,Number Of Parking Spaces,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Parking_Ratio,Parking Ratio,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Parking_Spaces_Unit,Parking Spaces/Unit,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Core_Factor,Core Factor,Double,No variable
+STRUCTURES,CoStarProperties,Point,Direct_Available_Space,Direct Available Space,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Direct_Vacant_Space,Direct Vacant Space,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Max_Building_Contiguous_Space,Max Building Contiguous Space,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Max_Floor_Contiguous_Space,Max Floor Contiguous Space,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Number_Of_Stories,Number Of Stories,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Smallest_Available_Space,Smallest Available Space,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Total_Available_Space_SF,Total Available Space (SF),Integer,No variable
+STRUCTURES,CoStarProperties,Point,Total_Buildings,Total Buildings,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Typical_Floor_Size,Typical Floor Size,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Office_Space,Office Space,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Anchor_GLA,Anchor GLA,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Anchor_Tenants,Anchor Tenants,String,No variable
+STRUCTURES,CoStarProperties,Point,Exp_Year,Exp Year,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Sublet_Available_Space,Sublet Available Space,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Sublet_Services,Sublet Services,String,No variable
+STRUCTURES,CoStarProperties,Point,Sublet_Vacant_Space,Sublet Vacant Space,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Total_New_Space_SF,Total New Space (SF),Integer,No variable
+STRUCTURES,CoStarProperties,Point,Total_Relet_Space_SF,Total Relet Space (SF),Integer,No variable
+STRUCTURES,CoStarProperties,Point,Total_Sublet_Space_SF,Total Sublet Space (SF),Integer,No variable
+STRUCTURES,CoStarProperties,Point,Total_Vacant_Available,Total Vacant Available,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Total_Vacant_Avail_Relet_Space_SF,Total Vacant Avail Relet Space (SF),Integer,No variable
+STRUCTURES,CoStarProperties,Point,Total_Vacant_Avail_Sublet_Space_SF,Total Vacant Avail Sublet Space (SF),Integer,No variable
+STRUCTURES,CoStarProperties,Point,Vacancy_PCT,Vacancy %,Double,No variable
+STRUCTURES,CoStarProperties,Point,Days_On_Market,Days On Market,Integer,No variable
+STRUCTURES,CoStarProperties,Point,For_Sale_Price,For Sale Price,Integer,No variable
+STRUCTURES,CoStarProperties,Point,For_Sale_Status,For Sale Status,String,No variable
+STRUCTURES,CoStarProperties,Point,Last_Sale_Date,Last Sale Date,Date,No variable
+STRUCTURES,CoStarProperties,Point,Last_Sale_Price,Last Sale Price,Double,No variable
+STRUCTURES,CoStarProperties,Point,Price_Unit,$Price/Unit,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Average_Weighted_Rent,Average Weighted Rent,Double,No variable
+STRUCTURES,CoStarProperties,Point,Avg_Concessions_PCT,Avg Concessions %,Double,No variable
+STRUCTURES,CoStarProperties,Point,Avg_Rent_Direct_Industrial,Avg Rent-Direct (Industrial),Double,No variable
+STRUCTURES,CoStarProperties,Point,Avg_Rent_Direct_Office,Avg Rent-Direct (Office),Double,No variable
+STRUCTURES,CoStarProperties,Point,Avg_Rent_Direct_Retail,Avg Rent-Direct (Retail),Double,No variable
+STRUCTURES,CoStarProperties,Point,Avg_Rent_Sublet_Industrial,Avg Rent-Sublet (Industrial),Double,No variable
+STRUCTURES,CoStarProperties,Point,Avg_Rent_Sublet_Office,Avg Rent-Sublet (Office),Double,No variable
+STRUCTURES,CoStarProperties,Point,Avg_Rent_Sublet_Retail,Avg Rent-Sublet (Retail),Double,No variable
+STRUCTURES,CoStarProperties,Point,Building_Operating_Expenses,Building Operating Expenses,String,No variable
+STRUCTURES,CoStarProperties,Point,Building_Tax_Expenses,Building Tax Expenses,String,No variable
+STRUCTURES,CoStarProperties,Point,Cap_Rate,Cap Rate,Double,No variable
+STRUCTURES,CoStarProperties,Point,Ops_Expense,Ops Expense,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Ops_Expense_Per_SF,Ops Expense Per SF,Double,No variable
+STRUCTURES,CoStarProperties,Point,Taxes_Per_SF,Taxes Per SF,Double,No variable
+STRUCTURES,CoStarProperties,Point,Taxes_Total,Taxes Total,Double,No variable
+STRUCTURES,CoStarProperties,Point,Tax_Year,Tax Year,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Affordable_Type,Affordable Type,String,No variable
+STRUCTURES,CoStarProperties,Point,Market_Segment,Market Segment,String,No variable
+STRUCTURES,CoStarProperties,Point,PCT_Studios,% Studios,Double,No variable
+STRUCTURES,CoStarProperties,Point,PCT_1_Bed,% 1-Bed,Double,No variable
+STRUCTURES,CoStarProperties,Point,PCT_2_Bed,% 2-Bed,Double,No variable
+STRUCTURES,CoStarProperties,Point,PCT_3_Bed,% 3-Bed,Double,No variable
+STRUCTURES,CoStarProperties,Point,PCT_4_Bed,% 4-Bed,Double,No variable
+STRUCTURES,CoStarProperties,Point,Rent_Type,Rent Type,String,No variable
+STRUCTURES,CoStarProperties,Point,Number_Of_Studios,Number Of Studios,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Number_Of_1_Bedrooms,Number Of 1 Bedrooms,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Number_Of_2_Bedrooms,Number Of 2 Bedrooms,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Number_Of_3_Bedrooms,Number Of 3 Bedrooms,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Number_Of_4_Bedrooms,Number Of 4 Bedrooms,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Number_Of_Units,Number Of Units,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Avg_Asking_SF,Avg Asking/SF,Double,No variable
+STRUCTURES,CoStarProperties,Point,Studio_Asking_Rent_SF,Studio Asking Rent/SF,Double,No variable
+STRUCTURES,CoStarProperties,Point,Studio_Asking_Rent_Unit,Studio Asking Rent/Unit,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Studio_Avg_SF,Studio Avg SF,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Studio_Concessions_PCT,Studio Concessions %,Double,No variable
+STRUCTURES,CoStarProperties,Point,Studio_Effective_Rent_SF,Studio Effective Rent/SF,Double,No variable
+STRUCTURES,CoStarProperties,Point,Studio_Effective_Rent_Unit,Studio Effective Rent/Unit,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Studio_Vacancy_PCT,Studio Vacancy %,Double,No variable
+STRUCTURES,CoStarProperties,Point,Studio_Vacant_Units,Studio Vacant Units,Integer,No variable
+STRUCTURES,CoStarProperties,Point,One_Bedroom_Asking_Rent_SF,One Bedroom Asking Rent/SF,Double,No variable
+STRUCTURES,CoStarProperties,Point,One_Bedroom_Asking_Rent_Unit,One Bedroom Asking Rent/Unit,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Avg_Asking_Unit,Avg Asking/Unit,Double,No variable
+STRUCTURES,CoStarProperties,Point,One_Bedroom_Avg_SF,One Bedroom Avg SF,Integer,No variable
+STRUCTURES,CoStarProperties,Point,One_Bedroom_Concessions_PCT,One Bedroom Concessions %,Double,No variable
+STRUCTURES,CoStarProperties,Point,One_Bedroom_Effective_Rent_SF,One Bedroom Effective Rent/SF,Double,No variable
+STRUCTURES,CoStarProperties,Point,One_Bedroom_Effective_Rent_Unit,One Bedroom Effective Rent/Unit,Integer,No variable
+STRUCTURES,CoStarProperties,Point,One_Bedroom_Vacancy_PCT,One Bedroom Vacancy %,Double,No variable
+STRUCTURES,CoStarProperties,Point,One_Bedroom_Vacant_Units,One Bedroom Vacant Units,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Two_Bedroom_Asking_Rent_SF,Two Bedroom Asking Rent/SF,Double,No variable
+STRUCTURES,CoStarProperties,Point,Two_Bedroom_Asking_Rent_Unit,Two Bedroom Asking Rent/Unit,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Two_Bedroom_Avg_SF,Two Bedroom Avg SF,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Two_Bedroom_Concessions_PCT,Two Bedroom Concessions %,Double,No variable
+STRUCTURES,CoStarProperties,Point,Avg_Effective_SF,Avg Effective/SF,Double,No variable
+STRUCTURES,CoStarProperties,Point,Two_Bedroom_Effective_Rent_SF,Two Bedroom Effective Rent/SF,Double,No variable
+STRUCTURES,CoStarProperties,Point,Two_Bedroom_Effective_Rent_Unit,Two Bedroom Effective Rent/Unit,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Two_Bedroom_Vacancy_PCT,Two Bedroom Vacancy %,Double,No variable
+STRUCTURES,CoStarProperties,Point,Two_Bedroom_Vacant_Units,Two Bedroom Vacant Units,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Three_Bedroom_Asking_Rent_SF,Three Bedroom Asking Rent/SF,Double,No variable
+STRUCTURES,CoStarProperties,Point,Three_Bedroom_Asking_Rent_Unit,Three Bedroom Asking Rent/Unit,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Three_Bedroom_Avg_SF,Three Bedroom Avg SF,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Three_Bedroom_Concessions_PCT,Three Bedroom Concessions %,Double,No variable
+STRUCTURES,CoStarProperties,Point,Three_Bedroom_Effective_Rent_SF,Three Bedroom Effective Rent/SF,Double,No variable
+STRUCTURES,CoStarProperties,Point,Three_Bedroom_Effective_Rent_Unit,Three Bedroom Effective Rent/Unit,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Avg_Effective_Unit,Avg Effective/Unit,Double,No variable
+STRUCTURES,CoStarProperties,Point,Three_Bedroom_Vacancy_PCT,Three Bedroom Vacancy %,Double,No variable
+STRUCTURES,CoStarProperties,Point,Three_Bedroom_Vacant_Units,Three Bedroom Vacant Units,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Four_Bedroom_Asking_Rent_SF,Four Bedroom Asking Rent/SF,Double,No variable
+STRUCTURES,CoStarProperties,Point,Four_Bedroom_Asking_Rent_Unit,Four Bedroom Asking Rent/Unit,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Four_Bedroom_Avg_SF,Four Bedroom Avg SF,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Four_Bedroom_Concessions_PCT,Four Bedroom Concessions %,Double,No variable
+STRUCTURES,CoStarProperties,Point,Four_Bedroom_Effective_Rent_SF,Four Bedroom Effective Rent/SF,Double,No variable
+STRUCTURES,CoStarProperties,Point,Four_Bedroom_Effective_Rent_Unit,Four Bedroom Effective Rent/Unit,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Four_Bedroom_Vacancy_PCT,Four Bedroom Vacancy %,Double,No variable
+STRUCTURES,CoStarProperties,Point,Four_Bedroom_Vacant_Units,Four Bedroom Vacant Units,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Avg_Unit_SF,Avg Unit SF,Double,No variable
+STRUCTURES,CoStarProperties,Point,Closest_Transit_Stop,Closest Transit Stop,String,No variable
+STRUCTURES,CoStarProperties,Point,Closest_Transit_Stop_Dist_mi,Closest Transit Stop Dist (mi),Double,No variable
+STRUCTURES,CoStarProperties,Point,Closest_Transit_Stop_Walk_Time_min,Closest Transit Stop Walk Time (min),Double,No variable
+STRUCTURES,CoStarProperties,Point,Rail_Lines,Rail Lines,String,No variable
+STRUCTURES,CoStarProperties,Point,Sprinklers,Sprinklers,String,No variable
+STRUCTURES,CoStarProperties,Point,Amenities,Amenities,String,No variable
+STRUCTURES,CoStarProperties,Point,Direct_Services,Direct Services,Double,No variable
+STRUCTURES,CoStarProperties,Point,Energy_Star,Energy Star,String,No variable
+STRUCTURES,CoStarProperties,Point,Features,Features,String,No variable
+STRUCTURES,CoStarProperties,Point,Gas,Gas,String,No variable
+STRUCTURES,CoStarProperties,Point,Heating,Heating,String,No variable
+STRUCTURES,CoStarProperties,Point,LEED_Certified,LEED Certified,String,No variable
+STRUCTURES,CoStarProperties,Point,Number_Of_Cranes,Number Of Cranes,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Number_Of_Elevators,Number Of Elevators,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Power,Power,String,No variable
+STRUCTURES,CoStarProperties,Point,Services,Services,String,No variable
+STRUCTURES,CoStarProperties,Point,Sewer,Sewer,String,No variable
+STRUCTURES,CoStarProperties,Point,Water,Water,String,No variable
+STRUCTURES,CoStarProperties,Point,Column_Spacing,Column Spacing,String,No variable
+STRUCTURES,CoStarProperties,Point,Ceiling_Height_Range,Ceiling Height Range,String,No variable
+STRUCTURES,CoStarProperties,Point,Drive_Ins,Drive Ins,String,No variable
+STRUCTURES,CoStarProperties,Point,Number_Of_Loading_Docks,Number Of Loading Docks,Integer,No variable
+STRUCTURES,CoStarProperties,Point,Architect_Name,Architect Name,String,No variable
+STRUCTURES,CoStarProperties,Point,Developer_Name,Developer Name,String,No variable
+STRUCTURES,CoStarProperties,Point,Leasing_Company_Address,Leasing Company Address,String,No variable
+STRUCTURES,CoStarProperties,Point,Leasing_Company_City_State_Zip,Leasing Company City State Zip,String,No variable
+STRUCTURES,CoStarProperties,Point,Leasing_Company_Contact,Leasing Company Contact,String,No variable
+STRUCTURES,CoStarProperties,Point,Leasing_Company_Fax,Leasing Company Fax,String,No variable
+STRUCTURES,CoStarProperties,Point,Leasing_Company_Name,Leasing Company Name,String,No variable
+STRUCTURES,CoStarProperties,Point,Leasing_Company_Phone,Leasing Company Phone,String,No variable
+STRUCTURES,CoStarProperties,Point,Owner_Address,Owner Address,String,No variable
+STRUCTURES,CoStarProperties,Point,Owner_City_State_Zip,Owner City State Zip,String,No variable
+STRUCTURES,CoStarProperties,Point,Owner_Contact,Owner Contact,String,No variable
+STRUCTURES,CoStarProperties,Point,Owner_Name,Owner Name,String,No variable
+STRUCTURES,CoStarProperties,Point,Owner_Phone,Owner Phone,String,No variable
+STRUCTURES,CoStarProperties,Point,Primary_Agent_Name,Primary Agent Name,String,No variable
+STRUCTURES,CoStarProperties,Point,Property_Manager_Address,Property Manager Address,String,No variable
+STRUCTURES,CoStarProperties,Point,Property_Manager_City_State_Zip,Property Manager City State Zip,String,No variable
+STRUCTURES,CoStarProperties,Point,Property_Manager_Contact,Property Manager Contact,String,No variable
+STRUCTURES,CoStarProperties,Point,Property_Manager_Name,Property Manager Name,String,No variable
+STRUCTURES,CoStarProperties,Point,Property_Manager_Phone,Property Manager Phone,String,No variable
+STRUCTURES,CoStarProperties,Point,Market_Name,Market Name,String,No variable
+STRUCTURES,CoStarProperties,Point,Submarket_Cluster,Submarket Cluster,String,No variable
+STRUCTURES,CoStarProperties,Point,Submarket_Name,Submarket Name,String,No variable
+STRUCTURES,CoStarProperties,Point,Building_Location,Building Location,String,No variable
+STRUCTURES,CoStarProperties,Point,Latitude,Latitude,Double,No variable
+STRUCTURES,CoStarProperties,Point,Longitude,Longitude,Double,No variable
+STRUCTURES,CoStarProperties,Point,Parcel_Number_1_Min,Parcel Number 1(Min),String,No variable
+STRUCTURES,CoStarProperties,Point,Parcel_Number_2_Max,Parcel Number 2(Max),String,No variable
+STRUCTURES,CoStarProperties,Point,Serial,Serial,String,No variable
+STRUCTURES,CoStarProperties,Point,PropertyType_Major,PropertyType (Major),String,No variable
+STRUCTURES,CoStarProperties,Point,PropertyType_Minor,PropertyType (Minor),String,No variable
 STRUCTURES,NJ_FireSta,Point,OWNER,OBJECTID,OID,"
 The type of ownership for the entity. 
 
@@ -7881,7 +8249,7 @@ TRANSPORTATION,NJTIP_FY2014_2017,Point,desc9,DESC9,String,No variable
 TRANSPORTATION,NJTIP_FY2014_2017,Point,desc10,DESC10,String,No variable
 TRANSPORTATION,NJTIP_FY2014_2017,Point,desc11,DESC11,String,No variable
 TRANSPORTATION,NJTIP_FY2014_2017,Point,desc12,DESC12,String,No variable
-TRANSPORTATION,NJTIP_FY2014_2017,Point,GlobalID,GlobalID,GlobalID,No variable
+TRANSPORTATION,NJTIP_FY2014_2017,Point,GlobalID,GLOBALID,GlobalID,No variable
 TRANSPORTATION,NJ_Centerline,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
 TRANSPORTATION,NJ_Centerline,Polyline,SHAPE,SHAPE,Geometry,Feature geometry.
 TRANSPORTATION,NJ_Centerline,Polyline,SEG_GUID,SEG_GUID,String,"Unique road segment identifier. If a segment is split, new SEG_GUIDs are assigned to the resulting segments. If a segment is no longer active, the SEG_GUID is retired."
@@ -8069,7 +8437,7 @@ TRANSPORTATION,PATIP_FY2015_2018_Line,Polyline,ROAD_NAME,ROAD_NAME,String,No var
 TRANSPORTATION,PATIP_FY2015_2018_Line,Polyline,DESCRIPTIO,DESCRIPTIO,String,No variable
 TRANSPORTATION,PATIP_FY2015_2018_Line,Polyline,REPORT,REPORT,String,No variable
 TRANSPORTATION,PATIP_FY2015_2018_Line,Polyline,Shape,SHAPE,Geometry,Feature geometry.
-TRANSPORTATION,PATIP_FY2015_2018_Line,Polyline,GlobalID,GlobalID,GlobalID,No variable
+TRANSPORTATION,PATIP_FY2015_2018_Line,Polyline,GlobalID,GLOBALID,GlobalID,No variable
 TRANSPORTATION,PATIP_FY2015_2018_Line,Polyline,SHAPE.LEN,SHAPE.LEN,Double,No variable
 TRANSPORTATION,RegionalAirportSystem,Point,OBJECTID_1,OBJECTID_1,OID,Internal feature number.
 TRANSPORTATION,RegionalAirportSystem,Point,OBJECTID,OBJECTID,Integer,Internal feature number.
@@ -8196,30 +8564,6 @@ TRANSPORTATION,RoadSafetyAudit,Polyline,PUB_NUM,PUB_NUM,String,No variable
 TRANSPORTATION,RoadSafetyAudit,Polyline,PUB_LINK,PUB_LINK,String,No variable
 TRANSPORTATION,RoadSafetyAudit,Polyline,GlobalID,GlobalID,GlobalID,No variable
 TRANSPORTATION,RoadSafetyAudit,Polyline,SHAPE.LEN,SHAPE.LEN,Double,No variable
-TRANSPORTATION,Shuttles_NJ,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
-TRANSPORTATION,Shuttles_NJ,Polyline,Shape,SHAPE,Geometry,Feature geometry.
-TRANSPORTATION,Shuttles_NJ,Polyline,Route,ROUTE,String,No variable
-TRANSPORTATION,Shuttles_NJ,Polyline,State,STATE,String,No variable
-TRANSPORTATION,Shuttles_NJ,Polyline,County,COUNTY,String,No variable
-TRANSPORTATION,Shuttles_NJ,Polyline,SPONSOR,SPONSOR,String,No variable
-TRANSPORTATION,Shuttles_NJ,Polyline,FY,FY,String,No variable
-TRANSPORTATION,Shuttles_NJ,Polyline,LENGTH_MI,LENGTH_MI,Double,No variable
-TRANSPORTATION,Shuttles_NJ,Polyline,GlobalID,GLOBALID,GlobalID,No variable
-TRANSPORTATION,Shuttles_NJ,Polyline,SHAPE.LEN,SHAPE.LEN,Double,No variable
-TRANSPORTATION,Shuttles_PA,Polyline,OBJECTID,OBJECTID,Integer,Internal feature number.
-TRANSPORTATION,Shuttles_PA,Polyline,SHAPE,OBJECTID_1,OID,Feature geometry.
-TRANSPORTATION,Shuttles_PA,Polyline,Shape,ORGANIZATI,String,Feature geometry.
-TRANSPORTATION,Shuttles_PA,Polyline,ORGANIZATI,PUBLIC_USE,String,Internal feature number.
-TRANSPORTATION,Shuttles_PA,Polyline,PUBLIC_USE,ACTIVE,String,Internal feature number.
-TRANSPORTATION,Shuttles_PA,Polyline,ACTIVE,NOTES,String,Internal feature number.
-TRANSPORTATION,Shuttles_PA,Polyline,NOTES,FUNDING,String,Internal feature number.
-TRANSPORTATION,Shuttles_PA,Polyline,FUNDING,START_,String,Internal feature number.
-TRANSPORTATION,Shuttles_PA,Polyline,START_,ORG_ABR,String,Internal feature number.
-TRANSPORTATION,Shuttles_PA,Polyline,ORG_ABR,SHAPE.LEN,Double,Internal feature number.
-TRANSPORTATION,Shuttles_PA,Polyline,SHAPE.LEN,STOP,String,Internal feature number.
-TRANSPORTATION,Shuttles_PA,Polyline,STOP,ROUTE,String,Internal feature number.
-TRANSPORTATION,Shuttles_PA,Polyline,ROUTE,GlobalID,GlobalID,No variable
-TRANSPORTATION,Shuttles_PA,Polyline,GlobalID,SHAPE,Geometry,Feature geometry.
 TRANSPORTATION,TIP_Actions_Line,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
 TRANSPORTATION,TIP_Actions_Line,Polyline,Shape,SHAPE,Geometry,Feature geometry.
 TRANSPORTATION,TIP_Actions_Line,Polyline,YEAR,YEAR,String,No variable
@@ -8467,37 +8811,6 @@ TRANSPORTATION,AirportFootprints,Polygon,RASP_Type,RASP_TYPE,String,No variable
 TRANSPORTATION,AirportFootprints,Polygon,GlobalID,GLOBALID,GlobalID,No variable
 TRANSPORTATION,AirportFootprints,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
 TRANSPORTATION,AirportFootprints,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,OBJECTID,OBJECTID,OID,Internal feature number.
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,DVRPCNUM,DVRPCNUM,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,CDATE,CDATE,Date,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,WEATHER,WEATHER,String,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,HIGHTEMP,HIGHTEMP,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,LOWTEMP,LOWTEMP,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM12,AM12,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM1,AM1,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM2,AM2,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM3,AM3,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM4,AM4,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM5,AM5,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM6,AM6,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM7,AM7,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM8,AM8,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM9,AM9,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM10,AM10,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM11,AM11,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM12,PM12,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM1,PM1,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM2,PM2,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM3,PM3,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM4,PM4,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM5,PM5,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM6,PM6,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM7,PM7,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM8,PM8,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM9,PM9,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM10,PM10,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM11,PM11,Double,No variable
-TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,TOTALVOL,TOTALVOL,Double,No variable
 TRANSPORTATION,CRASH_Pennsylvania,Point,OBJECTID,OBJECTID,OID,Internal feature number.
 TRANSPORTATION,CRASH_Pennsylvania,Point,CRN,CRN,Double,No variable
 TRANSPORTATION,CRASH_Pennsylvania,Point,DISTRICT,DISTRICT,String,No variable
@@ -8866,76 +9179,6 @@ TRANSPORTATION,NJDOT_Pavement,Polyline,AVGRUT,AVGRUT,Double,No variable
 TRANSPORTATION,NJDOT_Pavement,Polyline,SDI,SDI,Double,No variable
 TRANSPORTATION,NJDOT_Pavement,Polyline,ROUTE,ROUTE,String,No variable
 TRANSPORTATION,NJDOT_Pavement,Polyline,SHAPE.LEN,SHAPE.LEN,Double,No variable
-TRANSPORTATION,TrafficCounts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-TRANSPORTATION,TrafficCounts,Point,RECORDNUM,RECORDNUM,Double,No variable
-TRANSPORTATION,TrafficCounts,Point,TAKENBY,TAKENBY,String,No variable
-TRANSPORTATION,TrafficCounts,Point,SETDATE,SETDATE,Date,No variable
-TRANSPORTATION,TrafficCounts,Point,SETYEAR,SETYEAR,String,No variable
-TRANSPORTATION,TrafficCounts,Point,MCD,MCD,String,No variable
-TRANSPORTATION,TrafficCounts,Point,RDPREFIX,RDPREFIX,String,No variable
-TRANSPORTATION,TrafficCounts,Point,ROUTE,ROUTE,Double,No variable
-TRANSPORTATION,TrafficCounts,Point,ROAD,ROAD,String,No variable
-TRANSPORTATION,TrafficCounts,Point,CNTDIR,CNTDIR,String,No variable
-TRANSPORTATION,TrafficCounts,Point,FROMLMT,FROMLMT,String,No variable
-TRANSPORTATION,TrafficCounts,Point,TOLMT,TOLMT,String,No variable
-TRANSPORTATION,TrafficCounts,Point,TYPE,TYPE,String,No variable
-TRANSPORTATION,TrafficCounts,Point,RDSUFFIX,RDSUFFIX,String,No variable
-TRANSPORTATION,TrafficCounts,Point,LATITUDE,LATITUDE,Double,No variable
-TRANSPORTATION,TrafficCounts,Point,LONGITUDE,LONGITUDE,Double,No variable
-TRANSPORTATION,TrafficCounts,Point,FACTOR,FACTOR,Double,No variable
-TRANSPORTATION,TrafficCounts,Point,AXLE,AXLE,Double,No variable
-TRANSPORTATION,TrafficCounts,Point,AADT,AADT,Integer,No variable
-TRANSPORTATION,TrafficCounts,Point,SHAPE,SHAPE,Geometry,Feature geometry.
-TRANSPORTATION,TrafficCounts,Point,UPDATED,UPDATED,Date,No variable
-TRANSPORTATION,TrafficCounts,Point,CO_NAME,CO_NAME,String,No variable
-TRANSPORTATION,TrafficCounts,Point,MUN_NAME,MUN_NAME,String,No variable
-TRANSPORTATION,BicycleCounts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-TRANSPORTATION,BicycleCounts,Point,RECORDNUM,RECORDNUM,Double,No variable
-TRANSPORTATION,BicycleCounts,Point,SETDATE,SETDATE,Date,No variable
-TRANSPORTATION,BicycleCounts,Point,SETYEAR,SETYEAR,String,No variable
-TRANSPORTATION,BicycleCounts,Point,COMMENTS,COMMENTS,String,No variable
-TRANSPORTATION,BicycleCounts,Point,MCD,MCD,String,No variable
-TRANSPORTATION,BicycleCounts,Point,ROUTE,ROUTE,Double,No variable
-TRANSPORTATION,BicycleCounts,Point,ROAD,ROAD,String,No variable
-TRANSPORTATION,BicycleCounts,Point,CNTDIR,CNTDIR,String,No variable
-TRANSPORTATION,BicycleCounts,Point,FROMLMT,FROMLMT,String,No variable
-TRANSPORTATION,BicycleCounts,Point,TOLMT,TOLMT,String,No variable
-TRANSPORTATION,BicycleCounts,Point,TYPE,TYPE,String,No variable
-TRANSPORTATION,BicycleCounts,Point,LATITUDE,LATITUDE,Double,No variable
-TRANSPORTATION,BicycleCounts,Point,LONGITUDE,LONGITUDE,Double,No variable
-TRANSPORTATION,BicycleCounts,Point,FACTOR,FACTOR,Double,No variable
-TRANSPORTATION,BicycleCounts,Point,AXLE,AXLE,Double,No variable
-TRANSPORTATION,BicycleCounts,Point,OUTDIR,OUTDIR,String,No variable
-TRANSPORTATION,BicycleCounts,Point,INDIR,INDIR,String,No variable
-TRANSPORTATION,BicycleCounts,Point,AADB,AADB,Integer,No variable
-TRANSPORTATION,BicycleCounts,Point,SHAPE,SHAPE,Geometry,Feature geometry.
-TRANSPORTATION,BicycleCounts,Point,UPDATED,UPDATED,Date,No variable
-TRANSPORTATION,BicycleCounts,Point,CO_NAME,CO_NAME,String,No variable
-TRANSPORTATION,BicycleCounts,Point,MUN_NAME,MUN_NAME,String,No variable
-TRANSPORTATION,PedestrianCounts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
-TRANSPORTATION,PedestrianCounts,Point,RECORDNUM,RECORDNUM,Double,No variable
-TRANSPORTATION,PedestrianCounts,Point,SETDATE,SETDATE,Date,No variable
-TRANSPORTATION,PedestrianCounts,Point,SETYEAR,SETYEAR,String,No variable
-TRANSPORTATION,PedestrianCounts,Point,COMMENTS,COMMENTS,String,No variable
-TRANSPORTATION,PedestrianCounts,Point,MCD,MCD,String,No variable
-TRANSPORTATION,PedestrianCounts,Point,ROUTE,ROUTE,Double,No variable
-TRANSPORTATION,PedestrianCounts,Point,ROAD,ROAD,String,No variable
-TRANSPORTATION,PedestrianCounts,Point,CNTDIR,CNTDIR,String,No variable
-TRANSPORTATION,PedestrianCounts,Point,FROMLMT,FROMLMT,String,No variable
-TRANSPORTATION,PedestrianCounts,Point,TOLMT,TOLMT,String,No variable
-TRANSPORTATION,PedestrianCounts,Point,TYPE,TYPE,String,No variable
-TRANSPORTATION,PedestrianCounts,Point,LATITUDE,LATITUDE,Double,No variable
-TRANSPORTATION,PedestrianCounts,Point,LONGITUDE,LONGITUDE,Double,No variable
-TRANSPORTATION,PedestrianCounts,Point,FACTOR,FACTOR,Double,No variable
-TRANSPORTATION,PedestrianCounts,Point,AXLE,AXLE,Double,No variable
-TRANSPORTATION,PedestrianCounts,Point,OUTDIR,OUTDIR,String,No variable
-TRANSPORTATION,PedestrianCounts,Point,INDIR,INDIR,String,No variable
-TRANSPORTATION,PedestrianCounts,Point,SIDEWALK,SIDEWALK,String,No variable
-TRANSPORTATION,PedestrianCounts,Point,AADP,AADP,Integer,No variable
-TRANSPORTATION,PedestrianCounts,Point,SHAPE,SHAPE,Geometry,Feature geometry.
-TRANSPORTATION,PedestrianCounts,Point,UPDATED,UPDATED,Date,No variable
-TRANSPORTATION,PedestrianCounts,Point,CO_NAME,CO_NAME,String,No variable
-TRANSPORTATION,PedestrianCounts,Point,MUN_NAME,MUN_NAME,String,No variable
 TRANSPORTATION,PA_Centerline,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
 TRANSPORTATION,PA_Centerline,Polyline,NAME,NAME,String,No variable
 TRANSPORTATION,PA_Centerline,Polyline,NAMELC,NAMELC,String,No variable
@@ -8948,6 +9191,30 @@ TRANSPORTATION,PA_Centerline,Polyline,PARTSTRUC,PARTSTRUC,SmallInteger,No variab
 TRANSPORTATION,PA_Centerline,Polyline,SHAPE_LENG,SHAPE_LENG,Double,No variable
 TRANSPORTATION,PA_Centerline,Polyline,SHAPE,SHAPE,Geometry,Feature geometry.
 TRANSPORTATION,PA_Centerline,Polyline,SHAPE.LEN,SHAPE.LEN,Double,No variable
+TRANSPORTATION,TrafficCounts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
+TRANSPORTATION,TrafficCounts,Point,RECORDNUM,RECORDNUM,Double,No variable
+TRANSPORTATION,TrafficCounts,Point,TAKENBY,TAKENBY,String,No variable
+TRANSPORTATION,TrafficCounts,Point,SETDATE,SETDATE,Date,No variable
+TRANSPORTATION,TrafficCounts,Point,SETYEAR,SETYEAR,String,No variable
+TRANSPORTATION,TrafficCounts,Point,MCD,MCD,String,No variable
+TRANSPORTATION,TrafficCounts,Point,RDPREFIX,RDPREFIX,String,No variable
+TRANSPORTATION,TrafficCounts,Point,ROUTE,ROUTE,String,No variable
+TRANSPORTATION,TrafficCounts,Point,ROAD,ROAD,String,No variable
+TRANSPORTATION,TrafficCounts,Point,CNTDIR,CNTDIR,String,No variable
+TRANSPORTATION,TrafficCounts,Point,FROMLMT,FROMLMT,String,No variable
+TRANSPORTATION,TrafficCounts,Point,TOLMT,TOLMT,String,No variable
+TRANSPORTATION,TrafficCounts,Point,TYPE,TYPE,String,No variable
+TRANSPORTATION,TrafficCounts,Point,RDSUFFIX,RDSUFFIX,String,No variable
+TRANSPORTATION,TrafficCounts,Point,LATITUDE,LATITUDE,Double,No variable
+TRANSPORTATION,TrafficCounts,Point,LONGITUDE,LONGITUDE,Double,No variable
+TRANSPORTATION,TrafficCounts,Point,FACTOR,FACTOR,Double,No variable
+TRANSPORTATION,TrafficCounts,Point,AXLE,AXLE,Double,No variable
+TRANSPORTATION,TrafficCounts,Point,AADT,AADT,Integer,No variable
+TRANSPORTATION,TrafficCounts,Point,UPDATED,UPDATED,Date,No variable
+TRANSPORTATION,TrafficCounts,Point,CO_NAME,CO_NAME,String,No variable
+TRANSPORTATION,TrafficCounts,Point,MUN_NAME,MUN_NAME,String,No variable
+TRANSPORTATION,TrafficCounts,Point,SHAPE,SHAPE,Geometry,Feature geometry.
+TRANSPORTATION,TrafficCounts,Point,GLOBALID,GLOBALID,GlobalID,No variable
 TRANSPORTATION,SEPTA_BusStops,Point,OBJECTID,OBJECTID,OID,Internal feature number.
 TRANSPORTATION,SEPTA_BusStops,Point,SIGNUP,Signup,String,No variable
 TRANSPORTATION,SEPTA_BusStops,Point,ROUTE,Route,String,No variable
@@ -8968,6 +9235,55 @@ TRANSPORTATION,SEPTA_BusStops,Point,SUN_OFFS,Sun_Offs,Integer,No variable
 TRANSPORTATION,SEPTA_BusStops,Point,SUN_TOTAL,Sun_Total,Integer,No variable
 TRANSPORTATION,SEPTA_BusStops,Point,SOURCE,Source,String,No variable
 TRANSPORTATION,SEPTA_BusStops,Point,Shape,SHAPE,Geometry,Feature geometry.
+TRANSPORTATION,BicycleCounts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
+TRANSPORTATION,BicycleCounts,Point,RECORDNUM,RECORDNUM,Double,No variable
+TRANSPORTATION,BicycleCounts,Point,SETDATE,SETDATE,Date,No variable
+TRANSPORTATION,BicycleCounts,Point,SETYEAR,SETYEAR,String,No variable
+TRANSPORTATION,BicycleCounts,Point,COMMENTS,COMMENTS,String,No variable
+TRANSPORTATION,BicycleCounts,Point,MCD,MCD,String,No variable
+TRANSPORTATION,BicycleCounts,Point,ROUTE,ROUTE,String,No variable
+TRANSPORTATION,BicycleCounts,Point,ROAD,ROAD,String,No variable
+TRANSPORTATION,BicycleCounts,Point,CNTDIR,CNTDIR,String,No variable
+TRANSPORTATION,BicycleCounts,Point,FROMLMT,FROMLMT,String,No variable
+TRANSPORTATION,BicycleCounts,Point,TOLMT,TOLMT,String,No variable
+TRANSPORTATION,BicycleCounts,Point,TYPE,TYPE,String,No variable
+TRANSPORTATION,BicycleCounts,Point,LATITUDE,LATITUDE,Double,No variable
+TRANSPORTATION,BicycleCounts,Point,LONGITUDE,LONGITUDE,Double,No variable
+TRANSPORTATION,BicycleCounts,Point,FACTOR,FACTOR,Double,No variable
+TRANSPORTATION,BicycleCounts,Point,AXLE,AXLE,Double,No variable
+TRANSPORTATION,BicycleCounts,Point,OUTDIR,OUTDIR,String,No variable
+TRANSPORTATION,BicycleCounts,Point,INDIR,INDIR,String,No variable
+TRANSPORTATION,BicycleCounts,Point,AADB,AADB,Integer,No variable
+TRANSPORTATION,BicycleCounts,Point,UPDATED,UPDATED,Date,No variable
+TRANSPORTATION,BicycleCounts,Point,CO_NAME,CO_NAME,String,No variable
+TRANSPORTATION,BicycleCounts,Point,MUN_NAME,MUN_NAME,String,No variable
+TRANSPORTATION,BicycleCounts,Point,SHAPE,SHAPE,Geometry,Feature geometry.
+TRANSPORTATION,BicycleCounts,Point,GLOBALID,GLOBALID,GlobalID,No variable
+TRANSPORTATION,PedestrianCounts,Point,OBJECTID,OBJECTID,OID,Internal feature number.
+TRANSPORTATION,PedestrianCounts,Point,RECORDNUM,RECORDNUM,Double,No variable
+TRANSPORTATION,PedestrianCounts,Point,SETDATE,SETDATE,Date,No variable
+TRANSPORTATION,PedestrianCounts,Point,SETYEAR,SETYEAR,String,No variable
+TRANSPORTATION,PedestrianCounts,Point,COMMENTS,COMMENTS,String,No variable
+TRANSPORTATION,PedestrianCounts,Point,MCD,MCD,String,No variable
+TRANSPORTATION,PedestrianCounts,Point,ROUTE,ROUTE,String,No variable
+TRANSPORTATION,PedestrianCounts,Point,ROAD,ROAD,String,No variable
+TRANSPORTATION,PedestrianCounts,Point,CNTDIR,CNTDIR,String,No variable
+TRANSPORTATION,PedestrianCounts,Point,FROMLMT,FROMLMT,String,No variable
+TRANSPORTATION,PedestrianCounts,Point,TOLMT,TOLMT,String,No variable
+TRANSPORTATION,PedestrianCounts,Point,TYPE,TYPE,String,No variable
+TRANSPORTATION,PedestrianCounts,Point,LATITUDE,LATITUDE,Double,No variable
+TRANSPORTATION,PedestrianCounts,Point,LONGITUDE,LONGITUDE,Double,No variable
+TRANSPORTATION,PedestrianCounts,Point,FACTOR,FACTOR,Double,No variable
+TRANSPORTATION,PedestrianCounts,Point,AXLE,AXLE,Double,No variable
+TRANSPORTATION,PedestrianCounts,Point,OUTDIR,OUTDIR,String,No variable
+TRANSPORTATION,PedestrianCounts,Point,INDIR,INDIR,String,No variable
+TRANSPORTATION,PedestrianCounts,Point,SIDEWALK,SIDEWALK,String,No variable
+TRANSPORTATION,PedestrianCounts,Point,AADP,AADP,Integer,No variable
+TRANSPORTATION,PedestrianCounts,Point,UPDATED,UPDATED,Date,No variable
+TRANSPORTATION,PedestrianCounts,Point,CO_NAME,CO_NAME,String,No variable
+TRANSPORTATION,PedestrianCounts,Point,MUN_NAME,MUN_NAME,String,No variable
+TRANSPORTATION,PedestrianCounts,Point,SHAPE,SHAPE,Geometry,Feature geometry.
+TRANSPORTATION,PedestrianCounts,Point,GLOBALID,GLOBALID,GlobalID,No variable
 TRANSPORTATION,PADOT_LRS,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
 TRANSPORTATION,PADOT_LRS,Polyline,NLF_ID,NLF_ID,Double,No variable
 TRANSPORTATION,PADOT_LRS,Polyline,SHAPE,SHAPE,Geometry,Feature geometry.
@@ -9003,6 +9319,39 @@ TRANSPORTATION,BIKESUMBYHRCROSSTAB,Table,PM9,PM9,Double,No variable
 TRANSPORTATION,BIKESUMBYHRCROSSTAB,Table,PM10,PM10,Double,No variable
 TRANSPORTATION,BIKESUMBYHRCROSSTAB,Table,PM11,PM11,Double,No variable
 TRANSPORTATION,BIKESUMBYHRCROSSTAB,Table,TOTALVOL,TOTALVOL,Double,No variable
+TRANSPORTATION,BIKESUMBYHRCROSSTAB,Table,GLOBALID,GLOBALID,GlobalID,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,OBJECTID,OBJECTID,OID,Internal feature number.
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,DVRPCNUM,DVRPCNUM,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,CDATE,CDATE,Date,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,WEATHER,WEATHER,String,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,HIGHTEMP,HIGHTEMP,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,LOWTEMP,LOWTEMP,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM12,AM12,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM1,AM1,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM2,AM2,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM3,AM3,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM4,AM4,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM5,AM5,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM6,AM6,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM7,AM7,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM8,AM8,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM9,AM9,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM10,AM10,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,AM11,AM11,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM12,PM12,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM1,PM1,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM2,PM2,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM3,PM3,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM4,PM4,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM5,PM5,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM6,PM6,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM7,PM7,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM8,PM8,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM9,PM9,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM10,PM10,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,PM11,PM11,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,TOTALVOL,TOTALVOL,Double,No variable
+TRANSPORTATION,PEDSUMBYHRCROSSTAB,Table,GLOBALID,GLOBALID,GlobalID,No variable
 TRANSPORTATION,SEPTARIDERSHIP_Rail_Station,Table,OBJECTID,OBJECTID,OID,Internal feature number.
 TRANSPORTATION,SEPTARIDERSHIP_Rail_Station,Table,Station_Name,Station Name,String,No variable
 TRANSPORTATION,SEPTARIDERSHIP_Rail_Station,Table,Fare_Zone,Fare Zone,Double,No variable
@@ -9148,7 +9497,7 @@ TRANSPORTATION,SEPTA_TrolleyStops,Point,DAY,DAY,String,No variable
 TRANSPORTATION,SEPTA_TrolleyStops,Point,WKDY_ONS,WKDY_ONS,Integer,No variable
 TRANSPORTATION,SEPTA_TrolleyStops,Point,WKDY_OFFS,WKDY_OFFS,Integer,No variable
 TRANSPORTATION,SEPTA_TrolleyStops,Point,Shape,Shape,Geometry,Feature geometry.
-TRANSPORTATION,CMP_NJ_Corridors,Polygon,OBJECTID_1,OBJECTID_1,OID,Internal feature number.
+TRANSPORTATION,CMP_NJ_Corridors,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
 TRANSPORTATION,CMP_NJ_Corridors,Polygon,Shape,SHAPE,Geometry,Feature geometry.
 TRANSPORTATION,CMP_NJ_Corridors,Polygon,NAME,NAME,String,No variable
 TRANSPORTATION,CMP_NJ_Corridors,Polygon,SUB_ID,SUB_ID,String,No variable
@@ -9157,13 +9506,12 @@ TRANSPORTATION,CMP_NJ_Corridors,Polygon,GIS_ID,GIS_ID,String,No variable
 TRANSPORTATION,CMP_NJ_Corridors,Polygon,SUBNAME,SUBNAME,String,No variable
 TRANSPORTATION,CMP_NJ_Corridors,Polygon,CMP_ID,CMP_ID,Integer,No variable
 TRANSPORTATION,CMP_NJ_Corridors,Polygon,Priority,PRIORITY,String,No variable
-TRANSPORTATION,CMP_NJ_Corridors,Polygon,REPORT,REPORT,String,No variable
 TRANSPORTATION,CMP_NJ_Corridors,Polygon,STATE,STATE,String,No variable
 TRANSPORTATION,CMP_NJ_Corridors,Polygon,RuleID,RULEID,Integer,No variable
 TRANSPORTATION,CMP_NJ_Corridors,Polygon,Override,OVERRIDE,Blob,No variable
 TRANSPORTATION,CMP_NJ_Corridors,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
 TRANSPORTATION,CMP_NJ_Corridors,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
-TRANSPORTATION,CMP_PA_Corridors,Polygon,OBJECTID_1,OBJECTID_1,OID,Internal feature number.
+TRANSPORTATION,CMP_PA_Corridors,Polygon,OBJECTID,OBJECTID,OID,Internal feature number.
 TRANSPORTATION,CMP_PA_Corridors,Polygon,Shape,SHAPE,Geometry,Feature geometry.
 TRANSPORTATION,CMP_PA_Corridors,Polygon,NAME,NAME,String,No variable
 TRANSPORTATION,CMP_PA_Corridors,Polygon,SUB_ID,SUB_ID,String,No variable
@@ -9172,10 +9520,9 @@ TRANSPORTATION,CMP_PA_Corridors,Polygon,GIS_ID,GIS_ID,String,No variable
 TRANSPORTATION,CMP_PA_Corridors,Polygon,SUBNAME,SUBNAME,String,No variable
 TRANSPORTATION,CMP_PA_Corridors,Polygon,CMP_ID,CMP_ID,Integer,No variable
 TRANSPORTATION,CMP_PA_Corridors,Polygon,Priority,PRIORITY,String,No variable
-TRANSPORTATION,CMP_PA_Corridors,Polygon,REPORT,REPORT,String,No variable
+TRANSPORTATION,CMP_PA_Corridors,Polygon,RULEID,RULEID,Integer,No variable
+TRANSPORTATION,CMP_PA_Corridors,Polygon,OVERRIDE,OVERRIDE,Blob,No variable
 TRANSPORTATION,CMP_PA_Corridors,Polygon,STATE,STATE,String,No variable
-TRANSPORTATION,CMP_PA_Corridors,Polygon,RuleID,RULEID,Integer,No variable
-TRANSPORTATION,CMP_PA_Corridors,Polygon,Override,OVERRIDE,Blob,No variable
 TRANSPORTATION,CMP_PA_Corridors,Polygon,SHAPE.AREA,SHAPE.AREA,Double,No variable
 TRANSPORTATION,CMP_PA_Corridors,Polygon,SHAPE.LEN,SHAPE.LEN,Double,No variable
 TRANSPORTATION,NJDOT_LRS,Polyline,OBJECTID,OBJECTID,OID,Internal feature number.
