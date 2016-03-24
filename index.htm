@@ -7,12 +7,12 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="description" content="">
         <meta name="author" content="Michael Ruane">     
-        <title>DVRPC GeoDatabase Directory</title>
+        <title>DVRPC GIS Data Directory</title>
         <!--
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="https://cdn.datatables.net/1.10.8/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">-->
-
-        <link href="lib/locals/local.css" rel="stylesheet" type="text/css">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+        <link href="lib/locals/bootstrap.min.css" rel="stylesheet" type="text/css">
     
         
         <link rel="stylesheet" type="text/css" href="lib/style.css" />
@@ -125,10 +125,15 @@
                         <span class="icon-bar"></span>
                     </button>
                 <div class="navbar-brand">
-                    <span>DVRPC GIS Data Directory</span>
+                    <img id="dvrpc-nav-logo" src="../lib/images/dvrpc_logo.png" />
+                    <span class="page-title">GIS Data Directory</span>
                 </div>
             </div>
             <div id="navbar-links" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#aboutModal" style="margin-right:10px;" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#aboutModal').modal('show'); return false;"><i class="glyphicon glyphicon-question-sign" ></i>&nbsp;&nbsp;About</a>
+                    </li>
+                </ul>
             </div><!--/.navbar-collapse -->
         </header>
         
@@ -224,6 +229,25 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="aboutModal">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Using this directory</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <p>Browse the metadata from our internal GIS data inventory or search using a keyword.</p>
+                    <p>To view a dataset in GIS, click the “COPY URL” button then paste into the location bar of ArcCatalog.</p>
+
+
+                      </div>                   
+                  </div><!-- /.modal-body -->
+              </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+      </div><!-- /#aboutModal -->
 <!--
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
