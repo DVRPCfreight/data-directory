@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700);
+
 html { overflow-y: scroll; }
 html,body,#sidebar,#container {
    
@@ -6,11 +8,10 @@ html,body,#sidebar,#container {
 html,body,#sidebar{
     height:100%;
 }
-/*body {
-   
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+body {
+    font-family: "Open Sans",sans-serif;
 }
-p {
+/*p {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 h1,h2,h3,h4,h5,h6 {
