@@ -1,89 +1,90 @@
 {
-@context: "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
-@type: "dcat:Catalog",
-conformsTo: "https://project-open-data.cio.gov/v1.1/schema",
-describedBy: "https://project-open-data.cio.gov/v1.1/schema/catalog.json",
-dataset: [
-{
-@type: "dcat:Dataset",
-identifier: "94ba4896ec7142be80220cde37a7bd55",
-title: "NETS (National Establishment Time-Series) 2015 **DO NOT DISTRIBUTE**",
-notes: "<DIV STYLE="text-align:Left;"><DIV><DIV><P STYLE="margin:0 0 14 0;"><SPAN>"To develop a database that better described the dynamics of the U.S. economy, Walls &amp; Associates teamed up with Dun and Bradstreet (D&amp;B) to convert their archival establishment data into a time-series database of establishment information, the National Establishment Time-Series (NETS) Database. The starting point for the NETS Database was twenty-three annual snapshots (taken every January) of the full Duns Marketing Information (DMI) file that followed over 52.4 million establishments... These snapshots actually used the DMI file to determine which establishments were active in January of each year in question. Other archival files (e.g., the Credit Rating file) were utilized to provide annual raw establishment data that allowed us to create time-series information." </SPAN><SPAN STYLE="font-size:8pt">National Establishment Time-Series (NETS) Database: 2012 Database Description; Walls &amp; Associates</SPAN></P><P STYLE="margin:0 0 14 0;"><SPAN>Locations were geocoded using a variety of methods based on addresses provided in the NETS database. A QA/QC process was used on various levels in various locations to make spatial adjustments where necessary. Spatial location and certain attributes are being updated on an as-needed basis.</SPAN></P><P STYLE="margin:0 0 14 0;"><SPAN /></P><P><SPAN /></P></DIV></DIV></DIV>",
-keyword: [
-"Employment",
-"Economy",
-"Employers",
-"Employees",
-"DVRPC Region"
-],
-staff_contant: "Sean",
-staff_contact_email: "slaw@dvrpc.org",
-category: "Boundaries",
-posting_frequency: "as_needed",
-use_limitations:"unrestricted_without_agreement",
-issued: "2020-11-04T19:46:23.516000",
-modified: "2021-02-18T18:52:48.237000",
-publisher: "DVRPC GIS",
-contactPoint: {
-@type: "vcard:Contact",
-fn: "Delaware Valley Regional Planning Commission",
-hasEmail: "mailto:slawrence@dvrpc.org"
-},
-accessLevel: "org",
-distribution: [
-{
-@type: "dcat:Distribution",
-title: "Esri Rest API",
-format: "Esri REST",
-mediaType: "application/json",
-accessURL: "https://arcgis.dvrpc.org/portal/rest/services/Economy/NETS_2015/FeatureServer"
-},
-{
-@type: "dcat:Distribution",
-title: "GeoJSON",
-format: "GeoJSON",
-mediaType: "application/geo+json",
-accessURL: "https://arcgis.dvrpc.org/portal/services/Economy/NETS_2015/MapServer/WFSServer?request=GetFeature&service=WFS&typename=NETS_2015&outputformat=geojson&srsname=EPSG:4326&format_options=filename:NETS_2015.geojson"
-},
-{
-@type: "dcat:Distribution",
-title: "DVRPC GIS Catalog",
-mediaType: "text/html",
-accessURL: "https://arcgis.dvrpc.org/dvrpc/home/item.html?id=94ba4896ec7142be80220cde37a7bd55"
-},
-{
-@type: "dcat:Distribution",
-title: "Metadata XML",
-mediaType: "application/xml",
-accessURL: "https://arcgis.dvrpc.org/portal/rest/services/Economy/NETS_2015/FeatureServer/0/metadata"
-},
-{
-@type: "dcat:Distribution",
-title: "CSV",
-format: "CSV",
-mediaType: "text/csv",
-downloadURL: "https://arcgis.dvrpc.org/portal/services/Economy/NETS_2015/MapServer/WFSServer?request=GetFeature&service=WFS&typename=NETS_2015&outputformat=csv%2Bzip&srsname=EPSG:4326&format_options=filename:NETS_2015.zip"
-},
-{
-@type: "dcat:Distribution",
-title: "Shapefile",
-format: "ZIP",
-mediaType: "application/zip",
-downloadURL: "https://arcgis.dvrpc.org/portal/services/Economy/NETS_2015/MapServer/WFSServer?request=GetFeature&service=WFS&typename=NETS_2015&outputformat=shape%2Bzip&srsname=EPSG:4326&format_options=filename:NETS_2015.zip"
-},
-{
-@type: "dcat:Distribution",
-mediaType: "application/vnd.ogc.wfs_xml",
-format: "OGC WFS",
-title: "OGC WFS",
-accessURL: "https://arcgis.dvrpc.org/portal/services/Economy/NETS_2015/MapServer/WFSServer?request=GetCapabilities&service=WFS"
-},
-{
-@type: "dcat:Distribution",
-title: "Network Location",
-format: "ESRI Feature Class",
-accessURL: "V:\Economy\Economy.sde\NETS_2015"
-}
-]
-}
+    "@context":"https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
+    "@type":"dcat:Catalog",
+    "conformsTo":"https://project-open-data.cio.gov/v1.1/schema",
+    "describedBy":"https://project-open-data.cio.gov/v1.1/schema/catalog.json",
+    "dataset":[
+       {
+          "@type":"dcat:Dataset",
+          "identifier":"94ba4896ec7142be80220cde37a7bd55",
+          "title":"NETS (National Establishment Time-Series) 2015 **DO NOT DISTRIBUTE**",
+          "notes":"<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P STYLE=\"margin:0 0 14 0;\"><SPAN>\"To develop a database that better described the dynamics of the U.S. economy, Walls &amp; Associates teamed up with Dun and Bradstreet (D&amp;B) to convert their archival establishment data into a time-series database of establishment information, the National Establishment Time-Series (NETS) Database. The starting point for the NETS Database was twenty-three annual snapshots (taken every January) of the full Duns Marketing Information (DMI) file that followed over 52.4 million establishments... These snapshots actually used the DMI file to determine which establishments were active in January of each year in question. Other archival files (e.g., the Credit Rating file) were utilized to provide annual raw establishment data that allowed us to create time-series information.\" </SPAN><SPAN STYLE=\"font-size:8pt\">National Establishment Time-Series (NETS) Database: 2012 Database Description; Walls &amp; Associates</SPAN></P><P STYLE=\"margin:0 0 14 0;\"><SPAN>Locations were geocoded using a variety of methods based on addresses provided in the NETS database. A QA/QC process was used on various levels in various locations to make spatial adjustments where necessary. Spatial location and certain attributes are being updated on an as-needed basis.</SPAN></P><P STYLE=\"margin:0 0 14 0;\"><SPAN /></P><P><SPAN /></P></DIV></DIV></DIV>",
+          "staff_contact": "sean law",
+          "staff_contact_email": "slaw@dvrpc.org",
+          "category": "Boundaries",
+          "posting_frequency":"as_needed",
+          "use_limitations":"unrestricted_without_agreement",
+          "keyword":[
+             "Employment",
+             "Economy",
+             "Employers",
+             "Employees",
+             "DVRPC Region"
+          ],
+          "issued":"2020-11-04T19:46:23.516000",
+          "modified":"2021-02-18T18:52:48.237000",
+          "publisher":"DVRPC GIS",
+          "contactPoint":{
+             "@type":"vcard:Contact",
+             "fn":"Delaware Valley Regional Planning Commission",
+             "hasEmail":"mailto:slawrence@dvrpc.org"
+          },
+          "accessLevel":"org",
+          "distribution":[
+             {
+                "@type":"dcat:Distribution",
+                "title":"Esri Rest API",
+                "format":"Esri REST",
+                "mediaType":"application/json",
+                "accessURL":"https://arcgis.dvrpc.org/portal/rest/services/Economy/NETS_2015/FeatureServer"
+             },
+             {
+                "@type":"dcat:Distribution",
+                "title":"GeoJSON",
+                "format":"GeoJSON",
+                "mediaType":"application/geo+json",
+                "accessURL":"https://arcgis.dvrpc.org/portal/services/Economy/NETS_2015/MapServer/WFSServer?request=GetFeature&service=WFS&typename=NETS_2015&outputformat=geojson&srsname=EPSG:4326&format_options=filename:NETS_2015.geojson"
+             },
+             {
+                "@type":"dcat:Distribution",
+                "title":"DVRPC GIS Catalog",
+                "mediaType":"text/html",
+                "accessURL":"https://arcgis.dvrpc.org/dvrpc/home/item.html?id=94ba4896ec7142be80220cde37a7bd55"
+             },
+             {
+                "@type":"dcat:Distribution",
+                "title":"Metadata XML",
+                "mediaType":"application/xml",
+                "accessURL":"https://arcgis.dvrpc.org/portal/rest/services/Economy/NETS_2015/FeatureServer/0/metadata"
+             },
+             {
+                "@type":"dcat:Distribution",
+                "title":"CSV",
+                "format":"CSV",
+                "mediaType":"text/csv",
+                "downloadURL":"https://arcgis.dvrpc.org/portal/services/Economy/NETS_2015/MapServer/WFSServer?request=GetFeature&service=WFS&typename=NETS_2015&outputformat=csv%2Bzip&srsname=EPSG:4326&format_options=filename:NETS_2015.zip"
+             },
+             {
+                "@type":"dcat:Distribution",
+                "title":"Shapefile",
+                "format":"ZIP",
+                "mediaType":"application/zip",
+                "downloadURL":"https://arcgis.dvrpc.org/portal/services/Economy/NETS_2015/MapServer/WFSServer?request=GetFeature&service=WFS&typename=NETS_2015&outputformat=shape%2Bzip&srsname=EPSG:4326&format_options=filename:NETS_2015.zip"
+             },
+             {
+                "@type":"dcat:Distribution",
+                "mediaType":"application/vnd.ogc.wfs_xml",
+                "format":"OGC WFS",
+                "title":"OGC WFS",
+                "accessURL":"https://arcgis.dvrpc.org/portal/services/Economy/NETS_2015/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+             },
+             {
+                "@type":"dcat:Distribution",
+                "title":"Network Location",
+                "format":"ESRI Feature Class",
+                "accessURL":"V:\\Economy\\Economy.sde\\NETS_2015"
+             }
+          ]
+       }
+    }
 }
